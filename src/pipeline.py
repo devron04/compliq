@@ -103,16 +103,12 @@ class BISPipeline:
         if not self.client:
             return [chunk["standard_id"] for chunk, _ in top_chunks]
 
-        # PERFORMANCE TWEAK: If we only need IDs, ask the LLM to be brief (no rationales)
-        # to stay under the 5s latency limit.
-        if not return_full:
-            system_prompt = "You are a BIS expert. Return a JSON list of the top 3-5 most relevant IS standard IDs from the context. Return ONLY the JSON list."
-            user_prompt = f"Product: {product_description}\n\nContext:\n{context_str}"
-            max_tokens = 100
-        else:
-            system_prompt = PROMPT_TEMPLATE
-            user_prompt = f"PRODUCT DESCRIPTION: {product_description}\n\nRETRIEVED CONTEXT:\n{context_str}"
-            max_tokens = 500
+        # Concise prompt for both speed and accuracy
+        system_prompt = """You are a BIS expert. Recommend 3-5 standards from the CONTEXT that match the PRODUCT.
+Return JSON format: {"recommendations": [{"standard_id": "...", "rationale": "..."}]}
+ONLY use standard_ids from the context. Keep rationales under 10 words."""
+        
+        user_prompt = f"PRODUCT: {product_description}\n\nCONTEXT:\n{context_str}"
 
         try:
             response = self.client.chat.completions.create(
@@ -121,45 +117,34 @@ class BISPipeline:
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_prompt}
                 ],
-                response_format={"type": "json_object"} if return_full else None,
-                max_tokens=max_tokens,
+                response_format={"type": "json_object"},
+                max_tokens=300,
                 temperature=0.0
             )
             
             content = response.choices[0].message.content
-            
-            if not return_full:
-                # LLM should return a list or a JSON with a list
-                try:
-                    data = json.loads(content)
-                    if isinstance(data, list):
-                        return data[:5]
-                    if isinstance(data, dict):
-                        # Find the first list in the dict
-                        for val in data.values():
-                            if isinstance(val, list):
-                                return val[:5]
-                    return [content] # Fallback
-                except:
-                    # If LLM returned raw text, try to find IS numbers
-                    import re
-                    return re.findall(r"IS\s+\d+(?:\s*\(Part\s*\d+\))?(?:\s*:\s*\d{4})?", content)[:5]
-
-            # Full UI mode with rationales
             data = json.loads(content)
             recommendations = data.get("recommendations", [])
             
-            # Anti-hallucination filter
-            safe_recs = []
-            for rec in recommendations:
-                if rec.get("standard_id") in valid_is_numbers:
-                    safe_recs.append(rec)
+            # STRICT FILTERING (The Anti-Hallucination Layer)
+            # We only keep IDs that actually exist in our retrieved chunks
+            final_standards = []
+            final_full_data = []
             
-            return safe_recs
+            for rec in recommendations:
+                std_id = rec.get("standard_id", "").strip()
+                if std_id in valid_is_numbers:
+                    if std_id not in final_standards: # Avoid duplicates
+                        final_standards.append(std_id)
+                        final_full_data.append(rec)
+            
+            if return_full:
+                return final_full_data
+            return final_standards
             
         except Exception as e:
-            print(f"LLM Generation Error: {e}", file=sys.stderr)
-            # Fallback to direct retrieval on error
+            print(f"LLM Error: {e}", file=sys.stderr)
+            # Fallback to search results if LLM fails
             if return_full:
                 return [
                     {
