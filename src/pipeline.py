@@ -11,6 +11,8 @@ import os
 import sys
 import json
 from typing import List
+from dotenv import load_dotenv
+load_dotenv()
 from retriever import Retriever
 
 try:
@@ -126,16 +128,19 @@ ONLY use standard_ids from the context. Keep rationales under 10 words."""
             data = json.loads(content)
             recommendations = data.get("recommendations", [])
             
-            # STRICT FILTERING (The Anti-Hallucination Layer)
-            # We only keep IDs that actually exist in our retrieved chunks
+            # Map IDs to Titles from the original search results
+            id_to_title = {chunk["standard_id"]: chunk["title"] for chunk, _ in top_chunks}
+            
             final_standards = []
             final_full_data = []
             
             for rec in recommendations:
                 std_id = rec.get("standard_id", "").strip()
                 if std_id in valid_is_numbers:
-                    if std_id not in final_standards: # Avoid duplicates
+                    if std_id not in final_standards:
                         final_standards.append(std_id)
+                        # Add the real title to the recommendation
+                        rec["title"] = id_to_title.get(std_id, "Standard Document")
                         final_full_data.append(rec)
             
             if return_full:
