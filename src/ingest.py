@@ -62,14 +62,10 @@ def parse_pdf(pdf_path: str) -> list[dict]:
     for page in doc:
         full_text += page.get_text("text") + "\n"
 
-    # A naive approach to split by IS numbers. 
-    # BIS standards usually start with "IS " followed by digits, sometimes with year e.g. "IS 269 : 2015"
-    # We look for lines that look like standard headers.
-    
-    # Let's split using a regex that finds standard beginnings:
-    # Look for "IS \d+(?:[A-Za-z]+)?(?:\s*:\s*\d{4})?" at the start of a line or paragraph
-    # We will use re.split with a capturing group to keep the delimiter
-    pattern = r"(IS\s+\d+(?:[A-Za-z]+)?(?:\s*:\s*\d{4})?)"
+    # Split by IS standard headers. BIS SP 21 format:
+    # "IS 269 : 1989", "IS 2185 (Part 2) : 1983", etc.
+    # We capture the full standard ID including optional Part and year.
+    pattern = r"(IS\s+\d+(?:\s*\(Part\s*\d+\))?(?:\s*:\s*\d{4})?)"
     parts = re.split(pattern, full_text)
     
     chunks = []
@@ -77,8 +73,10 @@ def parse_pdf(pdf_path: str) -> list[dict]:
     # parts[0] is everything before the first IS standard
     for i in range(1, len(parts), 2):
         is_num_raw = parts[i].strip()
-        # Clean IS number (e.g. "IS 269 : 2015" -> "IS 269")
-        standard_id = is_num_raw.split(':')[0].strip()
+        # Normalize spacing in standard_id: "IS 269 : 1989" -> "IS 269: 1989"
+        # Keep the year — it's part of the real IS number format
+        standard_id = re.sub(r'\s*:\s*', ': ', is_num_raw).strip()
+        standard_id = re.sub(r'\s+', ' ', standard_id)  # collapse extra spaces
         
         # The content following this IS number
         content = parts[i+1].strip() if i+1 < len(parts) else ""
@@ -91,7 +89,7 @@ def parse_pdf(pdf_path: str) -> list[dict]:
         scope = content[:500].replace('\n', ' ').strip()
         
         # Full chunk text for embedding
-        full_chunk_text = f"{is_num_raw}\n{content}"
+        full_chunk_text = f"{standard_id}\n{content}"
         
         chunk = {
             "standard_id": standard_id,
@@ -111,31 +109,119 @@ def parse_pdf(pdf_path: str) -> list[dict]:
     return chunks
 
 def generate_fallback_chunks() -> list[dict]:
-    """Generate dummy chunks if no valid standards are extracted."""
+    """Fallback chunks matching real BIS SP 21 IS number format (with year)."""
     return [
         {
-            "standard_id": "IS 269",
-            "title": "Ordinary Portland Cement — Specification",
+            "standard_id": "IS 269: 1989",
+            "title": "Specification for Ordinary Portland Cement, 33 Grade",
             "category": "Cement",
-            "scope": "This standard covers the manufacture and chemical and physical requirements of 33, 43, and 53 grade ordinary Portland cement.",
-            "keywords": ["cement", "portland", "compressive", "strength", "grades"],
-            "full_text": "IS 269 : 2015 Ordinary Portland Cement — Specification. This standard covers the manufacture and chemical and physical requirements of 33, 43, and 53 grade ordinary Portland cement (OPC)."
+            "scope": "This standard covers the manufacture and chemical and physical requirements of 33 grade ordinary Portland cement.",
+            "keywords": ["cement", "portland", "opc", "33 grade", "compressive", "strength"],
+            "full_text": "IS 269: 1989 Specification for Ordinary Portland Cement, 33 Grade. Covers chemical and physical requirements for OPC 33 grade cement."
         },
         {
-            "standard_id": "IS 1786",
-            "title": "High Strength Deformed Steel Bars and Wires for Concrete Reinforcement",
-            "category": "Steel",
-            "scope": "This standard covers the requirements of deformed steel bars and wires for use as reinforcement in concrete.",
-            "keywords": ["steel", "bars", "deformed", "reinforcement", "concrete"],
-            "full_text": "IS 1786 : 2008 High Strength Deformed Steel Bars and Wires for Concrete Reinforcement. It covers various grades like Fe 415, Fe 500, Fe 500D, Fe 550, Fe 550D, Fe 600."
+            "standard_id": "IS 8112: 1989",
+            "title": "Specification for 43 Grade Ordinary Portland Cement",
+            "category": "Cement",
+            "scope": "Covers requirements for 43 grade ordinary portland cement.",
+            "keywords": ["cement", "portland", "43 grade", "opc"],
+            "full_text": "IS 8112: 1989 Specification for 43 Grade Ordinary Portland Cement. Chemical and physical requirements for OPC 43 grade."
         },
         {
-            "standard_id": "IS 383",
-            "title": "Coarse and Fine Aggregates for Concrete",
+            "standard_id": "IS 12269: 1987",
+            "title": "Specification for 53 Grade Ordinary Portland Cement",
+            "category": "Cement",
+            "scope": "Covers requirements for 53 grade ordinary portland cement.",
+            "keywords": ["cement", "portland", "53 grade", "opc", "high strength"],
+            "full_text": "IS 12269: 1987 Specification for 53 Grade Ordinary Portland Cement. Chemical and physical requirements for OPC 53 grade."
+        },
+        {
+            "standard_id": "IS 383: 1970",
+            "title": "Specification for Coarse and Fine Aggregates from Natural Sources for Concrete",
             "category": "Concrete",
             "scope": "Specification for coarse and fine aggregates from natural sources for concrete.",
-            "keywords": ["aggregates", "coarse", "fine", "concrete", "sand"],
-            "full_text": "IS 383 : 2016 Coarse and Fine Aggregates for Concrete. Covers requirements for aggregates, including crushed stone, gravel, and sand for concrete mixes."
+            "keywords": ["aggregates", "coarse", "fine", "concrete", "sand", "gravel"],
+            "full_text": "IS 383: 1970 Specification for Coarse and Fine Aggregates from Natural Sources for Concrete. Covers grading, quality, and testing of natural aggregates."
+        },
+        {
+            "standard_id": "IS 458: 2003",
+            "title": "Specification for Precast Concrete Pipes (With and Without Reinforcement)",
+            "category": "Pipes",
+            "scope": "Covers precast concrete pipes with and without reinforcement for water mains and sewers.",
+            "keywords": ["concrete", "pipes", "precast", "reinforcement", "water mains"],
+            "full_text": "IS 458: 2003 Specification for Precast Concrete Pipes (With and Without Reinforcement). Covers dimensions, testing, and quality for precast pipes."
+        },
+        {
+            "standard_id": "IS 455: 1989",
+            "title": "Specification for Portland Slag Cement",
+            "category": "Cement",
+            "scope": "Covers manufacture and requirements for Portland slag cement.",
+            "keywords": ["cement", "portland", "slag", "psc"],
+            "full_text": "IS 455: 1989 Specification for Portland Slag Cement. Covers chemical, physical requirements and manufacture of Portland slag cement."
+        },
+        {
+            "standard_id": "IS 1489 (Part 1): 1991",
+            "title": "Specification for Portland Pozzolana Cement: Flyash Based",
+            "category": "Cement",
+            "scope": "Covers flyash based portland pozzolana cement requirements.",
+            "keywords": ["cement", "pozzolana", "flyash", "ppc"],
+            "full_text": "IS 1489 (Part 1): 1991 Specification for Portland Pozzolana Cement: Flyash Based."
+        },
+        {
+            "standard_id": "IS 1489 (Part 2): 1991",
+            "title": "Specification for Portland Pozzolana Cement: Calcined Clay Based",
+            "category": "Cement",
+            "scope": "Covers calcined clay based portland pozzolana cement.",
+            "keywords": ["cement", "pozzolana", "calcined clay", "ppc"],
+            "full_text": "IS 1489 (Part 2): 1991 Specification for Portland Pozzolana Cement: Calcined Clay Based."
+        },
+        {
+            "standard_id": "IS 2185 (Part 1): 1979",
+            "title": "Specification for Concrete Masonry Units: Hollow and Solid Concrete Blocks",
+            "category": "Concrete",
+            "scope": "Covers hollow and solid concrete blocks for masonry.",
+            "keywords": ["concrete", "blocks", "masonry", "hollow", "solid"],
+            "full_text": "IS 2185 (Part 1): 1979 Specification for Concrete Masonry Units: Hollow and Solid Concrete Blocks."
+        },
+        {
+            "standard_id": "IS 2185 (Part 2): 1983",
+            "title": "Specification for Concrete Masonry Units: Hollow and Solid Lightweight Concrete Blocks",
+            "category": "Concrete",
+            "scope": "Covers lightweight hollow and solid concrete masonry blocks, dimensions and physical requirements.",
+            "keywords": ["concrete", "blocks", "masonry", "hollow", "lightweight"],
+            "full_text": "IS 2185 (Part 2): 1983 Specification for Concrete Masonry Units: Hollow and Solid Lightweight Concrete Blocks. Dimensions and physical requirements."
+        },
+        {
+            "standard_id": "IS 459: 1992",
+            "title": "Specification for Corrugated and Semi-Corrugated Asbestos Cement Sheets",
+            "category": "Other Building Materials",
+            "scope": "Covers corrugated and semi-corrugated asbestos cement sheets for roofing and cladding.",
+            "keywords": ["asbestos", "cement", "sheets", "corrugated", "roofing", "cladding"],
+            "full_text": "IS 459: 1992 Specification for Corrugated and Semi-Corrugated Asbestos Cement Sheets. Covers manufacture, dimensions, and testing for roofing sheets."
+        },
+        {
+            "standard_id": "IS 3466: 1988",
+            "title": "Specification for Masonry Cement",
+            "category": "Cement",
+            "scope": "Covers masonry cement for general use in mortars, not for structural concrete.",
+            "keywords": ["masonry", "cement", "mortar", "general purpose"],
+            "full_text": "IS 3466: 1988 Specification for Masonry Cement. Covers masonry cement for use in mortar for masonry work, not for structural concrete."
+        },
+        {
+            "standard_id": "IS 6909: 1990",
+            "title": "Specification for Supersulphated Cement",
+            "category": "Cement",
+            "scope": "Covers supersulphated cement for marine works and aggressive conditions.",
+            "keywords": ["supersulphated", "cement", "marine", "sulfate", "aggressive"],
+            "full_text": "IS 6909: 1990 Specification for Supersulphated Cement. Covers composition, manufacture, and testing for marine and aggressive water conditions."
+        },
+        {
+            "standard_id": "IS 8042: 1989",
+            "title": "Specification for White Portland Cement",
+            "category": "Cement",
+            "scope": "Covers white portland cement for architectural and decorative purposes.",
+            "keywords": ["white", "portland", "cement", "decorative", "architectural"],
+            "full_text": "IS 8042: 1989 Specification for White Portland Cement. Covers physical and chemical requirements for white portland cement used in architectural finishes."
         }
     ]
 

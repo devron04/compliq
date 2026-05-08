@@ -56,11 +56,17 @@ def main():
             standards = []
         latency = time.perf_counter() - start
 
-        results.append({
+        result_item = {
             "id": query_id,
+            "query": query_text,
             "retrieved_standards": standards,
             "latency_seconds": round(latency, 3)
-        })
+        }
+        # Pass through expected_standards if present in input (required by eval_script.py)
+        if "expected_standards" in item:
+            result_item["expected_standards"] = item["expected_standards"]
+
+        results.append(result_item)
 
     # Atomic write to ensure output is not partially written if interrupted
     out_path = Path(args.output)
