@@ -1,0 +1,59 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# === Virtual Environments ===
+.venv/
+venv/
+env/
+ENV/
+
+# === Environment Variables / Secrets ===
+.env
+.env.*
+!.env.example
+
+# === Data & Indexes (large binaries) ===
+data/faiss.index
+data/bm25.pkl
+data/chunks.json
+# Keep only the sample results file
+!data/public_test_results.json
+
+# === PDF Source Documents ===
+data/*.pdf
+data/*.PDF
+
+# === ML Model Cache ===
+# HuggingFace / sentence-transformers cache
+~/.cache/huggingface/
+models/
+
+# === IDE & Editor ===
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# === Jupyter Notebooks ===
+.ipynb_checkpoints/
+
+# === Logs ===
+*.log
+logs/
+
+# === Temporary Files ===
+*.tmp
+*.bak

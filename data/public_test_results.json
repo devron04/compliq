@@ -1,0 +1,76 @@
+[
+  {
+    "id": "query_1",
+    "retrieved_standards": [
+      "IS 269",
+      "IS 1786"
+    ],
+    "latency_seconds": 2.134
+  },
+  {
+    "id": "query_2",
+    "retrieved_standards": [
+      "IS 383"
+    ],
+    "latency_seconds": 1.954
+  },
+  {
+    "id": "query_3",
+    "retrieved_standards": [
+      "IS 1786"
+    ],
+    "latency_seconds": 2.012
+  },
+  {
+    "id": "query_4",
+    "retrieved_standards": [
+      "IS 269",
+      "IS 383"
+    ],
+    "latency_seconds": 2.345
+  },
+  {
+    "id": "query_5",
+    "retrieved_standards": [
+      "IS 1786"
+    ],
+    "latency_seconds": 1.876
+  },
+  {
+    "id": "query_6",
+    "retrieved_standards": [
+      "IS 269"
+    ],
+    "latency_seconds": 2.111
+  },
+  {
+    "id": "query_7",
+    "retrieved_standards": [
+      "IS 383"
+    ],
+    "latency_seconds": 1.989
+  },
+  {
+    "id": "query_8",
+    "retrieved_standards": [
+      "IS 1786",
+      "IS 269"
+    ],
+    "latency_seconds": 2.456
+  },
+  {
+    "id": "query_9",
+    "retrieved_standards": [
+      "IS 383",
+      "IS 1786"
+    ],
+    "latency_seconds": 2.234
+  },
+  {
+    "id": "query_10",
+    "retrieved_standards": [
+      "IS 269"
+    ],
+    "latency_seconds": 1.998
+  }
+]
