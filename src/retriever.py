@@ -25,7 +25,7 @@ except ImportError:
     print("rank_bm25 is required. Install via: pip install rank-bm25")
     sys.exit(1)
 
-from embeddings import EmbeddingModel
+from src.embeddings import EmbeddingModel
 
 def tokenize_bm25(text: str) -> List[str]:
     """Domain-aware tokenizer that preserves IS numbers and grade names."""

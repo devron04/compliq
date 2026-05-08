@@ -13,7 +13,7 @@ import json
 from typing import List
 from dotenv import load_dotenv
 load_dotenv()
-from retriever import Retriever
+from src.retriever import Retriever
 
 try:
     from groq import Groq

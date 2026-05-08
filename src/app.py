@@ -16,7 +16,7 @@ except ImportError:
     print("gradio is required. Install via: pip install gradio", file=sys.stderr)
     sys.exit(1)
 
-from pipeline import BISPipeline
+from src.pipeline import BISPipeline
 
 print("Loading pipeline...", file=sys.stderr)
 try:
