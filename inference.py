@@ -12,7 +12,9 @@ import json
 import time
 import sys
 from pathlib import Path
-from src.pipeline import BISPipeline
+# Add src to path so we can import modules directly
+sys.path.append(str(Path(__file__).parent / "src"))
+from pipeline import BISPipeline
 
 def main():
     parser = argparse.ArgumentParser(description="CompliQ Inference Script")
