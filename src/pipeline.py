@@ -100,55 +100,62 @@ class BISPipeline:
         context_str = "\n\n---\n\n".join(context_parts)
 
         # 2. Generate with LLM
-        # PERFORMANCE TWEAK: For automated inference (where we only need the IDs), 
-        # we can skip the LLM to stay under the 5s latency limit.
-        # We only use the LLM when we need full rationales (for the UI).
-        if not return_full:
+        if not self.client:
             return [chunk["standard_id"] for chunk, _ in top_chunks]
 
-        if not self.client:
-            # Fallback if no LLM configured: just return retrieved IDs
-            return [
-                {
-                    "standard_id": chunk["standard_id"],
-                    "title": chunk["title"],
-                    "rationale": "Retrieved via Hybrid Search (LLM disabled)"
-                } for chunk, _ in top_chunks
-            ]
-
-        prompt = PROMPT_TEMPLATE.format(
-            retrieved_chunks=context_str,
-            query=product_description
-        )
+        # PERFORMANCE TWEAK: If we only need IDs, ask the LLM to be brief (no rationales)
+        # to stay under the 5s latency limit.
+        if not return_full:
+            system_prompt = "You are a BIS expert. Return a JSON list of the top 3-5 most relevant IS standard IDs from the context. Return ONLY the JSON list."
+            user_prompt = f"Product: {product_description}\n\nContext:\n{context_str}"
+            max_tokens = 100
+        else:
+            system_prompt = PROMPT_TEMPLATE
+            user_prompt = f"PRODUCT DESCRIPTION: {product_description}\n\nRETRIEVED CONTEXT:\n{context_str}"
+            max_tokens = 500
 
         try:
             response = self.client.chat.completions.create(
-                messages=[
-                    {"role": "user", "content": prompt}
-                ],
                 model=self.model,
-                temperature=0.0, # Zero temperature for deterministic adherence to context
-                max_tokens=500,
-                response_format={"type": "json_object"}
+                messages=[
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": user_prompt}
+                ],
+                response_format={"type": "json_object"} if return_full else None,
+                max_tokens=max_tokens,
+                temperature=0.0
             )
             
-            output_text = response.choices[0].message.content
-            parsed_output = json.loads(output_text)
+            content = response.choices[0].message.content
             
-            recommendations = parsed_output.get("recommendations", [])
+            if not return_full:
+                # LLM should return a list or a JSON with a list
+                try:
+                    data = json.loads(content)
+                    if isinstance(data, list):
+                        return data[:5]
+                    if isinstance(data, dict):
+                        # Find the first list in the dict
+                        for val in data.values():
+                            if isinstance(val, list):
+                                return val[:5]
+                    return [content] # Fallback
+                except:
+                    # If LLM returned raw text, try to find IS numbers
+                    import re
+                    return re.findall(r"IS\s+\d+(?:\s*\(Part\s*\d+\))?(?:\s*:\s*\d{4})?", content)[:5]
+
+            # Full UI mode with rationales
+            data = json.loads(content)
+            recommendations = data.get("recommendations", [])
             
-            # Anti-hallucination filter: strictly filter out any generated ID not in valid_is_numbers
+            # Anti-hallucination filter
             safe_recs = []
             for rec in recommendations:
-                # Basic string cleanup
-                rec_id = rec.get("standard_id", "").strip()
-                if rec_id in valid_is_numbers:
+                if rec.get("standard_id") in valid_is_numbers:
                     safe_recs.append(rec)
             
-            if return_full:
-                return safe_recs
-                
-            return [rec["standard_id"] for rec in safe_recs]
+            return safe_recs
             
         except Exception as e:
             print(f"LLM Generation Error: {e}", file=sys.stderr)
