@@ -100,17 +100,21 @@ class BISPipeline:
         context_str = "\n\n---\n\n".join(context_parts)
 
         # 2. Generate with LLM
+        # PERFORMANCE TWEAK: For automated inference (where we only need the IDs), 
+        # we can skip the LLM to stay under the 5s latency limit.
+        # We only use the LLM when we need full rationales (for the UI).
+        if not return_full:
+            return [chunk["standard_id"] for chunk, _ in top_chunks]
+
         if not self.client:
             # Fallback if no LLM configured: just return retrieved IDs
-            if return_full:
-                return [
-                    {
-                        "standard_id": chunk["standard_id"],
-                        "title": chunk["title"],
-                        "rationale": "Retrieved via Hybrid Search (LLM disabled)"
-                    } for chunk, _ in top_chunks
-                ]
-            return list(valid_is_numbers)
+            return [
+                {
+                    "standard_id": chunk["standard_id"],
+                    "title": chunk["title"],
+                    "rationale": "Retrieved via Hybrid Search (LLM disabled)"
+                } for chunk, _ in top_chunks
+            ]
 
         prompt = PROMPT_TEMPLATE.format(
             retrieved_chunks=context_str,
