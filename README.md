@@ -1,16 +1,3 @@
----
-title: CompliQ
-emoji: 🏛️
-colorFrom: blue
-colorTo: indigo
-sdk: gradio
-sdk_version: 5.14.0
-python_version: "3.10"
-app_file: app.py
-pinned: false
-license: mit
----
-
 # 🏛️ CompliQ: BIS Standards Recommendation Engine
 
 **CompliQ** is a high-performance, AI-powered search engine designed to help construction professionals, manufacturers, and regulators instantly find the relevant **Bureau of Indian Standards (BIS)** for any building material or product.
