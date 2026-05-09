@@ -31,6 +31,21 @@ CompliQ isn't just "generative AI"—it is a measured retrieval system. Our pipe
 ### What is MRR?
 In our interview, we highlight **MRR (Mean Reciprocal Rank)** as our primary quality metric. Unlike simple accuracy, MRR measures *where* the correct result appears. A score of 0.86 indicates that our system consistently places the most relevant standard at the very top of the list, reducing manual search time for engineers and regulators by over 95%.
 
+## 🧪 How to Reproduce Results
+Judges can verify our metrics locally by running the following commands:
+
+**1. Run Evaluation Suite:**
+```powershell
+python eval_script.py
+```
+*This will run the full golden dataset and output the Hit Rate @ 3 and MRR.*
+
+**2. Test Specific Inference:**
+```powershell
+python inference.py --query "bricks for black soil"
+```
+*This allows you to test the raw pipeline logic independently of the UI.*
+
 ## 🚀 Live Demo
 Access the live application here: **[CompliQ on Hugging Face](https://huggingface.co/spaces/Ronakk0412/CompliQ)**
 
@@ -51,9 +66,6 @@ Access the live application here: **[CompliQ on Hugging Face](https://huggingfac
 - `src/`: Core logic (Pipeline, Retriever, Embeddings).
 - `data/`: Pre-indexed vector stores and standards metadata.
 - `assets/`: UI demonstrations and documentation media.
-
-## 🤝 Contributing
-Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 ## ⚖️ License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
