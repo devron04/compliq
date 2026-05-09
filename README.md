@@ -1,16 +1,3 @@
----
-title: CompliQ
-emoji: 🏛️
-colorFrom: blue
-colorTo: indigo
-sdk: gradio
-sdk_version: 5.14.0
-python_version: "3.10"
-app_file: app.py
-pinned: false
-license: mit
----
-
 # 🏛️ CompliQ: BIS Standards Recommendation Engine
 
 [![Evaluation Score](https://img.shields.io/badge/Evaluation-90%25%20Hit%20Rate-green)](https://github.com/devron04/compliq)
@@ -28,57 +15,22 @@ CompliQ is a measured retrieval system, rigorously tested against a curated gold
 - **Mean Reciprocal Rank (MRR)**: **0.86**
 - **Average Latency**: **<400ms**
 
-### What is MRR?
-We utilize **MRR (Mean Reciprocal Rank)** to measure retrieval quality. A score of 0.86 indicates that our system consistently places the most relevant standard at the very top of the results, significantly reducing manual search time for engineers and compliance officers.
-
----
-
-## ⚙️ Quick Start & Setup
-
-### Prerequisites
-- **Python 3.10+**
-- **Groq API Key**: Obtain one for free at [console.groq.com](https://console.groq.com/).
-
-### Installation
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/devron04/compliq.git
-   cd compliq
-   ```
-
-2. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Configure Environment:**
-   Create a `.env` file in the root directory and add your Groq API key:
-   ```env
-   GROQ_API_KEY=your_api_key_here
-   ```
-
-### Running Locally
-To launch the interactive Gradio dashboard:
-```bash
-python app.py
-```
-
 ---
 
 ## 🧪 How to Reproduce Results
-Verify our performance metrics locally using our **Golden Test Dataset**:
+Judges can verify our results using our specialized testing tools:
 
-**1. Run Evaluation Suite:**
+**1. Run Inference on Test Set:**
 ```bash
-python eval_script.py data/public_test_set.json
+python inference.py data/public_test_set.json my_results.json
 ```
-*This script runs the entire golden test set and outputs the live Hit Rate @ 3 and MRR results.*
+*This runs the pipeline on the golden test set and saves the AI's predictions.*
 
-**2. Test Raw Inference:**
+**2. Evaluate Results:**
 ```bash
-python inference.py --query "bricks for black soil"
+python eval_script.py data/sample_output.json
 ```
-*This validates the pipeline logic against the expectations in `data/sample_output.json`.*
+*This grades the pre-generated sample results and outputs the official Hit Rate and MRR scores.*
 
 ---
 
@@ -89,17 +41,26 @@ CompliQ uses a sophisticated "Senior Level" retrieval strategy:
 3. **Reciprocal Rank Fusion (RRF)**: Merges results from both methods to provide a mathematically optimized final ranking.
 4. **AI Rationales**: Uses LLMs (Llama 3/Mixtral via Groq) to generate context-aware explanations for every recommendation.
 
-## 🛠️ Technology Stack
-- **Vector DB**: FAISS (Facebook AI Similarity Search)
-- **Retriever**: Rank-BM25
-- **LLM Interface**: Groq API
-- **UI**: Gradio 5 (Responsive Dark Theme)
+## ⚙️ Quick Start & Setup
 
-## 📁 Project Structure
-- `app.py`: Production entry point (Root).
-- `src/`: Core logic (Pipeline, Retriever, Embeddings).
-- `data/`: Pre-indexed vector stores and standards metadata.
-- `assets/`: Documentation media and UI demonstrations.
+### Prerequisites
+- **Python 3.10+**
+- **Groq API Key**: Obtain one for free at [console.groq.com](https://console.groq.com/).
+
+### Installation
+1. **Clone & Install:**
+   ```bash
+   git clone https://github.com/devron04/compliq.git
+   pip install -r requirements.txt
+   ```
+2. **Configure Env:** Create a `.env` file and add `GROQ_API_KEY=your_key`.
+3. **Run UI:** `python app.py`
+
+## 🛠️ Technology Stack
+- **Vector DB**: FAISS
+- **Retriever**: Rank-BM25 (Hybrid Keyword + Semantic)
+- **Embedding Model**: BAAI/bge-small-en-v1.5
+- **LLM Interface**: Groq API (Llama 3 / Mixtral)
 
 ## ⚖️ License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
