@@ -6,9 +6,11 @@ Gradio UI for the MSE owner.
 Provides a simple interface to describe a product and get back relevant BIS standards.
 """
 
-import time
-import sys
 import os
+import sys
+import time
+# Add project root to sys.path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 try:
     import gradio as gr

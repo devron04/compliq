@@ -8,8 +8,12 @@ Allows building indices from chunks.json and loading them from disk.
 
 import json
 import sys
+import os
 import pickle
 import numpy as np
+# Add project root to sys.path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from pathlib import Path
 from typing import List, Tuple, Dict, Any
 

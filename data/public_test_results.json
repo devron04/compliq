@@ -6,7 +6,7 @@
       "IS 269: 1989",
       "IS 8112: 1989"
     ],
-    "latency_seconds": 0.626,
+    "latency_seconds": 0.654,
     "expected_standards": [
       "IS 269: 1989"
     ]
@@ -17,7 +17,7 @@
     "retrieved_standards": [
       "IS 383: 1970"
     ],
-    "latency_seconds": 0.293,
+    "latency_seconds": 0.351,
     "expected_standards": [
       "IS 383: 1970"
     ]
@@ -28,7 +28,7 @@
     "retrieved_standards": [
       "IS 458: 2003"
     ],
-    "latency_seconds": 0.363,
+    "latency_seconds": 0.325,
     "expected_standards": [
       "IS 458: 2003"
     ]
@@ -41,7 +41,7 @@
       "IS 2185 (Part 1): 1979",
       "IS 2185 (Part 1): 1997"
     ],
-    "latency_seconds": 0.42,
+    "latency_seconds": 0.36,
     "expected_standards": [
       "IS 2185 (Part 2): 1983"
     ]
@@ -54,7 +54,7 @@
       "IS 1626(Part 3): 1994",
       "IS 14862: 2000"
     ],
-    "latency_seconds": 0.409,
+    "latency_seconds": 0.399,
     "expected_standards": [
       "IS 459: 1992"
     ]
@@ -67,7 +67,7 @@
       "IS 269: 1989",
       "IS 12089: 1987"
     ],
-    "latency_seconds": 1.354,
+    "latency_seconds": 4.541,
     "expected_standards": [
       "IS 455: 1989"
     ]
@@ -80,7 +80,7 @@
       "IS 1489",
       "IS 1344: 1981"
     ],
-    "latency_seconds": 11.896,
+    "latency_seconds": 11.713,
     "expected_standards": [
       "IS 1489 (Part 2): 1991"
     ]
@@ -92,7 +92,7 @@
       "IS 1489(Part 2): 1991",
       "IS 3466: 1988"
     ],
-    "latency_seconds": 5.35,
+    "latency_seconds": 5.407,
     "expected_standards": [
       "IS 3466: 1988"
     ]
@@ -105,7 +105,7 @@
       "IS 6452: 1989",
       "IS 4032: 1985"
     ],
-    "latency_seconds": 8.747,
+    "latency_seconds": 8.767,
     "expected_standards": [
       "IS 6909: 1990"
     ]
@@ -118,7 +118,7 @@
       "IS 12269: 1987",
       "IS 8041: 1990"
     ],
-    "latency_seconds": 9.053,
+    "latency_seconds": 13.636,
     "expected_standards": [
       "IS 8042: 1989"
     ]

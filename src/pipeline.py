@@ -10,6 +10,9 @@ with a strict anti-hallucination prompt.
 import os
 import sys
 import json
+# Add project root to sys.path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from typing import List
 from dotenv import load_dotenv
 load_dotenv()
