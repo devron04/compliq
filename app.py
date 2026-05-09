@@ -32,7 +32,8 @@ def predict(query, category):
         for idx, rec in enumerate(results):
             # Sanitize junk titles from parser errors
             title = rec.get('title', 'N/A')
-            if len(title) < 5 or title.startswith('**') or title.startswith('*)'):
+            junk_markers = ['**', '*)', '*', '-', '#']
+            if len(title) < 5 or any(title.startswith(m) for m in junk_markers) or len(title.split()) > 12:
                 title = "Standard Specification / Requirement"
             
             output_html += f"""
