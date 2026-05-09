@@ -7,7 +7,9 @@ from src.pipeline import BISPipeline
 # Initialize pipeline
 print("Loading pipeline...", file=sys.stderr)
 try:
-    pipeline = BISPipeline(data_dir=os.path.join(os.path.dirname(__file__), 'data'))
+    # Handle path for both root and src execution
+    data_path = os.path.join(os.path.dirname(__file__), 'data') if os.path.exists(os.path.join(os.path.dirname(__file__), 'data')) else os.path.join(os.path.dirname(__file__), '..', 'data')
+    pipeline = BISPipeline(data_dir=data_path)
 except Exception as e:
     print(f"Failed to load pipeline: {e}", file=sys.stderr)
     pipeline = None
@@ -25,7 +27,7 @@ def predict(query, category):
     latency_ms = (time.perf_counter() - start_time) * 1000
     
     if not results:
-        output_html = '<div style="padding: 20px; background: var(--error-background-fill); color: var(--error-text-color); border-radius: 8px;">No matching standards found in the context.</div>'
+        output_html = '<div style="padding: 40px; text-align: center; color: var(--body-text-color-subdued); border: 2px dashed var(--border-color-primary); border-radius: 12px;">No matching standards found in the context.</div>'
     else:
         output_html = '<div style="display: flex; flex-direction: column; gap: 16px;">'
         for idx, rec in enumerate(results):
@@ -43,7 +45,9 @@ def predict(query, category):
                     <span style="font-style: italic;">{rec.get('rationale', 'N/A')}</span>
                 </div>
                 <div style="margin-top: 12px; display: flex; gap: 8px;">
-                    <span style="background: rgba(16, 185, 129, 0.15); color: #10b981; padding: 4px 10px; border-radius: 12px; font-size: 0.8rem; font-weight: 600;">✓ Verified in Context</span>
+                    <span style="background: rgba(16, 185, 129, 0.15); color: #10b981; padding: 4px 10px; border-radius: 12px; font-size: 0.8rem; font-weight: 600; display: flex; align-items: center; gap: 4px;">
+                        <span style="font-size: 1rem;">✓</span> Verified in Context
+                    </span>
                 </div>
             </div>
             """
@@ -62,48 +66,49 @@ custom_theme = gr.themes.Soft(
     block_background_fill="*neutral_100",
     block_background_fill_dark="*neutral_900",
     block_border_width="1px",
-    block_border_color="*neutral_200",
-    block_border_color_dark="*neutral_800",
 )
 
 css = """
-#header { text-align: center; margin-bottom: 20px; animation: fadeInDown 0.8s ease-out; }
-@keyframes fadeInDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+#header { text-align: center; margin-bottom: 30px; }
 .result-card {
     border: 1px solid var(--border-color-primary); border-radius: 12px; padding: 20px;
-    background: var(--background-fill-secondary); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background: var(--background-fill-secondary); transition: all 0.3s ease;
 }
-.result-card:hover { transform: translateY(-5px) scale(1.01); border-color: var(--primary-500); }
-#find-btn { background: linear-gradient(135deg, var(--primary-600), var(--primary-500)); transition: all 0.3s ease; }
-#find-btn:hover { box-shadow: 0 0 15px var(--primary-400); transform: translateY(-1px); }
-.gradio-container { background: radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.08) 0%, transparent 50%); }
+.result-card:hover { border-color: var(--primary-500); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+#find-btn { background: var(--primary-600); }
+.section-header { font-size: 1.2rem; font-weight: 600; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; }
 """
 
 with gr.Blocks(title="CompliQ - BIS Standards Finder", css=css, theme=custom_theme) as demo:
     with gr.Column(elem_id="header"):
         gr.Markdown(
             """
-            <div style="text-align: center; max-width: 800px; margin: 0 auto; padding: 20px 0;">
-                <h1 style="font-size: 3rem; margin-bottom: 10px; color: var(--primary-600);">🏛️ CompliQ</h1>
-                <h3 style="font-weight: 400; color: var(--body-text-color-subdued); margin-top: 0;">From product to standard, instantly.</h3>
-                <p style="font-size: 1.1rem; color: var(--body-text-color);">Describe your building material below to find the applicable <strong>Bureau of Indian Standards (BIS)</strong> regulations.</p>
+            <div style="text-align: center;">
+                <h1 style="font-size: 2.5rem; margin-bottom: 10px;">🏛️ CompliQ</h1>
+                <p style="font-size: 1.1rem; color: var(--body-text-color-subdued);">BIS Standards Recommendation Engine</p>
             </div>
             """
         )
     
     with gr.Row():
         with gr.Column(scale=3):
-            query_input = gr.Textbox(lines=4, placeholder="E.g., high-strength steel bars...", label="Product Description")
+            query_input = gr.Textbox(lines=4, placeholder="Describe your product or material...", label="Product Description")
         with gr.Column(scale=1):
             category_dropdown = gr.Dropdown(choices=CATEGORIES, value="All", label="Filter by Category")
             submit_btn = gr.Button("🔍 Find Standards", variant="primary", size="lg", elem_id="find-btn")
             
     latency_text = gr.Markdown("⏱️ Latency: -")
+    
+    gr.Markdown("### 📋 Recommended Standards")
     output_html = gr.HTML('<div style="padding: 40px; text-align: center; color: var(--body-text-color-subdued); border: 2px dashed var(--border-color-primary); border-radius: 12px;">Results will appear here...</div>')
 
+    gr.Markdown("### 💡 Examples")
     gr.Examples(
-        examples=[["Cement 53 grade", "Cement"], ["Aggregates for concrete", "Aggregates"]],
+        examples=[
+            ["I am making ordinary portland cement 53 grade.", "Cement"],
+            ["Manufacturing coarse and fine aggregates from natural sources for concrete.", "Aggregates"],
+            ["I produce high strength deformed steel bars for concrete reinforcement.", "Steel"]
+        ],
         inputs=[query_input, category_dropdown]
     )
 
