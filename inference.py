@@ -32,10 +32,8 @@ def run_inference(input_path, output_path):
         
         start_time = time.time()
         # Retrieve top 5 to satisfy MRR @ 5 requirements (Rule 4.1)
-        pipeline_results = pipeline.predict(query, top_k=5)
+        retrieved_ids = pipeline.query(query)
         latency = time.time() - start_time
-        
-        retrieved_ids = [res["standard_id"] for res in pipeline_results]
         
         # Build result object (Rule 3.3)
         result_item = {
