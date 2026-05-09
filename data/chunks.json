@@ -2132,7 +2132,7 @@
   },
   {
     "standard_id": "IS 2185",
-    "title": "(PART  1) : 1979 CONCRETE MASONRY UNITS",
+    "title": "Concrete masonry units:",
     "category": "Bricks",
     "scope": "(PART 1) : 1979 CONCRETE MASONRY UNITS PART 1 HOLLOW AND SOLID CONCRETE BLOCKS (Second Revision) Note 2 — Block shall also be manufactured in half lengths of 200, 250 or 300 mm. 3.2 Tolerances — Not more than ± 5 mm in length and 3 mm in height and width of unit. 3.3 Face shells and webs shall increase in thickness from the bottom to the top of unit; the thickness shall be not less than the value given in Table 1, as appropriate. 4. Classification — see Table 2 4.1 Hollow (Open and Closed Cav",
     "keywords": [
@@ -2170,7 +2170,7 @@
   },
   {
     "standard_id": "IS 2185",
-    "title": "(PART 2) : 1983 CONCRETE MASONRY UNITS",
+    "title": "Concrete masonry units:",
     "category": "Concrete",
     "scope": "(PART 2) : 1983 CONCRETE MASONRY UNITS PART 2 HOLLOW AND SOLID LIGHTWEIGHT CONCRETE BLOCKS (First Revision) 3. Classification 3.1 Load bearing lightweight concrete masonry units hollow (open and closed cavity) or solid shall conform to the following two grades— a) Grade A—These are used below and above ground level in damp-proof course, in exterior walls that may or may not be treated with a suitable weather-protective coating and for interior walls. b) Grade B — These are used above ground le",
     "keywords": [
@@ -2208,7 +2208,7 @@
   },
   {
     "standard_id": "IS 2185",
-    "title": "(PART 3) : 1984 CONCRETE MASONRY UNITS",
+    "title": "Concrete masonry units:",
     "category": "Concrete",
     "scope": "(PART 3) : 1984 CONCRETE MASONRY UNITS PART 3 AUTOCLAVED CELLULAR (AERATED) CONCRETE BLOCKS (First Revision) TABLE 1 PHYSICAL PROPERTIES OF AUTOCLAVED CELLULAR CONCRETE BLOCKS Sl No. Density in Ovendry Compressive Strength, Thermal Condition Min Conductivity Air Dry Condition Grade 1 Grade 2 (1) (2) (3) (4) (5) kg/m3 N/mm2 N/mm2 W/m.k i) 451 to 550 2.0 1.5 0.21 ii) 551 to 650 4.0 3.0 0.24 iii) 652 to 750 5.0 4.0 0.30 iv) 751 to 850 6.0 5.0 0.37 v) 8",
     "keywords": [
@@ -2879,7 +2879,7 @@
   },
   {
     "standard_id": "IS 432 (Part 1): 1982",
-    "title": "+ as main reinforcement and 6 mm",
+    "title": ",* 6 mm  shall be provided at top corners to",
     "category": "Steel",
     "scope": "+ as main reinforcement and 6 mm dia bars, of mild steel grade 1 conforming to",
     "keywords": [
@@ -2892,7 +2892,7 @@
   },
   {
     "standard_id": "IS 432",
-    "title": "(Part",
+    "title": "Mild steel and medium tensile steel bars and hard drawn  steel  wire",
     "category": "Steel",
     "scope": "(Part * Code of practice for design and construction of floor and roof with precast reinforced concrete planks and joists. * Code of practice for plain and reinforced concrete (fourth revision) + Mild steel and medium tensile steel bars and hard drawn steel wire for concrete bars for concrete reinforcement, Part 1 mild steel and medium tensile bars (third revision). 1.43 SP 21 : 2005 I) : 1982, at 200 mm c/c as transverse reinforcement. In the absence of detailed design same reinforcement",
     "keywords": [
@@ -4408,7 +4408,7 @@
   },
   {
     "standard_id": "IS 1838",
-    "title": "(PART 1) : 1983 PREFORMED  FILLERS FOR  EXPANSION",
+    "title": "Preformed fillers for expansion joints in concrete pavement and structures",
     "category": "Concrete",
     "scope": "(PART 1) : 1983 PREFORMED FILLERS FOR EXPANSION JOINT IN CONCRETE PAVEMENT AND STRUCTURES (NON- EXTRUDING AND RESILIENT TYPE) PART 1 BITUMEN IMPREGNATED FIBRE (First Revision)",
     "keywords": [
@@ -4446,7 +4446,7 @@
   },
   {
     "standard_id": "IS 1838",
-    "title": "(PART 2) : 1984 PREFORMED  FILLERS FOR  EXPANSION",
+    "title": "Preformed fillers for expansion joints in concrete pavement and structures",
     "category": "Concrete",
     "scope": "(PART 2) : 1984 PREFORMED FILLERS FOR EXPANSION JOINT IN CONCRETE PAVEMENT AND STRUCTURES (NON-EXTRUDING AND RESILIENT TYPE) PART 2 CNSL ALDEHYDE RESIN AND COCONUT PITH 1. Scope — Specifies the materials, manufacture, properties and tests for CNSL aldehyde resin and coconut pith based fillers for expansion joints in concrete roads, runways, bridges and other structures. 2. Properties 2.1 Preformed slabs or strips of expansion joint fillers shall not be deformed or broken by twisting,",
     "keywords": [
@@ -4503,7 +4503,7 @@
   },
   {
     "standard_id": "IS 11433",
-    "title": "(PART 1) : 1985 ONE-PART GUN-GRADE POLYSULPHIDE-",
+    "title": "One part gun-grade polysulphide-based joint sealant:",
     "category": "Cement",
     "scope": "(PART 1) : 1985 ONE-PART GUN-GRADE POLYSULPHIDE- BASED JOINT SEALANTS PART 1 GENERAL REQUIREMENTS 1. Scope— General requirements of one-part gun- grade polysulphide-based sealants used in some sealing or glazing applications in buildings and structures. 2. Selection of Material— The sealant shall cure at ambient temperature and humidity when applied. 3. Curing Conditions— Standard cure condition shall be 40 ± 20C temperature and 95±5 percent relative humidity. 4. Test Requirements 4.1 Rheolo",
     "keywords": [
@@ -4558,7 +4558,7 @@
   },
   {
     "standard_id": "IS 12118",
-    "title": "(PART 1) : 1987 TWO-PARTS POLYSULPHIDE BASED",
+    "title": "Two part polysulphide-based sealant",
     "category": "Other Building Materials",
     "scope": "(PART 1) : 1987 TWO-PARTS POLYSULPHIDE BASED SEALANTS PART 1 GENERAL REQUIREMENTS the original profile in a horizontal position. 4.2 Plastic Deformation— The sealant shall have a plastic deformation not greater than 25 percent. 4.3 Adhesion and Tensile Modulus — Adhesion and tensile modulus shall be considered satisfactory, if the total area (length × depth) of failure shall not exceed 100 mm2and the course requrired to produce the extension shall not be less than 25 N and not more than 270 N",
     "keywords": [
@@ -7611,7 +7611,7 @@
   },
   {
     "standard_id": "IS 2690",
-    "title": "(PART 1) : 1993 BURNT CLAY–FLAT TERRACING TILES",
+    "title": "Burnt clay flat terracing tiles:",
     "category": "Tiles",
     "scope": "(PART 1) : 1993 BURNT CLAY–FLAT TERRACING TILES PART 1 MACHINE-MADE (Second Revision) 4.18 SP 21 : 2005 1. Scope — Requirements for hand-made burnt clay flat terracing tiles. 2. General Quality— Shall be uniform in shape and sizes and shall be free from irregularities, such as twists, bends, cracks and particles of stones. 3. Dimensions and Tolerances 3.1 Length — 250 to 150 mm in stages of 25 mm. 3.2 Width — 200 to 75 mm in stages of 25 mm. 3.3 Thickness— 25 to 50 mm in stages of 5 mm. 3",
     "keywords": [
@@ -7630,7 +7630,7 @@
   },
   {
     "standard_id": "IS 2690",
-    "title": "(PART 2) : 1992 BURNT CLAY FLAT TERRACING TILES",
+    "title": "Burnt clay flat terracing tiles:",
     "category": "Tiles",
     "scope": "(PART 2) : 1992 BURNT CLAY FLAT TERRACING TILES PART 2 HAND – MADE (Second Revision) Note — For methods of test, refer to Annex B of the standard, and relevant parts of",
     "keywords": [
@@ -7762,7 +7762,7 @@
   },
   {
     "standard_id": "IS 3951",
-    "title": "(PART 1) : 1975 HOLLOW CLAY TILES FOR",
+    "title": "Hollow clay tiles for floors and roofs:",
     "category": "Tiles",
     "scope": "(PART 1) : 1975 HOLLOW CLAY TILES FOR FLOORS AND ROOFS PART 1 FILLER TYPE (First Revision) 4.21 SP 21 : 2005 1. Scope —Requirements for quality, dimensions, bulk density, water absorption and strength requirements of structural hollow clay tiles suitable for floor/roof. 2. General Requirements— Shall be free from cracks, flaws or inclusion of any deleterious materials. 2.1 Shall have at least one plane of symmetry in cross section. 2.2 Shall have serrations (not deeper than 3 mm and not wid",
     "keywords": [
@@ -7799,7 +7799,7 @@
   },
   {
     "standard_id": "IS 3951",
-    "title": "(PART 2) : 1975 HOLLOW CLAY TILES FOR",
+    "title": "Hollow clay tiles for floors and roofs:",
     "category": "Tiles",
     "scope": "(PART 2) : 1975 HOLLOW CLAY TILES FOR FLOORS AND ROOFS PART 2 STRUCTURAL TYPE (First Revision) 4.22 SP 21 : 2005 1. Specification — Covers the specifications of hand made half round and flat country tiles. Sl No. Characteristic Requirement Class AA Class A Class AA Class A (1) (2) (3) (4) (5) (6) i) Water absorption percent, Max 19 24 19 24 ii) Breaking load, kN, Min a) Average 0.40 (40 kg) 0.30 (30 kg) 0.35 (35 kg) 0.25 (25 kg) b) Individual 0.35",
     "keywords": [
@@ -7947,7 +7947,7 @@
   },
   {
     "standard_id": "IS 2095",
-    "title": "(PART 1) : 1996 GYPSUM PLASTER BOARDS",
+    "title": "Gypsum plaster boards",
     "category": "Bricks",
     "scope": "(PART 1) : 1996 GYPSUM PLASTER BOARDS PART 1 PLAIN GYPSUM PLASTER BOARDS (Second Revision) 4. General— Gypsum plaster boards consist of a gypsum plaster core with or without fibre encased in and firmly bonded to strong durable paper liners to form rectangular boards. Core shall be dried across full width. The face and back papers shall be securely bonded to the core. The paper surfaces may vary according to the use of the particular type of board, and the core may contain additive to impart add",
     "keywords": [
@@ -8004,7 +8004,7 @@
   },
   {
     "standard_id": "IS 2095",
-    "title": "(PART 3) : 1996 GYPSUM PLASTER BOARDS",
+    "title": "Gypsum plaster boards",
     "category": "Glass",
     "scope": "(PART 3) : 1996 GYPSUM PLASTER BOARDS PART 3 REINFORCED GYPSUM PLASTER BOARDS (Second Revision) 1. Scope — Covers the method of manufacture, tests and sampling of fibrous gypsum plaster boards and glass fibre reinforced gypsum (GRG) boards for use as a linning material for ceiling, dry surfacing material for walls, door panels or for partitions. 2. Materials — See 2 of the standard 3. Method of Manufacture — See 5 of the standard. 4. Dimensions and Tolerances 4.1 Shape — The boards shall be sq",
     "keywords": [
@@ -8131,7 +8131,7 @@
   },
   {
     "standard_id": "IS 2547",
-    "title": "(PART 1) : 1976 GYPSUM BUILDING PLASTERS",
+    "title": "Gypsum building plaster",
     "category": "Other Building Materials",
     "scope": "(PART 1) : 1976 GYPSUM BUILDING PLASTERS PART 1 EXCLUDING PREMIXED LIGHTWEIGHT PLASTERS (First Revision) 5.8 SP 21 : 2005 TABLE 2 PHYSICAL REQUIREMENT Requirements S.LNo. Particulars Plaster of Paris Anhydrous Keene’s Plaster Gypsum Plaster Type A (short) Type B (long time setting time setting (1) (2) (3) (4) (5) (6) i) Setting time – – – – minutes: a)Plaster sand 45-120 120-900 – – mixture b)Ne",
     "keywords": [
@@ -8202,7 +8202,7 @@
   },
   {
     "standard_id": "IS 2547",
-    "title": "(PART 2) : 1976 GYPSUM BUILDING PLASTER",
+    "title": "Gypsum building plaster",
     "category": "Other Building Materials",
     "scope": "(PART 2) : 1976 GYPSUM BUILDING PLASTER PART 2 PREMIXED LIGHTWEIGHT PLASTERS (First Revision) Note—For methods of tests, refer to Appendices A and B of the standard and relevant parts of",
     "keywords": [
@@ -8722,7 +8722,7 @@
   },
   {
     "standard_id": "IS 1141: 1993",
-    "title": "+ and",
+    "title": "‡. and treated as per",
     "category": "Other Building Materials",
     "scope": "+ and moisture content shall be determined as per",
     "keywords": [
@@ -11458,7 +11458,7 @@
   },
   {
     "standard_id": "IS 4832",
-    "title": "(PART 1) : 1969 CHEMICAL RESISTANT MORTARS",
+    "title": "Chemical resistant mortars :",
     "category": "Other Building Materials",
     "scope": "(PART 1) : 1969 CHEMICAL RESISTANT MORTARS PART I – SILICATE TYPE Note 1— For method of tests, refer to",
     "keywords": [
@@ -11586,7 +11586,7 @@
   },
   {
     "standard_id": "IS 4832",
-    "title": "(PART 2) : 1969  CHEMICAL RESISTANT MORTARS",
+    "title": "Chemical resistant mortars :",
     "category": "Bricks",
     "scope": "(PART 2) : 1969 CHEMICAL RESISTANT MORTARS PART 2 RESIN TYPE TABLE 1 PHYSICAL REQUIREMENTS OF RESIN TYPE CHEMICAL RESISTANT MORTARS Sl No. Particular Requirements for Type of Mortar Phenolic Furane Epoxy Polyester Type Type Type Type (1) (2) (3) (4) (5) (6) i) Working time at 27 ± 2°C, Min minutes 20 20 20 20 ii) Flexural strength at 7 days, Min, kgf/cm2 75 75 150 150 iii) Compressive strength at 7 days, Min, kgf/cm2",
     "keywords": [
@@ -11605,7 +11605,7 @@
   },
   {
     "standard_id": "IS 4832",
-    "title": "(PART 3) : 1968 CHEMICAL RESISTANT MORTARS",
+    "title": "Chemical resistant mortars :",
     "category": "Other Building Materials",
     "scope": "(PART 3) : 1968 CHEMICAL RESISTANT MORTARS PART 3 – SULPHUR TYPE TABLE 1 PHYSICAL REQUIRE- MENTS OF SULPHUR TYPE CHEMI- CAL RESISTANT MORTARS S.No. Property Requirement (1) (2) (3) i) Compressive strength at 48 hours, 280 Min, kgf/cm 2 ii) Tensile strength at 48 hours, Min, 30 kg/cm 2 iii) Flexural strength at 48 hours, Min 70 kg/cm 2 iv) Bond strength at 48 hours Min kg/cm 2 10 v) Proportion of original strength retained after Shock test, Mi",
     "keywords": [
@@ -13152,7 +13152,7 @@
   },
   {
     "standard_id": "IS 1254: 1991",
-    "title": "+  for use in",
+    "title": "Specifications for Corrugated aluminium sheet (third revision).",
     "category": "Glass",
     "scope": "+ for use in roofs.” Recommended temperature range is from —20 to 60°C 2. Materials — Shall be composed of a thermosetting styranated or acrylated polyester resin system reinforced with glass fibre which may include curing agents, catalysts and light stabilizers. Glassfibre shall be in the form of chopped strand mat having a highly soluble modified polyester binder in accordance with",
     "keywords": [
@@ -17203,7 +17203,7 @@
   },
   {
     "standard_id": "IS 1592: 1989",
-    "title": "+.  This standard covers the dimensions of",
+    "title": "for the class",
     "category": "Pipes",
     "scope": "*. 2. Metal —As per the prescribed standard. 3. Requirements 3.1 Brinells hardness — Not to exceed 215 HBS. 3.2 Tensile strength — Min. of 150 MPa. 3.3 Hydrostatic test — It should not show any leakage, or sweating or any other defect under a test pressure as per IS : 1592-1989 maintained for minimum of 15 seconds. 4. Dimensions for Flanges and Collars Nominal Class External Dia Dia of AC Pipe dn D2 (1) (2) (3) 80 5,10,15 99.5 20 101.5 25 106.5 100 5,10 120.0 15 121.0 20 126.5 25 132.5 125 5,10",
     "keywords": [
@@ -17332,7 +17332,7 @@
   },
   {
     "standard_id": "IS 1592: 1989",
-    "title": "+.  This standard covers the dimensions of",
+    "title": "for the class",
     "category": "Other Building Materials",
     "scope": "+. This standard covers the dimensions of rubber sealing rings having circular cross section only, up to 600 mm nominal diameter. 2. General — Requirements of rubbr sealing rings as specified in",
     "keywords": [
@@ -17415,7 +17415,7 @@
   },
   {
     "standard_id": "IS 1592: 1989",
-    "title": "+.  This standard covers the dimensions of",
+    "title": "for the class",
     "category": "Other Building Materials",
     "scope": "* 2. Metal —As per the prescribed standard. For detailed information, refer to",
     "keywords": [
@@ -17868,7 +17868,7 @@
   },
   {
     "standard_id": "IS 7328: 1992",
-    "title": "+. The addition of not more than 10 percent of",
+    "title": "may also be  used  with the",
     "category": "Other Building Materials",
     "scope": "*. HDPE conforming to designation PEEWA-45- T-012 of",
     "keywords": [
@@ -17897,7 +17897,7 @@
   },
   {
     "standard_id": "IS 7328: 1992",
-    "title": "+. The addition of not more than 10 percent of",
+    "title": "may also be  used  with the",
     "category": "Pipes",
     "scope": ". The specified base density shall be between 940.5 kg/m3 and 946.4 kg/m3 (both inclusive) when determined at 27°C. The value of the density shall also not differ from the nominal value by more than 3 kg/m3. The MFR of the material shall be between 0.41 and 1.10 (both inclusive) when tested at 190°C with nominal load of 5 kg. The resin shall be compounded with carbon black. The carbon black content in the material shall be within 2.5 0.5% and the dispersion of carbon black shall be satisfac",
     "keywords": [
@@ -18057,7 +18057,7 @@
   },
   {
     "standard_id": "IS 4985: 1988",
-    "title": "[Specification for",
+    "title": "for portable",
     "category": "Pipes",
     "scope": "[Specification for unplasticized PVC pipes for potable water supplies (second revision) for water supplies. 2. Materials — Shall substantially consist of polyvinyl chloride, to which may be added only those additives that are needed to facilitate the manufacture of sound pipe of good surface finish, mechanical strength and opacity. 3. Size of Fitting 3.1 Shall be designated by the diameters of their sockets. The inside diameters of the sockets of the fittings shall correspond to the outside dia",
     "keywords": [
@@ -20301,7 +20301,7 @@
   },
   {
     "standard_id": "IS 7328: 1992",
-    "title": "+. The addition of not more than 10 percent of",
+    "title": "may also be  used  with the",
     "category": "Other Building Materials",
     "scope": "*, HDPE conforming to designation PEEWA -45-T-012 PEEWA -50-T-012 or PEEWA - 57 - T - 012 of",
     "keywords": [
@@ -22657,7 +22657,7 @@
   },
   {
     "standard_id": "IS 7328: 1992",
-    "title": "+. The addition of not more than 10 percent of",
+    "title": "may also be  used  with the",
     "category": "Other Building Materials",
     "scope": "+. The addition of not more than 10 percent of the manufacturer's own rework material resulting from the manufacture of floats conforming to this standard is permissible. No other reworked material shall be used. 3. Designation HP 25 — For float of nominal size of 25 mm to be used for high pressure applications. LP 40 — For float of nominal size of 40 mm to be used for low pressure applications. TABLE 1 DIMENSIONS OF FLOAT, BOSS AND INSERT All dimensiions in millimetres. Sl. No. Particu",
     "keywords": [
@@ -27389,7 +27389,7 @@
   },
   {
     "standard_id": "IS 3087: 1985",
-    "title": "+ shall be used.",
+    "title": "Wood particle boards (medium density) for general purposes (first revision) 12.25",
     "category": "Tiles",
     "scope": "+ shall be used. 3.2 Impregnated Base Paper — Printed or plain coloured absorbent base paper having a weight of 60- 140 g/m2 impregnated in a suitable synthetic resin and dried to a volatile content of 4-8 percent shall be used.",
     "keywords": [
@@ -27529,7 +27529,7 @@
   },
   {
     "standard_id": "IS 8112: 1989",
-    "title": "++   shall be used.",
+    "title": "43 grade ordinary Portland cement (first revision)",
     "category": "Cement",
     "scope": "++ shall be used. 3. Finish The particle boards shall be of uniform thickness and density throughout the length and width of the boards. All particle boards. shall be flat and smooth. 4. Dimensions and Tolerances – The sizes of cement bonded particle boards shall be as follows : Length 3050 mm and 2440 mm Width 1220 mm Thickness—The thickness of cement bonded particle boards shall be as given below 6, 8, 10, 12, 16, 20, 25, 30 and 40 mm. Tolerances – The following tolerances for the dimension",
     "keywords": [
@@ -28366,7 +28366,7 @@
   },
   {
     "standard_id": "IS 12049: 1987",
-    "title": "++.Thickness of",
+    "title": "Dimensions and tolerances  relating to wood based  panel materials.",
     "category": "Timber",
     "scope": "++.Thickness of bamboo mat boards shall be specified depending upon the number of plies. The thickness shall be measured up to one decimal place of millimetre. 3.2. Tolerances– The following tolerances on the nominal sizes of finished boards shall be permissible Dimension Tolerance a) Length +6mm – 0mm b) Width +3mm – 0mm + Synthetic resin adhesives fcr plywood (phenolic and amino plastic) (first revision) ++ Dimensions and tolerances relating to wood bas",
     "keywords": [
@@ -29042,7 +29042,7 @@
   },
   {
     "standard_id": "IS 2191",
-    "title": "(PART 1) : 1983 WOODEN FLUSH DOOR SHUTTERS",
+    "title": ": (Part 2): 1983",
     "category": "Timber",
     "scope": "(PART 1) : 1983 WOODEN FLUSH DOOR SHUTTERS (CELLULAR AND HOLLOW CORE TYPE) PART 1 PLYWOOD FACE PANELS (Fourth Revision) 1. Scope – Requirements regarding types, sizes, material, construction, workmanship and finish, and tests of cellular and hollow core wooden flush door shutters with face panels of plywood or cross-band and face veneers. 2. Types Core Type Abbreviation Cellular Decorative CD Non-decorative CN Hollow Decorative HD Non-decorative HN 3. Sizes Designation Width Height mm mm 8",
     "keywords": [
@@ -29080,7 +29080,7 @@
   },
   {
     "standard_id": "IS 2191",
-    "title": "(PART 2) : 1983 WOODEN FLUSH DOOR SHUTTERS",
+    "title": ": (Part 2): 1983",
     "category": "Timber",
     "scope": "(PART 2) : 1983 WOODEN FLUSH DOOR SHUTTERS (CELLULAR AND HOLLOW CORE TYPE) PART 2 – PARTICLE BOARD AND HARDBOARD FACE PANELS (Third Revision) 1. Scope – Requirements regarding material, grade, types, sizes, construction, finishes and tests of wooden flush door shutters of cellular and hollow core type with particle board face panels (both veneered and unveneered) and hard board face panels. 2. Types and designation 2.1 Cellular— Decorative with skins of CDPV decorative veneered particle board.",
     "keywords": [
@@ -29161,7 +29161,7 @@
   },
   {
     "standard_id": "IS 2202",
-    "title": "(PART 1) : 1999 WOODEN FLUSH DOOR SHUTTERS",
+    "title": "Wooden flush door shutters (solid core type)",
     "category": "Timber",
     "scope": "(PART 1) : 1999 WOODEN FLUSH DOOR SHUTTERS (SOLID CORE TYPE) PART 1 PLYWOOD FACE PANELS (Sixth Revision) 1. Scope – Requirements regarding types, sizes, material, consttruction, workmanship and finish, and tests, of solid core wooden flush door shutters with face panels of plywood or cross-band and face veneers. 2. Type and Construction Sl.No. Core Type Abbreviation (1) (2) (3) (4) i) Blockboard Decorative BD Non-decorative BN ii) Particle board Decorative PD with or without N",
     "keywords": [
@@ -29232,7 +29232,7 @@
   },
   {
     "standard_id": "IS 2202",
-    "title": "(PART 2) : 1983 WOODEN FLUSH DOOR SHUTTERS",
+    "title": "Wooden flush door shutters (solid core type)",
     "category": "Timber",
     "scope": "(PART 2) : 1983 WOODEN FLUSH DOOR SHUTTERS (SOLID CORE TYPE) PART 2 PARTICLE BOARD AND HARDBOARD FACE PANELS (Third Revision) For detailed information, refer to",
     "keywords": [
@@ -30258,7 +30258,7 @@
   },
   {
     "standard_id": "IS 432",
-    "title": "(PART 1) : 1982 MILD STEEL AND MEDIUM  TENSILE",
+    "title": "Mild steel and medium tensile steel bars and hard drawn  steel  wire",
     "category": "Steel",
     "scope": "(PART 1) : 1982 MILD STEEL AND MEDIUM TENSILE STEEL BARS AND HARD-DRAWN STEEL WIRE FOR CONCRETE REINFORCEMENT PART 1 MILD STEEL AND MEDIUM TENSILE STEEL BARS (Third Revision) 5.1.2 Ovality and out-of-square— Permissible ovality for round bars and out-of-square of square bars shall be 75 percent of total tolerance (plus and minus) specified on size. 5.1.3 Weight Size Tolerance Percent Over Up to and Including mm m",
     "keywords": [
@@ -30342,7 +30342,7 @@
   },
   {
     "standard_id": "IS 432",
-    "title": "(PARTII) : 1982 MILD STEEL AND MEDIUM TENSILE STEEL",
+    "title": "Mild steel and medium tensile steel bars and hard drawn  steel  wire",
     "category": "Steel",
     "scope": "(PARTII) : 1982 MILD STEEL AND MEDIUM TENSILE STEEL BARS AND HARD-DRAWN STEEL WIRE FOR CONCRETE REINFORCEMENT PART 2 HARD-DRAWN STEEL WIRE (Third Revision) 1. Scope – Requirements of hard-drawn steel wire of medium strength used as reinforcement in concrete. 2. Freedom from Defects – Finished wire shall be sound, free from splits, surface flaw, etc. 3. Nominal Sizes — 2.65, 3.0, 3.15, 3.55, 4.0, 4.5, 4.75, 5.0, 5.3, 5.6, 6.0, 6.3, 7.1, 7.5, 8.0, 9.0, 9.5 and 10 mm diameter. 4. Tolerance",
     "keywords": [
@@ -30376,7 +30376,7 @@
   },
   {
     "standard_id": "IS 1716: 1985",
-    "title": ". Method for reverse bend testing of metallic  wire (second revision) and 8 of  the s tandard.",
+    "title": "Method  for reverse bend test for metallic wire (second revision) and 11 of  the  standard.",
     "category": "Other Building Materials",
     "scope": ". Method for reverse bend testing of metallic wire (second revision) and 8 of the s tandard. Note 2 — For chemical composition see 3 of the standard For detailed information, refer to",
     "keywords": [
@@ -30506,7 +30506,7 @@
   },
   {
     "standard_id": "IS 1785",
-    "title": "(PARTI) : 1983 PLAIN HARD-DRAWN STEEL WIRE FOR",
+    "title": "Plain hard-drawn steel  wire for prestressed  concrete",
     "category": "Steel",
     "scope": "(PARTI) : 1983 PLAIN HARD-DRAWN STEEL WIRE FOR PRESTRESSED CONCRETE PART I COLD DRAWN STRESS-RELIEVED WIRE (Second Revision) 1. Scope – Requirements for the manufacture, supply and testing of plain, cold drawn, stress-relieved steel wire for use in prestressed concrete. 2. Chemical Composition and Manufacture 2.1 It shall not contain more than 0.040 percent of sulphur and not more than 0.040 percent of phosphorus in ladle analysis. 2.2 The surface of wire shall be clean uniform, smooth and fr",
     "keywords": [
@@ -30543,7 +30543,7 @@
   },
   {
     "standard_id": "IS 1785",
-    "title": "(Part I) : 1983  Specification for plain hard – drawn steel  for",
+    "title": "Plain hard-drawn steel  wire for prestressed  concrete",
     "category": "Steel",
     "scope": "(Part I) : 1983 Specification for plain hard – drawn steel for prestressed concrete : Part I Cold drawn stress – relieved wire (second revision). 14.9 SP 21 : 2005",
     "keywords": [
@@ -30562,7 +30562,7 @@
   },
   {
     "standard_id": "IS 1785",
-    "title": "(PART 2) : 1983 PLAIN HARD- DRAWNSTEEL WIRE",
+    "title": "Plain hard-drawn steel  wire for prestressed  concrete",
     "category": "Steel",
     "scope": "(PART 2) : 1983 PLAIN HARD- DRAWNSTEEL WIRE FOR PRESTRESSED CONCRETE. RART 2 -AS DRAWN WIRE (First Revision) 1. Scope – Requirements for manufacture supply and testing of plain ‘as-drawn’ steel wire for use in prestressed concrete pipes and similar other purposes. 2. Chemical Composition and Manufacture 2.1 The ladle analysis shall show that the steel contains not more than 0.040 percent of sulphur and not more than 0.040 percent of phosphorus. 2.2 The surface of wire shall be clean, uniform, s",
     "keywords": [
@@ -31984,7 +31984,7 @@
   },
   {
     "standard_id": "IS 10175 (Part 1): 1993",
-    "title": ".Mechanical testing of metals  modified erichsen cupping test-Sheet and strip,Part 1– Thickness upto 2 mm",
+    "title": "Mechanical testing of metals – Modified erichsen cupping test – Sheet and strip :  Part 1  Thickness upto",
     "category": "Other Building Materials",
     "scope": ".Mechanical testing of metals modified erichsen cupping test-Sheet and strip,Part 1– Thickness upto 2 mm (first revision). Note2— For chemical composition, refer to the standard. For detail information, refer to",
     "keywords": [
@@ -34194,7 +34194,7 @@
   },
   {
     "standard_id": "IS 513: 1994",
-    "title": "+ may also be",
+    "title": "Cold rolled low carbon steel sheets and strips (fourth revision)",
     "category": "Steel",
     "scope": "+ may also be used for sections where load bearing is not a design criteria, for examle, false ceiling, sections for frames of doors and windows. 4. Dimensions and Properties – 4.1 Equal Angles – 4.1.1 Designations h × h × t in mm h × h × t in mm 20 × 20 × 1.25 20 × 20 × 1.60 20 × 20 × 2.00 30 × 30 × 1.60 30 × 30 × 2.00 30 × 30 × 3.15 40 × 40 × 1.60 40 × 40 × 2.00 40 × 40 × 2.55 40 × 40 × 3.15 50",
     "keywords": [
@@ -37903,7 +37903,7 @@
   },
   {
     "standard_id": "IS 1367",
-    "title": "(Part I)+",
+    "title": "Technical supply conditions for threaded steel fasteners.",
     "category": "Other Building Materials",
     "scope": "(Part I)+ * ISO Metric screw thread * As per sheet + Attahced + For commercial bolts and nuts (diameter range 1 to 52 mm) (first revision) 19.32 SP 21 : 2005",
     "keywords": [
@@ -38549,7 +38549,7 @@
   },
   {
     "standard_id": "IS 4218",
-    "title": "[Parts (1, 2, 3 and 4)]",
+    "title": ": (Part 4)  ISO metric",
     "category": "Other Building Materials",
     "scope": "[Parts (1, 2, 3 and 4)] 3. Grade – Unless other wire specified the nuts shall be of product grade B as specified in",
     "keywords": [
@@ -39404,7 +39404,7 @@
   },
   {
     "standard_id": "IS 1367",
-    "title": "(Part 9/Sec2).*",
+    "title": "Technical supply conditions for threaded steel fasteners.",
     "category": "Tiles",
     "scope": "(Part 9/Sec2).* 7. Finish 7.1 The step bolts shall be galvanized in accordance with IS1367(Part13)* 8. Tests 8.1 The step bolts shall not have any permanent set when subjected to the cantilever test as shown in Fig. 2 of the standard. 9. Designation – The step bolts shall be designated by the size, length and the number of this Indian Standard. The letter NN shall be added to the designation to indicate supply with two nuts. Example – A step bolt of size M16 and length 175mm with two hexagon nu",
     "keywords": [
@@ -39512,7 +39512,7 @@
   },
   {
     "standard_id": "IS 1367",
-    "title": "(Part 9/sec 1)  *",
+    "title": "Technical supply conditions for threaded steel fasteners.",
     "category": "Other Building Materials",
     "scope": "(Part 9/sec 1) * 8. Designation – The bolts shall be designated by nomenclature, thread size, nominal length, number of this standard and property class.. The letters N and W shall be added to the designation to indicate supply with nut and plain wsher respectively. Example – A transmission tower bolt of thread size M16 and nominal length 50mm with nut and property class 5.6 shall be designated as—Transmission Tower Bolts M16 × 50 N– 5.6",
     "keywords": [
@@ -40035,7 +40035,7 @@
   },
   {
     "standard_id": "IS 2553",
-    "title": "( PART 1) : 1990   SAFETY GLASS",
+    "title": ": (Part 1):1990",
     "category": "Glass",
     "scope": "( PART 1) : 1990 SAFETY GLASS PART 1 GENERAL PURPOSE (Third Revision) 1. Scope – Requirements and the methods of sampling and test for safety glass meant for general purposes such as for use in glazing windows, doors of buildings and railway coaches. 2. Types a) Toughened safety (tempered) glass (TS) b) Toughened float safety glass(TF), c) Laminated safety glass (LS) and d) Laminated float safety glass (LF). 3. Requirements 3.1 General 3.1.1 Material – Safety glass shall be made of ‘A",
     "keywords": [
@@ -44503,7 +44503,7 @@
   },
   {
     "standard_id": "IS 9537",
-    "title": "(PART 1) : 1980 CONDUITS FOR ELECTRICAL",
+    "title": "Conduits for Electrical Installations",
     "category": "Other Building Materials",
     "scope": "(PART 1) : 1980 CONDUITS FOR ELECTRICAL INSTALLATIONS PART 1 - GENERAL REQUIREMENTS 26.28 SP 21 : 2005 Note — For methods of Test, refer to the standard. For detailed information, refer to",
     "keywords": [
@@ -44522,7 +44522,7 @@
   },
   {
     "standard_id": "IS 9537",
-    "title": "(Part I) : 1980  Specification for conduits for electrical installations",
+    "title": "Conduits for Electrical Installations",
     "category": "Steel",
     "scope": "(Part I) : 1980 Specification for conduits for electrical installations : Part I General requirements. iii) Conduits with high protection against radiation. 4. Mechanical Properties a) Conduits shall have adequate mechanical strength. b) Bend Test – Values as per relevant conduit specifications. c) Compression Test – when tested as prescribed, the difference between the initial diameter and diameter of flattened sample shall not exceed a specified percentage of the outside diameter measure",
     "keywords": [
@@ -44541,7 +44541,7 @@
   },
   {
     "standard_id": "IS 9537",
-    "title": "(PART II) : 1981 CONDUITS FOR ELECTRICAL WIRING",
+    "title": "Conduits for Electrical Installations",
     "category": "Steel",
     "scope": "(PART II) : 1981 CONDUITS FOR ELECTRICAL WIRING PART 2 RIGID STEEL CONDUITS Note 1 – For requirement regarding gauge for checking minimum and maximum outside diameter of conduits, measurement of thickness and screw threads, refer to the standard. Note 2 – For test details and provisions regarding external influences, refer to the standard and",
     "keywords": [
@@ -44596,7 +44596,7 @@
   },
   {
     "standard_id": "IS 9537",
-    "title": "(Part:1) 1980 shall apply",
+    "title": "Conduits for Electrical Installations",
     "category": "Other Building Materials",
     "scope": "(Part:1) 1980 shall apply 3. Classification – According to mechanical properties as : a) Conduits for light mechanical stresses. b) Conduits for medium mechanical stresses. c) Conduits for heavy mechanical stresses. 4. Dimensions - See Table 1 TABLE 1 DIMENSIONS OF CONDUITS All dimensions in millimetress Nominal Size Outside Tolerance on Inside Diameter, Min Diameter Diameter Outside Diameter Light Medium Heavy (1) (2) (3) (4) (5) (6) 16 16 - 0.3 13.7 13.0 12.2 20 20 - 0.3 17.4 16.9 15.8 25 25",
     "keywords": [
@@ -44615,7 +44615,7 @@
   },
   {
     "standard_id": "IS 9537",
-    "title": "(Part I) : 1980",
+    "title": "Conduits for Electrical Installations",
     "category": "Other Building Materials",
     "scope": "(Part I) : 1980 d) Collapse Test – It shall be possible to pass the appropriate gauge, through the conduit fixed to support under its own weight and without any initial speed. Applicable for conduit of sizes 16,0 and 25 only e) Resistance to Heat f) Resistance to Burning g) Electrical Characteristics h) External Influences Note – For detail requirements refer to the standard For detailed information, refer to",
     "keywords": [
@@ -44652,7 +44652,7 @@
   },
   {
     "standard_id": "IS 9537",
-    "title": "(PART 3) : 1983 CONDUITS FOR ELECTRICAL",
+    "title": "Conduits for Electrical Installations",
     "category": "Other Building Materials",
     "scope": "(PART 3) : 1983 CONDUITS FOR ELECTRICAL INSTALLATIONS PART 3 – RIGID PLAIN CONDUITS OF INSULATING MATERIALS 26.31 SP 21 : 2005 1. Scope – Requirements and methods of tests for pliable self-recovering plain and corrugated conduits of insulating materials. 2. General Requirements – Provision s of",
     "keywords": [
@@ -44690,7 +44690,7 @@
   },
   {
     "standard_id": "IS 9537",
-    "title": "( Part  1) : 1980",
+    "title": "Conduits for Electrical Installations",
     "category": "Other Building Materials",
     "scope": "( Part 1) : 1980 d) Collapse Test – It shall be possible to pass the appropriate gauge, through theconduit fixed to support under its own weight and without any initial speed. e) Resistance to Heat. f) Resistance to Burning. g) Electrical Characteristics. h) External Influences.",
     "keywords": [
@@ -44709,7 +44709,7 @@
   },
   {
     "standard_id": "IS 9537",
-    "title": "(PART 4) : 1983 CONDUITS FOR ELECTRICAL",
+    "title": "Conduits for Electrical Installations",
     "category": "Other Building Materials",
     "scope": "(PART 4) : 1983 CONDUITS FOR ELECTRICAL INSTALLATIONS PART 4 – PLIABLE SELF RECOVERING CONDUITS OF INSULATING MATERIALS Note – For details requirements refer to the standard For detailed information, refer to",
     "keywords": [
@@ -44746,7 +44746,7 @@
   },
   {
     "standard_id": "IS 9537",
-    "title": "(PART 5) : 2000 CONDUITS FOR ELECTRICAL",
+    "title": "Conduits for Electrical Installations",
     "category": "Cement",
     "scope": "(PART 5) : 2000 CONDUITS FOR ELECTRICAL INSTALLATIONS PART 5 – PLIABLE CONDUITS OF INSULATING MATERIAL 1. Scope – This clause of Part 1 of the Standard is applicable except as follows: Addition: This Indian Standard (Part 5) specifies requirements for pliable non-flame propagating plain and corrugated conduits of insulating material. It does not include self- recovering or flexible conduits. This standard also applies to corrugated conduits with a smooth exterior surface. 2. General Requirements",
     "keywords": [
