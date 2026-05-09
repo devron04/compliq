@@ -1,3 +1,16 @@
+---
+title: CompliQ
+emoji: 🏛️
+colorFrom: blue
+colorTo: indigo
+sdk: gradio
+sdk_version: 4.44.0
+python_version: 3.10
+app_file: app.py
+pinned: false
+license: mit
+---
+
 # CompliQ: AI-Powered BIS Standards Recommendation Engine
 
 **CompliQ** is a high-performance RAG (Retrieval-Augmented Generation) system designed to instantly match product descriptions with relevant **Bureau of Indian Standards (BIS)**. Built for the BIS Hackathon, it solves the challenge of navigating complex regulatory documents using state-of-the-art AI.
