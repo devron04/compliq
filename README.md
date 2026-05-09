@@ -22,13 +22,13 @@ Judges can verify our results using the mandatory evaluation entry-points:
 
 **1. Generate Results (Inference):**
 ```bash
-python inference.py --input data/public_test_set.json --output results.json
+python inference.py --input data/public_test_set.json --output data/public_test_results.json
 ```
 *This command runs the RAG pipeline on the test set and saves the predictions.*
 
 **2. Calculate Metrics (Evaluation):**
 ```bash
-python eval_script.py results.json
+python eval_script.py --results data/public_test_results.json
 ```
 *This script grades the generated results and outputs the official Hit Rate and MRR scores.*
 
