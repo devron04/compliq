@@ -1,3 +1,16 @@
+---
+title: CompliQ
+emoji: 🏛️
+colorFrom: blue
+colorTo: indigo
+sdk: gradio
+sdk_version: 5.14.0
+python_version: "3.10"
+app_file: app.py
+pinned: false
+license: mit
+---
+
 # 🏛️ CompliQ: BIS Standards Recommendation Engine
 
 [![Evaluation Score](https://img.shields.io/badge/Evaluation-90%25%20Hit%20Rate-green)](https://github.com/devron04/compliq)
