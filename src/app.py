@@ -14,8 +14,8 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 try:
     import gradio as gr
-except ImportError:
-    print("gradio is required. Install via: pip install gradio", file=sys.stderr)
+except ImportError as e:
+    print(f"gradio import failed: {e}", file=sys.stderr)
     sys.exit(1)
 
 from src.pipeline import BISPipeline
