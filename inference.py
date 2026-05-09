@@ -38,6 +38,7 @@ def run_inference(input_path, output_path):
         # Build result object (Rule 3.3)
         result_item = {
             "id": query_id,
+            "query": query,
             "retrieved_standards": retrieved_ids,
             "latency_seconds": round(latency, 4)
         }

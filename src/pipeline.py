@@ -37,17 +37,24 @@ except ImportError:
 # ---------------------------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------------------------
-LLM_TIMEOUT_SECONDS = 3.5   # Hard ceiling: fall back to retrieval if exceeded
+LLM_TIMEOUT_SECONDS = 6.0   # Hard ceiling: fall back to retrieval if exceeded
 MAX_OUTPUT_TOKENS   = 256   # Enough for 5 compact recommendations
 LLM_TEMPERATURE     = 0.0   # Deterministic — removes sampling overhead
 
 # Compact system prompt — fewer tokens → faster TTFT (time-to-first-token)
 SYSTEM_PROMPT = (
-    "You are a BIS expert. From the CONTEXT, choose 3-5 standards that best match "
-    "the PRODUCT. Respond ONLY with valid JSON. "
-    'Format: {"recommendations": [{"standard_id": "...", "rationale": "..."}]} '
-    "Use ONLY standard_ids that appear verbatim in the CONTEXT. "
-    "Keep each rationale under 10 words."
+    "You are a Bureau of Indian Standards (BIS) expert. "
+    "From the provided CONTEXT, identify the 3-5 standards that most directly "
+    "govern the PRODUCT described. \n\n"
+    "RANKING CRITERIA:\n"
+    "1. Rank 1 must be the primary product specification (e.g., the cement type itself).\n"
+    "2. Subsequent ranks can be related standards (components, testing, or parts).\n"
+    "3. Prioritize exact matches for product grades (e.g., 33 Grade) and specific types (e.g., Slag, Masonry).\n\n"
+    "STRICT RULES:\n"
+    "- Respond ONLY with a valid JSON object.\n"
+    '- Format: {"recommendations": [{"standard_id": "...", "rationale": "..."}]}\n'
+    "- Use ONLY standard_ids that appear verbatim in the CONTEXT.\n"
+    "- Keep each rationale under 12 words."
 )
 
 

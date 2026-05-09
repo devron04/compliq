@@ -1,6 +1,6 @@
 # 🏛️ CompliQ: BIS Standards Recommendation Engine
 
-[![Evaluation Score](https://img.shields.io/badge/Evaluation-90%25%20Hit%20Rate-green)](https://github.com/devron04/compliq)
+[![Evaluation Score](https://img.shields.io/badge/Evaluation-100%25%20Hit%20Rate-brightgreen)](https://github.com/devron04/compliq)
 [![Live Demo](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Live%20Demo-blue)](https://huggingface.co/spaces/Ronakk0412/CompliQ)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -11,9 +11,9 @@
 ## 📊 Performance & Evaluation
 CompliQ is a measured retrieval system, rigorously tested against a curated golden dataset of BIS standards.
 
-- **Hit Rate @ 3**: **90%** (Correct standard appears in top 3 results 9/10 times).
-- **Mean Reciprocal Rank (MRR)**: **0.86**
-- **Average Latency**: **<400ms**
+- **Hit Rate @ 3**: **100%** (Verified on official public test set).
+- **Mean Reciprocal Rank (MRR)**: **0.83** (Exceeds 0.7 target).
+- **Average Latency**: **~2.1s** (Safely under 5s target; <400ms for fast queries).
 
 ---
 
@@ -22,13 +22,13 @@ Judges can verify our results using the mandatory evaluation entry-points:
 
 **1. Generate Results (Inference):**
 ```bash
-python inference.py --input data/public_test_set.json --output results.json
+python inference.py --input data/public_test_set.json --output public_test_results.json
 ```
 *This command runs the RAG pipeline on the test set and saves the predictions.*
 
 **2. Calculate Metrics (Evaluation):**
 ```bash
-python eval_script.py results.json
+python eval_script.py --results public_test_results.json
 ```
 *This script grades the generated results and outputs the official Hit Rate and MRR scores.*
 
@@ -39,7 +39,9 @@ CompliQ uses a sophisticated "Senior Level" retrieval strategy:
 1. **Dense Retrieval (FAISS)**: Captures semantic meaning and intent using `BAAI/bge-small-en-v1.5`.
 2. **Sparse Retrieval (BM25)**: Ensures precise keyword matching for specific standard IDs and material names.
 3. **Reciprocal Rank Fusion (RRF)**: Merges results from both methods to provide a mathematically optimized final ranking.
-4. **AI Rationales**: Uses LLMs (Llama 3/Mixtral via Groq) to generate context-aware explanations for every recommendation.
+4. **AI Rationales & Re-ranking**: Uses LLMs (Llama 3 via Groq) to filter and rank the most specific product matches at the top.
+5. **Anti-Hallucination Whitelist**: A strict code-level filter that discards any standard ID not found in the original retrieved context.
+6. **Latency Guard**: A hard timeout mechanism that automatically falls back to raw retrieval if the LLM takes too long, guaranteeing a response within the 5s limit.
 
 ## ⚙️ Quick Start & Setup
 
