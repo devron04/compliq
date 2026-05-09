@@ -59,6 +59,12 @@ css = """
 .result-card {
     border: 1px solid #1f2937; border-radius: 8px; padding: 20px;
     background: #111827;
+    transition: all 0.3s ease;
+}
+.result-card:hover { 
+    border-color: #3b82f6 !important; 
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.2); 
+    transform: translateY(-2px);
 }
 .section-header { font-size: 1rem; font-weight: 600; color: white; margin: 20px 0 10px 0; }
 #find-btn { background: #2563eb !important; border: none !important; }
