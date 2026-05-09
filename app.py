@@ -30,6 +30,11 @@ def predict(query, category):
     else:
         output_html = '<div style="display: flex; flex-direction: column; gap: 16px;">'
         for idx, rec in enumerate(results):
+            # Sanitize junk titles from parser errors
+            title = rec.get('title', 'N/A')
+            if len(title) < 5 or title.startswith('**') or title.startswith('*)'):
+                title = "Standard Specification / Requirement"
+            
             output_html += f"""
             <div class="result-card">
                 <h3 style="margin: 0 0 12px 0; font-size: 1.2rem; display: flex; align-items: center; gap: 10px; color: #ffffff;">
@@ -37,7 +42,7 @@ def predict(query, category):
                     <span style="color: #3b82f6; text-decoration: underline;">{rec.get('standard_id', 'N/A')}</span>
                 </h3>
                 <p style="margin: 8px 0; font-size: 1rem; color: #e5e7eb;">
-                    <strong style="color: #9ca3af;">Title:</strong> {rec.get('title', 'N/A')}
+                    <strong style="color: #9ca3af;">Title:</strong> {title}
                 </p>
                 <div style="margin: 12px 0 0 0; padding: 12px; background: #0f172a; border-radius: 6px;">
                     <strong style="color: #3b82f6; font-size: 0.8rem; text-transform: uppercase;">AI Rationale</strong><br/>
