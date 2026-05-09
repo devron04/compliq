@@ -5,11 +5,21 @@ src/pipeline.py
 End-to-End RAG Orchestration.
 Loads pre-built indexes, retrieves context via Hybrid Search, and calls LLM (Groq)
 with a strict anti-hallucination prompt.
+
+Latency strategy:
+  - Indexes and embedding model are loaded ONCE on BISPipeline.__init__().
+  - Groq client is pre-warmed with a tiny dummy call on startup so the first
+    real query does not pay the cold-start tax.
+  - Every Groq call runs inside a concurrent.futures thread with a hard
+    LLM_TIMEOUT_SECONDS deadline. If the LLM is too slow, we transparently
+    fall back to the top-ranked retrieval results — guaranteeing sub-5s
+    responses even under API congestion.
 """
 
 import os
 import sys
 import json
+import concurrent.futures
 # Add project root to sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
@@ -24,146 +34,217 @@ except ImportError:
     print("groq is required. Install via: pip install groq", file=sys.stderr)
     sys.exit(1)
 
-# Anti-Hallucination Prompt Template
-PROMPT_TEMPLATE = """You are a BIS Standards compliance assistant. Your job is to recommend relevant 
-Bureau of Indian Standards (BIS) standards based on a product description.
+# ---------------------------------------------------------------------------
+# Configuration
+# ---------------------------------------------------------------------------
+LLM_TIMEOUT_SECONDS = 3.5   # Hard ceiling: fall back to retrieval if exceeded
+MAX_OUTPUT_TOKENS   = 256   # Enough for 5 compact recommendations
+LLM_TEMPERATURE     = 0.0   # Deterministic — removes sampling overhead
 
-STRICT RULES:
-1. You MUST ONLY recommend standards from the CONTEXT provided below.
-2. NEVER invent, guess, or recall IS numbers from memory.
-3. If a standard is not in the CONTEXT, do not mention it.
-4. Return ONLY the IS numbers that appear verbatim in the CONTEXT.
+# Compact system prompt — fewer tokens → faster TTFT (time-to-first-token)
+SYSTEM_PROMPT = (
+    "You are a BIS expert. From the CONTEXT, choose 3-5 standards that best match "
+    "the PRODUCT. Respond ONLY with valid JSON. "
+    'Format: {"recommendations": [{"standard_id": "...", "rationale": "..."}]} '
+    "Use ONLY standard_ids that appear verbatim in the CONTEXT. "
+    "Keep each rationale under 10 words."
+)
 
-CONTEXT (retrieved BIS standards):
-{retrieved_chunks}
 
-PRODUCT DESCRIPTION:
-{query}
+def _build_user_prompt(query: str, context_str: str) -> str:
+    return f"PRODUCT: {query}\n\nCONTEXT:\n{context_str}"
 
-OUTPUT FORMAT (JSON only, no preamble, no explanation outside JSON):
-{{
-  "recommendations": [
-    {{
-      "standard_id": "IS XXXX",
-      "title": "exact title from context",
-      "rationale": "one sentence explaining relevance to the product"
-    }}
-  ]
-}}
-
-Return 3 to 5 recommendations. Only use standard_ids that appear in the CONTEXT above.
-"""
 
 class BISPipeline:
     def __init__(self, data_dir: str = "data"):
-        """Initialize pipeline and load pre-built indexes once."""
+        """
+        Initialize pipeline:
+          1. Load pre-built FAISS + BM25 indexes (once).
+          2. Connect to Groq and pre-warm the connection.
+        """
+        # 1. Retriever (loads embedding singleton + indexes from disk)
         self.retriever = Retriever(data_dir=data_dir)
         try:
             self.retriever.load_indexes()
         except FileNotFoundError as e:
-            print(f"Index load error: {e}. Please run 'python src/retriever.py' to build indexes.", file=sys.stderr)
+            print(
+                f"Index load error: {e}. "
+                "Please run 'python src/retriever.py' to build indexes.",
+                file=sys.stderr,
+            )
             sys.exit(1)
 
+        # 2. Groq client
         api_key = os.environ.get("GROQ_API_KEY")
         if not api_key:
-            print("Warning: GROQ_API_KEY environment variable not set. LLM generation will fallback to raw retrieval.", file=sys.stderr)
+            print(
+                "Warning: GROQ_API_KEY not set. LLM generation will fall back to raw retrieval.",
+                file=sys.stderr,
+            )
             self.client = None
         else:
             self.client = Groq(api_key=api_key)
-            
+            self._prewarm_groq()
+
         self.model = "llama-3.1-8b-instant"
 
-    def query(self, product_description: str, return_full: bool = False) -> List[str]:
+        # Thread pool reused across calls (avoids per-query thread creation overhead)
+        self._executor = concurrent.futures.ThreadPoolExecutor(max_workers=1)
+
+    # ------------------------------------------------------------------
+    # Internal helpers
+    # ------------------------------------------------------------------
+
+    def _prewarm_groq(self):
+        """
+        Fire a minimal Groq request at startup to establish the connection
+        and pull any cold-start penalty away from the first real query.
+        Failures are silently ignored — this is best-effort.
+        """
+        try:
+            print("Pre-warming Groq connection...", file=sys.stderr)
+            self.client.chat.completions.create(
+                model="llama-3.1-8b-instant",
+                messages=[{"role": "user", "content": "Hi"}],
+                max_tokens=1,
+                temperature=0.0,
+            )
+            print("Groq connection warm.", file=sys.stderr)
+        except Exception as e:
+            print(f"Groq pre-warm failed (non-fatal): {e}", file=sys.stderr)
+
+    def _call_groq(self, user_prompt: str) -> str:
+        """Blocking Groq call — always run via the thread pool with a timeout."""
+        response = self.client.chat.completions.create(
+            model=self.model,
+            messages=[
+                {"role": "system", "content": SYSTEM_PROMPT},
+                {"role": "user",   "content": user_prompt},
+            ],
+            response_format={"type": "json_object"},
+            max_tokens=MAX_OUTPUT_TOKENS,
+            temperature=LLM_TEMPERATURE,
+        )
+        return response.choices[0].message.content
+
+    def _retrieval_fallback(self, top_chunks, return_full: bool):
+        """Return retrieval-only results when LLM is unavailable or too slow.
+        
+        Deduplicates by standard_id so the same IS number never appears twice
+        (multiple chunks can share the same standard_id).
+        """
+        seen      = set()
+        ids       = []
+        full_recs = []
+
+        for chunk, _ in top_chunks:
+            sid = chunk["standard_id"]
+            if sid not in seen:
+                seen.add(sid)
+                ids.append(sid)
+                full_recs.append(
+                    {
+                        "standard_id": sid,
+                        "title":       chunk["title"],
+                        "rationale":   "Direct retrieval match (LLM fallback)",
+                    }
+                )
+
+        return full_recs if return_full else ids
+
+    # ------------------------------------------------------------------
+    # Public API
+    # ------------------------------------------------------------------
+
+    def query(self, product_description: str, return_full: bool = False) -> List:
         """
         Run the full RAG pipeline for a given product description.
-        If return_full is True, returns the parsed JSON from LLM (for UI).
-        Otherwise, returns a list of just the IS numbers (for inference.py).
+
+        Args:
+            product_description: Natural language product text.
+            return_full: If True, returns list of dicts with standard_id, title,
+                         rationale (used by the UI). If False, returns a plain
+                         list of IS number strings (used by inference.py).
+
+        Returns:
+            List of standard IDs (str) or list of recommendation dicts.
         """
-        # Edge case: empty query
         if not product_description or not product_description.strip():
-            return [] if not return_full else []
+            return []
 
-        # 1. Retrieve Context (Top 5)
+        # ── Step 1: Hybrid Retrieval ──────────────────────────────────
         top_chunks = self.retriever.hybrid_search(product_description, top_k=5)
-        
-        # If no chunks found, return empty
         if not top_chunks:
-            return [] if not return_full else []
+            return []
 
-        # Formatting context for LLM
-        context_parts = []
+        # Build context string and set of valid IS numbers for anti-hallucination
+        context_parts    = []
         valid_is_numbers = set()
-        for chunk, score in top_chunks:
-            valid_is_numbers.add(chunk["standard_id"])
+        id_to_title      = {}
+
+        for chunk, _ in top_chunks:
+            sid = chunk["standard_id"]
+            valid_is_numbers.add(sid)
+            id_to_title[sid] = chunk["title"]
             context_parts.append(
-                f"Standard ID: {chunk['standard_id']}\n"
+                f"Standard ID: {sid}\n"
                 f"Title: {chunk['title']}\n"
                 f"Category: {chunk['category']}\n"
                 f"Scope: {chunk['scope']}"
             )
-        
+
         context_str = "\n\n---\n\n".join(context_parts)
 
-        # 2. Generate with LLM
+        # ── Step 2: LLM Generation (with timeout + fallback) ──────────
         if not self.client:
-            return [chunk["standard_id"] for chunk, _ in top_chunks]
+            return self._retrieval_fallback(top_chunks, return_full)
 
-        # Concise prompt for both speed and accuracy
-        system_prompt = """You are a BIS expert. Recommend 3-5 standards from the CONTEXT that match the PRODUCT.
-Return JSON format: {"recommendations": [{"standard_id": "...", "rationale": "..."}]}
-ONLY use standard_ids from the context. Keep rationales under 10 words."""
-        
-        user_prompt = f"PRODUCT: {product_description}\n\nCONTEXT:\n{context_str}"
+        user_prompt = _build_user_prompt(product_description, context_str)
 
         try:
-            response = self.client.chat.completions.create(
-                model=self.model,
-                messages=[
-                    {"role": "system", "content": system_prompt},
-                    {"role": "user", "content": user_prompt}
-                ],
-                response_format={"type": "json_object"},
-                max_tokens=300,
-                temperature=0.0
+            future = self._executor.submit(self._call_groq, user_prompt)
+            content = future.result(timeout=LLM_TIMEOUT_SECONDS)
+        except concurrent.futures.TimeoutError:
+            print(
+                f"LLM timeout after {LLM_TIMEOUT_SECONDS}s — using retrieval fallback.",
+                file=sys.stderr,
             )
-            
-            content = response.choices[0].message.content
-            data = json.loads(content)
-            recommendations = data.get("recommendations", [])
-            
-            # Map IDs to Titles from the original search results
-            id_to_title = {chunk["standard_id"]: chunk["title"] for chunk, _ in top_chunks}
-            
-            final_standards = []
-            final_full_data = []
-            
-            for rec in recommendations:
-                std_id = rec.get("standard_id", "").strip()
-                if std_id in valid_is_numbers:
-                    if std_id not in final_standards:
-                        final_standards.append(std_id)
-                        # Add the real title to the recommendation
-                        rec["title"] = id_to_title.get(std_id, "Standard Document")
-                        final_full_data.append(rec)
-            
-            if return_full:
-                return final_full_data
-            return final_standards
-            
+            return self._retrieval_fallback(top_chunks, return_full)
         except Exception as e:
             print(f"LLM Error: {e}", file=sys.stderr)
-            # Fallback to search results if LLM fails
-            if return_full:
-                return [
-                    {
-                        "standard_id": chunk["standard_id"],
-                        "title": chunk["title"],
-                        "rationale": "Fallback retrieval due to LLM error"
-                    } for chunk, _ in top_chunks
-                ]
-            return list(valid_is_numbers)
+            return self._retrieval_fallback(top_chunks, return_full)
+
+        # ── Step 3: Parse & Anti-Hallucination Filter ─────────────────
+        try:
+            data            = json.loads(content)
+            recommendations = data.get("recommendations", [])
+        except (json.JSONDecodeError, AttributeError):
+            return self._retrieval_fallback(top_chunks, return_full)
+
+        final_ids      = []
+        final_full     = []
+        seen           = set()
+
+        for rec in recommendations:
+            std_id = rec.get("standard_id", "").strip()
+            # Hard filter: only allow IDs that were in the retrieved context
+            if std_id in valid_is_numbers and std_id not in seen:
+                seen.add(std_id)
+                final_ids.append(std_id)
+                rec["title"] = id_to_title.get(std_id, "Standard Document")
+                final_full.append(rec)
+
+        # Edge case: LLM returned nothing valid → fall back
+        if not final_ids:
+            return self._retrieval_fallback(top_chunks, return_full)
+
+        return final_full if return_full else final_ids
+
 
 if __name__ == "__main__":
     pipeline = BISPipeline()
-    res = pipeline.query("Looking for cement used in marine construction that resists sulfates", return_full=True)
+    res = pipeline.query(
+        "Looking for cement used in marine construction that resists sulfates",
+        return_full=True,
+    )
     print(json.dumps(res, indent=2))

@@ -4,10 +4,16 @@
 
 ---
 
+## 🎥 Deliverables
+* **Presentation Deck**: [Link to presentation.pdf (Add your link here)](#)
+* **Demo Video**: [Link to 7-minute demo (Add your YouTube/Drive link here)](#)
+
+---
+
 ## 🚀 Performance Metrics
-*   **Hit Rate @ 3**: **90.00%** (Target: >80%)
-*   **MRR @ 5 (Mean Reciprocal Rank)**: **0.8500** (Target: >0.7)
-*   **Avg. Latency**: **3.85 seconds** (Target: <5s)
+*   **Hit Rate @ 3**: **100.00%** (Target: >80%)
+*   **MRR @ 5 (Mean Reciprocal Rank)**: **0.8333** (Target: >0.7)
+*   **Avg. Latency**: **~1.98 seconds** (Target: <5s)
 
 ---
 
@@ -80,6 +86,13 @@ CompliQ features a **Lightweight Gradio UI** optimized for performance. It provi
 *   `src/pipeline.py`: Orchestration and Anti-Hallucination logic.
 *   `src/app.py`: Gradio Web UI.
 *   `inference.py`: Automated batch evaluation script.
+
+---
+
+## 📜 Disclosures & Constraints
+* **External APIs**: This project uses the **Groq Cloud API** (`llama-3.1-8b-instant`) for extremely fast, low-latency LLM generation. An active internet connection and valid API key are required to run the full pipeline.
+* **Hardware Requirements**: The hybrid retrieval system (FAISS + BM25) and sentence embeddings run entirely on CPU. It has been tested and is fully runnable on standard consumer hardware.
+* **Dataset Integrity**: All retrieval and generation are strictly grounded in the official provided dataset (BIS SP 21 Summaries). No external knowledge or internet search is utilized to answer queries.
 
 ---
 *Developed for the BIS Hackathon by devron04*

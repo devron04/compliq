@@ -129,15 +129,17 @@ class Retriever:
                 sparse_results.append((int(idx), rank + 1))
 
         # Reciprocal Rank Fusion (RRF)
-        # RRF_score(d) = sum(1 / (k + rank(d)))
-        k_rrf = 60
+        # RRF_score(d) = w * (1 / (k + rank(d)))
+        k_rrf = 5
+        w_dense = 0.5
+        w_sparse = 1.0
         rrf_scores = {}
         
         for chunk_idx, rank in dense_results:
-            rrf_scores[chunk_idx] = rrf_scores.get(chunk_idx, 0.0) + 1.0 / (k_rrf + rank)
+            rrf_scores[chunk_idx] = rrf_scores.get(chunk_idx, 0.0) + w_dense * (1.0 / (k_rrf + rank))
             
         for chunk_idx, rank in sparse_results:
-            rrf_scores[chunk_idx] = rrf_scores.get(chunk_idx, 0.0) + 1.0 / (k_rrf + rank)
+            rrf_scores[chunk_idx] = rrf_scores.get(chunk_idx, 0.0) + w_sparse * (1.0 / (k_rrf + rank))
 
         # Sort by RRF score descending
         sorted_indices = sorted(rrf_scores.keys(), key=lambda x: rrf_scores[x], reverse=True)
