@@ -1605,25 +1605,6 @@
     "full_text": "IS 4031 Methods of physical tests for hydraulic cement, and"
   },
   {
-    "standard_id": "IS 4032: 1985",
-    "title": "Method of chemical analysis of hydraulic cement (first revision)",
-    "category": "Cement",
-    "scope": "Method of chemical analysis of hydraulic cement (first revision) For detailed information, refer to",
-    "keywords": [
-      "method",
-      "chemical",
-      "analysis",
-      "hydraulic",
-      "cement",
-      "first",
-      "revision",
-      "detailed",
-      "information",
-      "refer"
-    ],
-    "full_text": "IS 4032: 1985 Method of chemical analysis of hydraulic cement (first revision) For detailed information, refer to"
-  },
-  {
     "standard_id": "IS 6909: 1990",
     "title": "Specification for supersulphated cement",
     "category": "Cement",
@@ -1679,20 +1660,6 @@
       "revision"
     ],
     "full_text": "IS 8041: 1990 RAPID HARDENING PORTLAND CEMENT (Second Revision) Not more than 10 mm ('Le Chatelier’ method). Not more than 0.8 percent (autoclave). 3.3 Setting Time: Initial setting 30 minutes, final setting 10 h. 3.4 Compressive Strength of Mortar Cubes a) 24 hours 30 Not less than 16 MPa minutes b) 72 1 hours Not less than 27 MPa 4 Delivery — Packed in specified bags of 50 kg or 25 kg net or in bulk with tolerances specified in the standard. Note — For methods of tests, refer to relevant parts of"
-  },
-  {
-    "standard_id": "IS 4031",
-    "title": "Methods of physical tests for  hydraulic cement, and",
-    "category": "Cement",
-    "scope": "Methods of physical tests for hydraulic cement, and",
-    "keywords": [
-      "methods",
-      "physical",
-      "tests",
-      "hydraulic",
-      "cement"
-    ],
-    "full_text": "IS 4031 Methods of physical tests for hydraulic cement, and"
   },
   {
     "standard_id": "IS 4032: 1985",
@@ -1764,20 +1731,6 @@
       "second"
     ],
     "full_text": "IS 8042: 1989 WHITE PORTLAND CEMENT (Second Revision) prepared from white portland cement shall not be less than 90 percent of those specified for 33 grade ordinary Portland cement. 4. Degree of Whiteness — The reflectance of neat cement ring prepared and tested in accordance with the test specified shall not be less than 70 percent. 5. Delivery— Packed in specified bags of 50 kg, 10 kg, 5 kg, 2 kg or 1 kg net or in bulk subject to tolerances specified in the standard. TABLE 1 CHEMICAL REQUIREMENTS FOR WHITE PORTLAND CEMENT Sl No. Characteristic Requirements (1) (2) (3) i) Ratio of percentages of lime to percentage of Not greater than 1.02 silica, alumina and iron oxide and not less than 0.66 ii) Iron oxide, percent by mass Not more than 1.0 percent iii) Insoluble residue, percent by mass Not more than 2.0 percent iv) Magenesisa, percent by mass Not more than 6 percent v) Total sulphur content calculated as Not more than 3.5 percent sulphuric anhydride (SO3), percent by mass Note —For methods of tests, refer to relevant parts of"
-  },
-  {
-    "standard_id": "IS 4031",
-    "title": "Methods of physical tests for hydraulic cement and",
-    "category": "Cement",
-    "scope": "Methods of physical tests for hydraulic cement and",
-    "keywords": [
-      "methods",
-      "physical",
-      "tests",
-      "hydraulic",
-      "cement"
-    ],
-    "full_text": "IS 4031 Methods of physical tests for hydraulic cement and"
   },
   {
     "standard_id": "IS 4032: 1985",
@@ -1929,20 +1882,6 @@
     "full_text": "IS 8112: 1989 Specification for 43 Grade ordinary portland cement (first revision). Note 1 — For specific chemical and physical requirements of cement used for railway sleepers, refer to the standard. Note 2 — For methods of tests, refer to relevant parts of"
   },
   {
-    "standard_id": "IS 4031",
-    "title": "Methods of physical tests for hydraulic cement and",
-    "category": "Cement",
-    "scope": "Methods of physical tests for hydraulic cement and",
-    "keywords": [
-      "methods",
-      "physical",
-      "tests",
-      "hydraulic",
-      "cement"
-    ],
-    "full_text": "IS 4031 Methods of physical tests for hydraulic cement and"
-  },
-  {
     "standard_id": "IS 4032: 1985",
     "title": "Methods of chemical analysis of hydraulic cement. (first revision)",
     "category": "Cement",
@@ -1966,7 +1905,16 @@
     "title": "Specification for ordinary portland cement, 33 grade (fourth",
     "category": "Other Building Materials",
     "scope": "*and",
-    "keywords": [],
+    "keywords": [
+      "for",
+      "cement",
+      "33",
+      "grade",
+      "portland",
+      "fourth",
+      "ordinary",
+      "specification"
+    ],
     "full_text": "IS 269: 1989 *and"
   },
   {
@@ -2027,20 +1975,6 @@
     "full_text": "IS 12269: 1987 Specification for 53 Grade ordinary portland cement. Note 1 — For specific chemical and physical requirements of cement used for railway sleepers, refer to the standard. Note 2 — For methods of tests, refer to relevant parts of"
   },
   {
-    "standard_id": "IS 4031",
-    "title": "Methods of physical tests for hydraulic cement and",
-    "category": "Cement",
-    "scope": "Methods of physical tests for hydraulic cement and",
-    "keywords": [
-      "methods",
-      "physical",
-      "tests",
-      "hydraulic",
-      "cement"
-    ],
-    "full_text": "IS 4031 Methods of physical tests for hydraulic cement and"
-  },
-  {
     "standard_id": "IS 4032: 1985",
     "title": "Methods of chemical analysis of hydraulic cement. (first revision)",
     "category": "Cement",
@@ -2096,20 +2030,6 @@
       "parts"
     ],
     "full_text": "IS 12330: 1988 Specification for sulphate resisting Portland cement. Note — For methods of tests, refer to relevant parts of"
-  },
-  {
-    "standard_id": "IS 4031",
-    "title": "Methods of physical tests for hydraulic cement and",
-    "category": "Cement",
-    "scope": "Methods of physical tests for hydraulic cement and",
-    "keywords": [
-      "methods",
-      "physical",
-      "tests",
-      "hydraulic",
-      "cement"
-    ],
-    "full_text": "IS 4031 Methods of physical tests for hydraulic cement and"
   },
   {
     "standard_id": "IS 4032: 1985",
@@ -2659,7 +2579,16 @@
     "title": "Specification for ordinary portland cement, 33 grade (fourth",
     "category": "Other Building Materials",
     "scope": "* or",
-    "keywords": [],
+    "keywords": [
+      "for",
+      "cement",
+      "33",
+      "grade",
+      "portland",
+      "fourth",
+      "ordinary",
+      "specification"
+    ],
     "full_text": "IS 269: 1989 * or"
   },
   {
@@ -2667,7 +2596,9 @@
     "title": "†  or",
     "category": "Other Building Materials",
     "scope": "† or",
-    "keywords": [],
+    "keywords": [
+      "or"
+    ],
     "full_text": "IS 8041: 1990 † or"
   },
   {
@@ -3505,25 +3436,6 @@
     "full_text": "IS 1626: 1984 ASBESTOS CEMENT BUILDING PIPES AND PIPE FITTINGS, GUTTERS AND GUTER FITTINGS AND ROOF FITTINGS PART 3 ROOF FITTINGS (Second Revision) Note — For methods of tests, refer to"
   },
   {
-    "standard_id": "IS 5913: 1989",
-    "title": "Methods of tests for asbestos cement products (first revision).",
-    "category": "Cement",
-    "scope": "Methods of tests for asbestos cement products (first revision). For detailed information, refer to",
-    "keywords": [
-      "methods",
-      "tests",
-      "asbestos",
-      "cement",
-      "products",
-      "first",
-      "revision",
-      "detailed",
-      "information",
-      "refer"
-    ],
-    "full_text": "IS 5913: 1989 Methods of tests for asbestos cement products (first revision). For detailed information, refer to"
-  },
-  {
     "standard_id": "IS 1626 (Part 3): 1994",
     "title": "Specification for asbestos cement",
     "category": "Cement",
@@ -3694,25 +3606,6 @@
     "full_text": "IS 6908: 1991 ASBESTOS CEMENT PIPES AND FITTINGS FOR SEWERAGE AND DRAINAGE (First revision) 5.2 Fittings — Tolerances on the nominal thickness of the fittings shall be as follows: Upper deviation : Free Lower deviation :—1.5 mm 6. Tests 6.1 Hydraulic ressure Test— The pipe and joints when tested to a pressure of 0.25 MPa shall not show any fissure, leakage, or sweating on their outside surface. 6.2 Transverse Crushing Test— a) Pipes— Minimum 33 N/mm. b) Fittings — No minimum transverse crushing load is required 6.3 Longitudinal Bending Strength (Optional ) Shall not fracture below the following bending loads 100 mm 2.8 kN 125 mm 4.2 kN 150 mm 6.0 kN 6.4 Acid Resistance Test (Optional) — The amount of acetic acid neutralied shall not exceed 0.100 g/cm 7. Joints a) Asbestos cement couplings with rubber sealing rings. b) Cast iron detachable joints with rubber sealing rings and bolts and nuts. 7.1 The assembled joint shall be capable of withstanding an internal hydrostatic pressure of 0.25 MPa 1.62 SP 21 : 2005 TABLE 1 CLASSIFICATION OF PIPES Nominal Minimum Ultimate Crushing Load Diameter m m Class 1 Class 2 Class 3 (1) (2) (3) (4) 100 15.0 15.0 15.0 125 15.0 15.0 15.0 150 15.0 15.0 17.5 200 15.0 17.5 25.0 250 15.0 22.5 30.0 300 17.5 27.5 35.0 350 21.5 31.5 41.5 400 23.5 36.5 48.5 450 26.5 40.0 53.5 500 30.0 45.0 60.0 600 36.5 53.5 71.5 700 41.5 63.5 83.5 750 45.0 67.5 90.0 800 48.5 71.5 96.5 850 51.0 76.5 102.5 900 53.5 81.5 108.5 1000 60.0 90.0 120.0 Note— No crushing load at rupture shall be less than 15 kN/m. TABLE 2 PERMISSIBLE DEVIATIONS ON SIZES Thickness Permissible Deviations On Thickness On External On Nominal Excluding Diameter at Length Machined Ends Finished Ends (1) (2) (3) (4) mm mm mm mm Up to and including 10 -1.5 +50 Over 10, up toand including 20 -2.0 ±1.0 for 100 - 20 for 100 to to 700 mm 300mm nominal Over 20, up to and including 30 -2.5 nominal diameter and diameter and Over 30, up to and including 60 -3.0 ± 1.5 for 750 + 50 to 1000 mm - 40 for nominal nominal diameter diameter greater than 300 mm Over 60, up to andincluding 90 -3.5 Over 90 -4.0 Note— Nominal length of the pipes shall be 3 m for nominal diameters upto 200 mm and 4 m for greater diameters. Note— For methods of tests, refer to"
   },
   {
-    "standard_id": "IS 5913: 1989",
-    "title": "Methods of tests for asbestos cement products (first revision).",
-    "category": "Cement",
-    "scope": "Methods of tests for asbestos cement products (first revision). For detailed information, refer to",
-    "keywords": [
-      "methods",
-      "tests",
-      "asbestos",
-      "cement",
-      "products",
-      "first",
-      "revision",
-      "detailed",
-      "information",
-      "refer"
-    ],
-    "full_text": "IS 5913: 1989 Methods of tests for asbestos cement products (first revision). For detailed information, refer to"
-  },
-  {
     "standard_id": "IS 6908: 1991",
     "title": "Specification for asbestos cement pipes and",
     "category": "Cement",
@@ -3749,25 +3642,6 @@
       "table"
     ],
     "full_text": "IS 8870: 1978 ASBESTOS CEMENT CABLE CONDUITS AND TROUGHS TABLE 1 DIMENSIONS AND PERMISSIBLE VARIATIONS OF ASBESTOS CEMENT CONDUITS AND BEND Nominal Length Permissible Variation Nominal Internal Wall Diameter Diameter Conduits Bends Thickness Thickness Length (1) (2) (3) (4) (5) (6) (7) mm mm m m mm mm mm 50 50 2,3,4 2 9.0 ± 1.5 +50 -20 80 80 2,3,4 2 9.5 ± 1.5 +50 -20 100 100 2,3,4 2 9.5 ± 1.5 +50 -20 125 125 2,3,4 2 10.0 ± 1.5 +50 -20 150 150 2,3,4 2 10.0 ± 1.5 +50 -20 Note — Bends shall be in 900 and 1350 angles. 2.3 For detailed dimensions for asbestos cement conduits, troughs and their fittings, refer to Table 3 to 7 of the standard. 3. Finish — Homogenous with inner and outer surfaces clean, true, smooth and free from any imperfections that render them unsuitable for their purpose. Ends shall be finished square to the axis. 4. Tests 4.1 Conduits shall be tested for straightness, regularity of thickness and diameter, flexural strength, crushing strength, water absorption, impact resistance and flattening resistance. 4.2 Troughs shall be tested for straightness, regularity of thickness, flexural strength and water absorption. Note— For detailed test requirements refer to 6 of the standard. Note— For methods of tests, refer to"
-  },
-  {
-    "standard_id": "IS 5913: 1989",
-    "title": "Methods of tests for asbestos cement products (first revision).",
-    "category": "Cement",
-    "scope": "Methods of tests for asbestos cement products (first revision). For detailed information, refer to",
-    "keywords": [
-      "methods",
-      "tests",
-      "asbestos",
-      "cement",
-      "products",
-      "first",
-      "revision",
-      "detailed",
-      "information",
-      "refer"
-    ],
-    "full_text": "IS 5913: 1989 Methods of tests for asbestos cement products (first revision). For detailed information, refer to"
   },
   {
     "standard_id": "IS 8870: 1978",
@@ -3950,25 +3824,6 @@
       "asbestos"
     ],
     "full_text": "IS 13008: 1990 SHALLOW CORRUGATED ASBESTOS CEMENT SHEETS 3.2 Impermeability — Shall not show during 24 hours of test any formation of drops of water except traces of moisture on the lower surface. 4. Finish — Shall have a rectangular shape, smooth surface on the weathering side, a good apearance and shall be true and regular. The edges of the sheets shall be straight and clean. TABLE 1 DIMENSIONS AND TOLERANCES OF SHALLOW CORRUGATED SHEETS All dimensions in millimetres. Sl Characteristics Nominal Tolerances No. Dimension i) Depth of corrugation 20 ±2.0 ii) Pitch of corrugation 75 ±1.5 ±10 iii) Overall width 1 015 – 5 +Free iv) Nominal thickness 4.2 – 0.2 v) Length of sheet 1 500 1 750 2 000 ±10 2 250 Note— For methods of tests, refer to"
-  },
-  {
-    "standard_id": "IS 5913: 1989",
-    "title": "Methods of tests for asbestos cement products (first revision).",
-    "category": "Cement",
-    "scope": "Methods of tests for asbestos cement products (first revision). For detailed information, refer to",
-    "keywords": [
-      "methods",
-      "tests",
-      "asbestos",
-      "cement",
-      "products",
-      "first",
-      "revision",
-      "detailed",
-      "information",
-      "refer"
-    ],
-    "full_text": "IS 5913: 1989 Methods of tests for asbestos cement products (first revision). For detailed information, refer to"
   },
   {
     "standard_id": "IS 13008: 1990",
@@ -4222,23 +4077,6 @@
       "revision"
     ],
     "full_text": "IS 456: 2000 Code of practice for plain and reinforced concrete (fourth revision) and"
-  },
-  {
-    "standard_id": "IS 3597: 1998",
-    "title": "Methods of test for concrete pipes (second revision).",
-    "category": "Concrete",
-    "scope": "Methods of test for concrete pipes (second revision). For detailed information, refer to",
-    "keywords": [
-      "methods",
-      "concrete",
-      "pipes",
-      "second",
-      "revision",
-      "detailed",
-      "information",
-      "refer"
-    ],
-    "full_text": "IS 3597: 1998 Methods of test for concrete pipes (second revision). For detailed information, refer to"
   },
   {
     "standard_id": "IS 7319: 1974",
@@ -5443,7 +5281,9 @@
     "title": "and",
     "category": "Other Building Materials",
     "scope": "and",
-    "keywords": [],
+    "keywords": [
+      "and"
+    ],
     "full_text": "IS 2180 and"
   },
   {
@@ -5919,25 +5759,6 @@
     "full_text": "IS 1122: 1974 Method of test for determination of true specific gravity of natural building stones (first revision) and"
   },
   {
-    "standard_id": "IS 1124: 1974",
-    "title": "Method of test for determination of water absorption, apparent specific gravity and",
-    "category": "Other Building Materials",
-    "scope": "Method of test for determination of water absorption, apparent specific gravity and porosity of natural building stones (first revision). For detailed information, refer to",
-    "keywords": [
-      "method",
-      "determination",
-      "water",
-      "absorption",
-      "apparent",
-      "specific",
-      "gravity",
-      "porosity",
-      "natural",
-      "building"
-    ],
-    "full_text": "IS 1124: 1974 Method of test for determination of water absorption, apparent specific gravity and porosity of natural building stones (first revision). For detailed information, refer to"
-  },
-  {
     "standard_id": "IS 3316: 1974",
     "title": "Specifications for structural granite",
     "category": "Steel",
@@ -6007,25 +5828,6 @@
       "revision"
     ],
     "full_text": "IS 1121(Part 1): 1974 Methods of test for determination of strength properties of natural building stones : Part 1 Compressive strength (first revision) and"
-  },
-  {
-    "standard_id": "IS 1124: 1974",
-    "title": "Method of test for determination of water absorption,",
-    "category": "Other Building Materials",
-    "scope": "Method of test for determination of water absorption, apparent specific gravity and porosity of natural building stones (first revision). For detailed information, refer to",
-    "keywords": [
-      "method",
-      "determination",
-      "water",
-      "absorption",
-      "apparent",
-      "specific",
-      "gravity",
-      "porosity",
-      "natural",
-      "building"
-    ],
-    "full_text": "IS 1124: 1974 Method of test for determination of water absorption, apparent specific gravity and porosity of natural building stones (first revision). For detailed information, refer to"
   },
   {
     "standard_id": "IS 3620: 1979",
@@ -7104,24 +6906,6 @@
     "full_text": "IS 2691: 1988 BURNT CLAY FACING BRICKS (Second Revision) 5. Physical Requirements 5.1 Average Compressive Strength shall not be less than 10N/mm2 5.2 Water absorption after 24 hours immersion shall not exceed 15 percent. 5.3 Efflorescence shall be “Nil”. 5.4 Warpage shall not exceed 2.5 mm. 4.7 SP 21 : 2005 1. Scope — Covers dimensions, quality and strength, and methods of sampling and test for burnt clay paving bricks for use in construction of pavements. 2. General — shall be mechanically shaped and not hand moulded. when broken, bricks show a uniformly dense structure free from lime, large voids and marked laminations. Shall have smooth rectangular faces and sharp corners. 3. Dimensions 190 mm × 90 mm × 90 mm and 190 mm × 90 mm × 40 mm Note — The bricks shall not be provided with frogs. 4. Tolerances Dimensions Total Tolerance for 20 Bricks mm mm 190 ± 80 90,40 ± 40 5. Physical properties 5.1 Average compressive strength shall be not less than 40 N/mm2 5.2 Average water absorption shall be not more than 5 percent 5.3 Efforescence shall be ‘nil’. Note — For methods of tests, refer to relevant parts of"
   },
   {
-    "standard_id": "IS 3495: 1992",
-    "title": "Method of test for burnt clay building bricks",
-    "category": "Bricks",
-    "scope": "Method of test for burnt clay building bricks (third revision). For detailed information, refer to",
-    "keywords": [
-      "method",
-      "burnt",
-      "building",
-      "bricks",
-      "third",
-      "revision",
-      "detailed",
-      "information",
-      "refer"
-    ],
-    "full_text": "IS 3495: 1992 Method of test for burnt clay building bricks (third revision). For detailed information, refer to"
-  },
-  {
     "standard_id": "IS 3583: 1988",
     "title": "Specification for clay paving bricks",
     "category": "Bricks",
@@ -7154,24 +6938,6 @@
       "uniform"
     ],
     "full_text": "IS 3583: 1988 BURNT CLAY PAVING BRICKS (Second Revision) 4.8 SP 21 : 2005 1. Scope — Covers the dimensions, quality and strength requirements of hollow bricks made from burnt clay and having perforations through and at right angle to the bearing surface. 2. General Requirements 2.1 Bricks shall be free from cracks, flaws and nodules of free lime. Shall be of uniform colour. Shall have plane rectangular faces with parallel sides and shall have sharp straight edges at right angle; and a fine compact and uniform texture. 2.2 The bricks shall be free from excessive winding or bowing. Winding or bowing in length dimension concaity or converxity in external face of brikcs, and angles between sides and joining edges shall be not more than 5 mm. Note— For testing details refer to 3.2 of the standard. 3. Types a) Type A — Bricks with both faces keyed for plastering or rendering. b) Type B — Bricks with both faces smooth and suitable for use without plastering or rendering on either side, and c) Type C — Bricks with one face keyed and one face smooth. 4. Dimensions Length Width Height mm mm mm 190 190 90 290 90 90 290 140 90 Thickness of any shell and web shall not be less than 11 mm and 8 mm respectively. 5. Tolerances Dimensions Overall Measurements of 20 Bricks (mm) Min Max 290 5680 5920 190 3720 3880 140 2740 2860 90 1760 1840 5.1 In addition, the size of any individual brick in the sample shall not exceed the corresponding modular size as given below : Dimension of Bricks Modular Size mm mm 290 300 190 200 140 150 90 100 6. Crushing Strength — Minimum average value shall be 3.5 N/mm2. The strength of any individual brick shall not fall below the average value by more than 20 percent. 7. Water Absorption — Shall not be more than 20 percent by mass. 8. Efflorescence— Shall have a rating not more than ‘slight’. Note — For methods of tests, refer to Appendices A and B of the standard, and relevant parts of"
-  },
-  {
-    "standard_id": "IS 3495: 1992",
-    "title": "Method of test for",
-    "category": "Bricks",
-    "scope": "Method of test for burnt clay building bricks (third revision). For detailed information, refer to",
-    "keywords": [
-      "method",
-      "burnt",
-      "building",
-      "bricks",
-      "third",
-      "revision",
-      "detailed",
-      "information",
-      "refer"
-    ],
-    "full_text": "IS 3495: 1992 Method of test for burnt clay building bricks (third revision). For detailed information, refer to"
   },
   {
     "standard_id": "IS 3952: 1988",
@@ -7227,24 +6993,6 @@
     "full_text": "IS 4885: 1988 SEWER BRICKS (First Revision) Note — For method of the tests refer to the relevant parts of"
   },
   {
-    "standard_id": "IS 3495: 1992",
-    "title": "Method of test for burnt clay building  bricks",
-    "category": "Bricks",
-    "scope": "Method of test for burnt clay building bricks (third revision). For detailed information, refer to",
-    "keywords": [
-      "method",
-      "burnt",
-      "building",
-      "bricks",
-      "third",
-      "revision",
-      "detailed",
-      "information",
-      "refer"
-    ],
-    "full_text": "IS 3495: 1992 Method of test for burnt clay building bricks (third revision). For detailed information, refer to"
-  },
-  {
     "standard_id": "IS 4885: 1988",
     "title": "Specification for Sewer bricks (first revision).",
     "category": "Bricks",
@@ -7262,24 +7010,6 @@
       "general"
     ],
     "full_text": "IS 4885: 1988 Specification for Sewer bricks (first revision). 1. Scope — Specifies dimensions, quality and strength, and methods of sampling and test for burnt clay sewer bricks used for sewers of sanitary (domestic) sewage. 2. Dimensions and Tolerances 2.1 Dimensions 190 mm × 90 mm × 90 mm, and 190 mm × 90 mm × 40 mm Note — For oval and other special shaped sewers, bricks may be tapered suitably. 2.2. Tolerance Dimensions Total Tolerance for 20 Bricks mm mm 190 ± 80 90, 40 ± 40 2.3. Tolerance for warpage of face or edges from plane surface and straight line shall be 2.5 mm. 3. General Quality — Shall be free from cracks, flaws and nodules of lime. shall have plane rectangular faces with sharp edges and corners. Kiln marks not exceeding 3 mm in depth shall be permitted on the opposite edges. When broken, sewer bricks shall show a fracture of uniformly fine grained and compact structure throughout. 4. Physical properties 4.1 Average compressive strength shall not be less than 17.5 N/mm2 and for individual brick it shall not be less than 16 N/mm2. 4.2 Average water absorption shall not exceed 10 percent and for individual it shall not exceed 12 percent. 4.3 Efflorecence shall not be more than “slight” 4.10 SP 21 : 2005 1. Scope — Requirements for dimensions, general quality and physical properties for burnt clay bricks for use in soling of roads. 2. General Quality — Shall be free from cracks and other flaws and nodules of free lime. Shall have, plane rectangular faces and straight right angle edges. 3. Dimensions 190 mm × 90 mm × 90 mm and 190 mm × 90 mm × 40 mm 4. Tolerances — Overall dimensions of 20 bricks, shall be as follows : Length 380 ± 8 cm Width 180 ± 4 cm Height for 90 mm high 180 ± 4 cm for 40 mm high 80 ± 4 cm 5. Physical Properties 5.1 Compresive Strength — Shall be not less than 10 N/mm2. 5.2 Water Absorption — Shall not be more than 20 percent. 5.3 Efflorescence — Shall not be more than “slight’. Note — For methods of tests, refer to relevant parts of"
-  },
-  {
-    "standard_id": "IS 3495: 1992",
-    "title": "Method of test for burnt clay building  bricks (third revision).",
-    "category": "Bricks",
-    "scope": "Method of test for burnt clay building bricks (third revision). For detailed information, refer to",
-    "keywords": [
-      "method",
-      "burnt",
-      "building",
-      "bricks",
-      "third",
-      "revision",
-      "detailed",
-      "information",
-      "refer"
-    ],
-    "full_text": "IS 3495: 1992 Method of test for burnt clay building bricks (third revision). For detailed information, refer to"
   },
   {
     "standard_id": "IS 5779: 1986",
@@ -7374,7 +7104,16 @@
     "title": "Heavy duty burnt clay building bricks (third revision)",
     "category": "Other Building Materials",
     "scope": "* and",
-    "keywords": [],
+    "keywords": [
+      "burnt",
+      "heavy",
+      "clay",
+      "revision",
+      "bricks",
+      "third",
+      "duty",
+      "building"
+    ],
     "full_text": "IS 2180: 1988 * and"
   },
   {
@@ -7395,24 +7134,6 @@
       "compressive"
     ],
     "full_text": "IS 1077: 1992 ** 2. Classification Class Average Compressive Strength Designation not less than N/mm2 30 30.0 25 25 20 20.0 17.5 17.5 15 15.0 12.5 12.5 10 10.0 7.5 7.5 5 5.0 3.5 3.5 3. General Quality — Shall be hand or machine moulded and shall be free from cracks and flaws as black coring, nodules of stone and/or free lime and organic matter. Hand-moulded bricks of 90 mm or 70 mm height shall be moulded with a frog 10 to 20 mm deep on one of its flat sides; and bricks of 40 or 30 mm height as well as those made by extrusion process may not be provided with frogs. Shall have smooth rectangular faces with sharp corners and shall be uniform in shape and colour. 4. Dimensions Modular : 190 mm × 90 mm × 90 mm 190 mm × 90 mm × 40 mm Non-Modular : 230 mm × 110 mm × 70 mm 230 mm × 110 mm × 30 mm Modular and non-modular for proper bond arrangment 70 mm × 110 mm × 70 mm 1/3 length brick 230 mm × 50 mm × 70 mm 1/2 length brick 5. Tolerances — Dimensions of bricks shall be within the following limits per 20 bricks. Modular size Non-modular size a) Length 3 800 ± 80 4 600 ± 80 b) Width 1 800 ± 40 2 200 ± 40 c) Height 1 800 ± 40 1 400 ± 40 (For 90 mm high bricks) (For 70 mm high bricks) 800 ± 40 600 ± 40 (For 40 mm high bricks) (For 30 mm high bricks) 6. Physical Requirements 6.1 Compressive Strength — Average strength shall be as given in 2. 6.2 Water Absorption — Shall not be more than 20 percent 6.3 Efflorescence — Not more than “moderate” for class 12.5 and ‘slight’ for brighter classes. For methods of tests, refer to relevant parts of"
-  },
-  {
-    "standard_id": "IS 3495: 1992",
-    "title": "Method of test for burnt clay building bricks (third revision).",
-    "category": "Bricks",
-    "scope": "Method of test for burnt clay building bricks (third revision). For detailed information, refer to",
-    "keywords": [
-      "method",
-      "burnt",
-      "building",
-      "bricks",
-      "third",
-      "revision",
-      "detailed",
-      "information",
-      "refer"
-    ],
-    "full_text": "IS 3495: 1992 Method of test for burnt clay building bricks (third revision). For detailed information, refer to"
   },
   {
     "standard_id": "IS 13757: 1993",
@@ -10166,32 +9887,6 @@
     "full_text": "IS 1202: 1978 methods of testing tar bituminous material: Determination of specific gravity (first revision)"
   },
   {
-    "standard_id": "IS 1205: 1978",
-    "title": "Determination of softening point (first revision).",
-    "category": "Other Building Materials",
-    "scope": "Determination of softening point (first revision).",
-    "keywords": [
-      "determination",
-      "softening",
-      "point",
-      "first",
-      "revision"
-    ],
-    "full_text": "IS 1205: 1978 Determination of softening point (first revision)."
-  },
-  {
-    "standard_id": "IS 1213: 1978",
-    "title": "Distillation test (first revision).",
-    "category": "Other Building Materials",
-    "scope": "Distillation test (first revision).",
-    "keywords": [
-      "distillation",
-      "first",
-      "revision"
-    ],
-    "full_text": "IS 1213: 1978 Distillation test (first revision)."
-  },
-  {
     "standard_id": "IS 1215: 1978",
     "title": "Determination of matter insoluble in toulene (first revision).",
     "category": "Other Building Materials",
@@ -10282,22 +9977,6 @@
     "full_text": "IS 1202: 1978 Methods of testing tar and bituminous materials, determination of specific gravity (first revision)."
   },
   {
-    "standard_id": "IS 1211: 1978",
-    "title": "Determination of water content (Dean and Stark method) (first revision).",
-    "category": "Other Building Materials",
-    "scope": "Determination of water content (Dean and Stark method) (first revision).",
-    "keywords": [
-      "determination",
-      "water",
-      "content",
-      "stark",
-      "method",
-      "first",
-      "revision"
-    ],
-    "full_text": "IS 1211: 1978 Determination of water content (Dean and Stark method) (first revision)."
-  },
-  {
     "standard_id": "IS 1213: 1978",
     "title": "Distallation test (first revision).",
     "category": "Other Building Materials",
@@ -10366,19 +10045,6 @@
     "full_text": "IS 454: 1994 CUTBACK BITUMEN FROM WAXY CRUDE (Second Revision) 1. Scope— Covers the physical and chemical requirements of cutbacks bitumen from waxy crude of indigenous origin. 2. Grades a) Light grade — For use as primer. TABLE 1 REQUIREMENTS FOR CUTBACK BITUMEN FROM WAXY CRUDE Sl.No. Characteristics Requirement for Grades Light Medium Heavy Min Max Min Max Min Max (1) (2) (3) (4) (5) (6) (7) (8) i) Kinematic viscosity, 600C cst 70 140 800 1600 3000 6000 ii) Flash point, Pensky Martens closed type,0°C 38 — 55 — 55 — iii) Distillate volume, percent of total distillate up to 3600C a) Up to 190° C 10 — 30 — — — b) Up to 225° C 50 — 30 — — — c) Up to 260° C 70 — 30 — — — d) Up to 315° C 85 — 75 — 50 — iv) Residue from distillation up to 360°C, percent by volume (by difference) 55 — 75 — 80 — v) Tests on residue from distillation upto 360°C a) Viscosity at 60° C, poises 600 2400 100 2400 100 2400 b) Ductility at 27° C 12 — 10 — 10 — c) Matter soluble in Trichloroethylene percent by mass 99 — 99 — 99 — d) Penetration 25° C /100g/5Sec 35 70 50 100 25 50 vi) Water content percent by mass — 0.2 — 0.2 — 0.2 b) Medium grade — For surface dressing and resurfacing operations, and c) Heavy grade— For pre-mix type of construction. Note — The source and grade shall be stated by the manufacturer. 3. Requirements— See Table 1 Note— For methods of tests, refer to"
   },
   {
-    "standard_id": "IS 1203: 1978",
-    "title": "Determination of penetration (first revision).",
-    "category": "Other Building Materials",
-    "scope": "Determination of penetration (first revision).",
-    "keywords": [
-      "determination",
-      "penetration",
-      "first",
-      "revision"
-    ],
-    "full_text": "IS 1203: 1978 Determination of penetration (first revision)."
-  },
-  {
     "standard_id": "IS 1206 (Part1): 1978",
     "title": "Determination of viscosity Part 1 Industrial viscosity (first revision).",
     "category": "Other Building Materials",
@@ -10393,19 +10059,6 @@
     "full_text": "IS 1206 (Part1): 1978 Determination of viscosity Part 1 Industrial viscosity (first revision)."
   },
   {
-    "standard_id": "IS 1208: 1978",
-    "title": "Determination of ductility (first revision).",
-    "category": "Other Building Materials",
-    "scope": "Determination of ductility (first revision).",
-    "keywords": [
-      "determination",
-      "ductility",
-      "first",
-      "revision"
-    ],
-    "full_text": "IS 1208: 1978 Determination of ductility (first revision)."
-  },
-  {
     "standard_id": "IS 1209: 1978",
     "title": "Determination of flash point and fire point (first revision).",
     "category": "Other Building Materials",
@@ -10418,34 +10071,6 @@
       "revision"
     ],
     "full_text": "IS 1209: 1978 Determination of flash point and fire point (first revision)."
-  },
-  {
-    "standard_id": "IS 1211: 1978",
-    "title": "Determination of water content (Dean and Stark method) (first revision).",
-    "category": "Other Building Materials",
-    "scope": "Determination of water content (Dean and Stark method) (first revision).",
-    "keywords": [
-      "determination",
-      "water",
-      "content",
-      "stark",
-      "method",
-      "first",
-      "revision"
-    ],
-    "full_text": "IS 1211: 1978 Determination of water content (Dean and Stark method) (first revision)."
-  },
-  {
-    "standard_id": "IS 1213: 1978",
-    "title": "Distillation test  (first revision).",
-    "category": "Other Building Materials",
-    "scope": "Distillation test (first revision).",
-    "keywords": [
-      "distillation",
-      "first",
-      "revision"
-    ],
-    "full_text": "IS 1213: 1978 Distillation test (first revision)."
   },
   {
     "standard_id": "IS 1203: 1978",
@@ -10505,24 +10130,6 @@
     "full_text": "IS 702: 1988 INDUSTRIAL BITUMEN (Second Revision) d) 115/15 e) 135/10 f) 155/6 Note— The two values given in the grade denotes approximately softnening point and penetration respectively 3. Requirements — See Table 1 TABLE 1 REQUIREMENTS OF INDUSTRIAL BITUMEN Sl. Characteristics Requirements for Grades No. 85/25 85/40 90/15 115/15 135/10 155/6 (1) (2) (3) (4) (5) (6) (7) (8) i) Specific gravity at 27°C 1.00 to 1.05 1.00 to 1.05 1.01 to 1.06 1.02 to 1.07 1.02 to 1.071.02 to 1.07 ii) Flash point, cleveland open cup, °C 225 225 225 225 225 225 iii) Softening point, °C 80 to 90 80 to 90 85 to 100 110 to 120 130 to 140 150 to 160 iv) Penetration at 25°C, 20 to 30 35 to 45 10 to 20 8 to 20 7 to 12 2 to 10 100g, 5 sec, 1/10mm v) a) Loss on heating, percent by mass, Max 0.30 0.30 0.30 0.30 0.30 0.30 b) Penetration of the residue at 25°C, 100g, 5s, percent of original Min 60 60 60 60 60 60 vi) Ductility at 27°C, cm, Min 3 3 2 2 1 0 vii) Matter soluble in trichloro-ethylene, percent by mass, Min 99 99 99 99 99 99 Note—For methods of tests, refer to"
   },
   {
-    "standard_id": "IS 1202: 1978",
-    "title": "methods of testing tar bituminous material: Determination of specific gravity",
-    "category": "Other Building Materials",
-    "scope": "Methods of testing tar and bituminous materials, determination of specific gravity (first revision).",
-    "keywords": [
-      "methods",
-      "testing",
-      "bituminous",
-      "materials",
-      "determination",
-      "specific",
-      "gravity",
-      "first",
-      "revision"
-    ],
-    "full_text": "IS 1202: 1978 Methods of testing tar and bituminous materials, determination of specific gravity (first revision)."
-  },
-  {
     "standard_id": "IS 1203: 1978",
     "title": "Determination of penetration (first revision)",
     "category": "Other Building Materials",
@@ -10574,22 +10181,6 @@
       "revision"
     ],
     "full_text": "IS 1212: 1978 Determination of loss on heating (first revision)"
-  },
-  {
-    "standard_id": "IS 1216: 1978",
-    "title": "Determination of solubility in carbon disulphide trichloroethylene (first revision)",
-    "category": "Other Building Materials",
-    "scope": "Determination of solubility in carbon disulphide trichloroethylene (first revision)",
-    "keywords": [
-      "determination",
-      "solubility",
-      "carbon",
-      "disulphide",
-      "trichloroethylene",
-      "first",
-      "revision"
-    ],
-    "full_text": "IS 1216: 1978 Determination of solubility in carbon disulphide trichloroethylene (first revision)"
   },
   {
     "standard_id": "IS 1448 (Part 69): 1969",
@@ -10772,33 +10363,6 @@
       "revision"
     ],
     "full_text": "IS 1202: 1978 Methods of testing tar and bituminous materials, Determination of specific gravity (first revision)."
-  },
-  {
-    "standard_id": "IS 1203: 1978",
-    "title": "Determination of penetration (first revision).",
-    "category": "Other Building Materials",
-    "scope": "Determination of penetration (first revision).",
-    "keywords": [
-      "determination",
-      "penetration",
-      "first",
-      "revision"
-    ],
-    "full_text": "IS 1203: 1978 Determination of penetration (first revision)."
-  },
-  {
-    "standard_id": "IS 1205: 1978",
-    "title": "Determination of softening point (first revision).",
-    "category": "Other Building Materials",
-    "scope": "Determination of softening point (first revision).",
-    "keywords": [
-      "determination",
-      "softening",
-      "point",
-      "first",
-      "revision"
-    ],
-    "full_text": "IS 1205: 1978 Determination of softening point (first revision)."
   },
   {
     "standard_id": "IS 1206 (Part 1): 1978",
@@ -12310,51 +11874,6 @@
     "full_text": "IS 5317: 2002 BITUMEN MASTIC FOR BRIDGE DECKING AND ROADS (Second Revision) 1. Scope — Requirements for bitumen mastic used as a surfacing material for bridge decks and roads. 2. Materials 2.1 Bitumen — See Table 1 TABLE 1 PHYSICAL PROPERTIES OF BITUMEN SL. No. Characteristic Requirements (1) (2) (3) i) Softening point (ring and ball method) 50 to 90oC ii) Penetration at 25oC in 1/100 cm 10 to 40 iii) Ductility at 27oC, Min in cm 3 iv) Loss on heating, percent, Max 1 v) Solubility in carbon disulphide,percent Min 99 2.2 Filler The filler shall be lime stone powder passing 75-micron IS Sieve and shall have a calcium carbonate content of not less than 80 percent by weight. 2.3 Aggregates 2.3.1 Fine Aggregate – Fine aggregate shall consist of naturally occuring sand or crushed lime stone or crushed hard-rock. The grading of the fine aggregates inclusive of the filler is given in Table 2 for guidance. TABLE 2 GRADING OF FINE AGGREGATES S.l No. Passing Retained on Percentage by IS Sieve IS Sieve mass Min Max (1) (2) (3) (4) (5) i) 75 - micron — 0 5 ii) 212 - micron 75 micron 10 20 iii) 600 - micron 212 micron 5 35 iv) 2.36 mm 600 micron 0 25 2.3.2 Coarse Aggregate — Coarse aggregate shall consist of hard durable crushed rock having aggregate impact value of not more than 20 and abrasion value not more than 40. 3. Hardness Number — The bitumen mastic whose composition is given at Table 3 before the addition of coarse aggregate, shall have hardness number of 60 to 80 at 25°C. 4. Composition — See Table 3 TABLE 3 COMPOSITION OF BITU- MEN MASTIC (WITHOUT COARSE AGGREGATE) Requirement Percentage by Weight of Mastic Without Coarse Aggregate Min Max (1) (2) (3) i) Bitumen 14 17 ii) Passing 75-micron IS Sieve 25 45 iii) Passing 212 micron IS Sieve 8 18 and retained on75-micron IS Sieve iv) Passing 600-micron IS Sieve 4 30 and retained on 212-micron IS Sieve v) Passing 2.36mm IS Sieve and 0 22 retained on 600-micron IS Sieve Note— For methods of tests for bitumen, refer to"
   },
   {
-    "standard_id": "IS 1203: 1978",
-    "title": "Determination of penetration.",
-    "category": "Other Building Materials",
-    "scope": "Determination of penetration.",
-    "keywords": [
-      "determination",
-      "penetration"
-    ],
-    "full_text": "IS 1203: 1978 Determination of penetration."
-  },
-  {
-    "standard_id": "IS 1205: 1978",
-    "title": "Determination of softening point.",
-    "category": "Other Building Materials",
-    "scope": "Determination of softening point.",
-    "keywords": [
-      "determination",
-      "softening",
-      "point"
-    ],
-    "full_text": "IS 1205: 1978 Determination of softening point."
-  },
-  {
-    "standard_id": "IS 1208: 1978",
-    "title": "Determination of ductility.",
-    "category": "Other Building Materials",
-    "scope": "Determination of ductility.",
-    "keywords": [
-      "determination",
-      "ductility"
-    ],
-    "full_text": "IS 1208: 1978 Determination of ductility."
-  },
-  {
-    "standard_id": "IS 1212: 1978",
-    "title": "Determination of loss on heating.",
-    "category": "Other Building Materials",
-    "scope": "Determination of loss on heating.",
-    "keywords": [
-      "determination",
-      "heating"
-    ],
-    "full_text": "IS 1212: 1978 Determination of loss on heating."
-  },
-  {
     "standard_id": "IS 1216: 1978",
     "title": "Determination of solubility in carbon disulphide trichloroethylene .",
     "category": "Other Building Materials",
@@ -12425,51 +11944,6 @@
       "electrical"
     ],
     "full_text": "IS 702: 1988 'Specification for industrial bitumen (second revision) are two typical examples of binder which will satisfy the requirements of this table. 3.2 Aggregates and Fillers–The aggregates and fillers used in preparing bitumen mastic should be of inert nature and should have the grading as given below– Sieve Designation Percentage by Mass Passing Retained on IS Sieve IS Sieve 75- micron — 45 to 55 (filler) 212- micron 75- micron 10 to 30 600- micron 212- micron 10 to 30 2.36- mm 600- micron 5 to 20 — 2.36 mm Nil 4. Composition 4.1 Bitumen mastic composition for electrical conducting and anti-static grade are made by incorporating bitumen in conjunction with other suitable materials like carbon black of the conductive grade like graphite. 4.1.1 The bitumen content shall be between 13 to 18 percent by mass of the total mastic. Note — For method of preparation of bitumen mastic,refer to clause 4.2 of the standard. 5. Properties 5.1 Hardness number of bitumen mastic as laid shall be 4 to 12 at 35oC unless otherwise agreed to mutually. 5.2 Resistance of product after being manufactured shall have electrical conductance between 5 x 104 ohms and 2 × 106 ohms. Note— for methods of tests for bitumen, refer to:"
-  },
-  {
-    "standard_id": "IS 1203: 1978",
-    "title": "Determination of penetration.",
-    "category": "Other Building Materials",
-    "scope": "Determination of penetration.",
-    "keywords": [
-      "determination",
-      "penetration"
-    ],
-    "full_text": "IS 1203: 1978 Determination of penetration."
-  },
-  {
-    "standard_id": "IS 1205: 1978",
-    "title": "Determination of softening point.",
-    "category": "Other Building Materials",
-    "scope": "Determination of softening point.",
-    "keywords": [
-      "determination",
-      "softening",
-      "point"
-    ],
-    "full_text": "IS 1205: 1978 Determination of softening point."
-  },
-  {
-    "standard_id": "IS 1208: 1978",
-    "title": "Determination of ductility.",
-    "category": "Other Building Materials",
-    "scope": "Determination of ductility.",
-    "keywords": [
-      "determination",
-      "ductility"
-    ],
-    "full_text": "IS 1208: 1978 Determination of ductility."
-  },
-  {
-    "standard_id": "IS 1212: 1978",
-    "title": "Determination of loss on heating.",
-    "category": "Other Building Materials",
-    "scope": "Determination of loss on heating.",
-    "keywords": [
-      "determination",
-      "heating"
-    ],
-    "full_text": "IS 1212: 1978 Determination of loss on heating."
   },
   {
     "standard_id": "IS 1216: 1978",
@@ -12544,40 +12018,6 @@
       "shall"
     ],
     "full_text": "IS 9510: 1980 BITUMEN MASTIC, ACID – RESISTING GRADE TABLE 2 GRADING OF FINE AGGREGATES Sl. No. Grading Percent by Mass (1) (2) (3) i) Passing 75-micron IS Sieve 45 to 55 (filler) ii) Passing 212-micron IS Sieve 10 to 30 and retained on 75-micron IS Sieve iii) Passing 600-micron IS Sieve 10 to 30 and retained on 212-micron IS Sieve iv) Passing 2.36 mm IS Sieve and retained on 600 micron IS Sieve 5 to 20 v) Retained on 2.36 mm IS Sieve Nil TABLE 3 SIZE OF COARSE AGGREGATES FOR USE IN BITUMEN MASTIC Thickness of Size of Aggregates Percentage Each Layer of by mass the mastic (1) (2) (3) 10mm No coarse aggregates may — be incorporated 15mm Passing 4.75mm IS Sieve. 100 Retained on 600 micron IS Sieve 85Min 20mm Passing 4.75mm 100 IS Sieve Retained on 600-micron IS Sieve 95Min 25mm Passing 10mm 100 IS Sieve retained on 2.36mm IS Sieve 95Min 3. Composition — See Tables 4 and 5 TABLE 4 PERCENTAGE OF COARSE AGGREGATES Sl Thickness of Each Percentage of No. Layer of the Mastic Coarse Aggregates byMass of Total Mastic (1) (2) (3) i) 15 mm 15 to 30 ii) 20 to 25 mm 20 to 35 iii) 25 to 30 mm 30 to 45 8.35 SP 21 : 2005 TABLE 5 COMPOSITION OF BITU- MEN MASTIC Sl Requirement Percentage by No. Mass of Bitumen Mastic Excluding the Coarse Aggre gate (1) (2) (3) i) Soluble bitumen 13 to 18 ii) Grading of aggregate Passing 75-micron IS Sieve 45 to 55 Passing 212 micron IS Sieve 8 to 32 and retained on 75-micron IS Sieve Passing 600-micron IS Sieve 8 to 30 and retained on 212 micron IS Sieve 4. Properties 4.1 Hardness Number– Unless otherwise agreed between the purchaser and the user, the hardness number of bitumen mastic as laid shall be 4 to 12 at 35oC 4.2 Acid-Resistance– The test specimens shall be subjected to acid-resistance test. The test specimen shall be observed for change of mass, surface cracks, loss of gloss, etching, pitting, and softening. The concentration of acid solutions to which the specimens to be are tested shall be as specified by the user. 4.2.1 The immersion medium shall be observed for discolouration and the formation of sediments. Note 1— For guidance on performance and recommendation for use of bitumen mastic, refer to Table 6 of the standard. Note 2— For methods of tests for bitumen, refer to:"
-  },
-  {
-    "standard_id": "IS 1203: 1978",
-    "title": "Determination of penetration.",
-    "category": "Other Building Materials",
-    "scope": "Determination of penetration.",
-    "keywords": [
-      "determination",
-      "penetration"
-    ],
-    "full_text": "IS 1203: 1978 Determination of penetration."
-  },
-  {
-    "standard_id": "IS 1205: 1978",
-    "title": "Determination of softening point.",
-    "category": "Other Building Materials",
-    "scope": "Determination of softening point.",
-    "keywords": [
-      "determination",
-      "softening",
-      "point"
-    ],
-    "full_text": "IS 1205: 1978 Determination of softening point."
-  },
-  {
-    "standard_id": "IS 1212: 1978",
-    "title": "Determination of loss on heating.",
-    "category": "Other Building Materials",
-    "scope": "Determination of loss on heating.",
-    "keywords": [
-      "determination",
-      "heating"
-    ],
-    "full_text": "IS 1212: 1978 Determination of loss on heating."
   },
   {
     "standard_id": "IS 1216: 1978",
@@ -12671,51 +12111,6 @@
       "sieve"
     ],
     "full_text": "IS 12583: 1988 Specification for corrugated bitumen roofing sheets. 6. Finish—The sheets shall have true shape, good appearance and shall be free from visible defects. The corrugations shall be true and regular. The edges of the sheets shall be straight and clean. External surface of the sheets shall be painted with almunium paint. 7. Packing—The sheets shall be packed in accordance with the usual trade practice to avoid damage, discoloration, deformation etc. 8.38 SP 21 : 2005 1. Scope 1.1 Requirements of bitumen mastic flooring for industries handling LPG and other light hydrocarbon products. 1.2 This standard is also applicable for explosive and crackers manufacturing factories, ordinance factories, ammonia depots, etc. 1.3 This standard is not applicable for less volatile materials such as kerosene, diesel and lubricating oil. 2. Materials 2.1 Bitumen — Properties of bitumen shall be as specified in Table 1. TABLE 1 PHYSICAL PROPERTIES OF BITUMEN Sl Characteristic Requirement (1) (2) (3) i) Softening point (ring 65 to 100oC and ball method) ii) Penetration at 27oC in 10 to 40 1/100 cm iii) Loss on heating, % Max 0.3 iv) Solubility in CS2, % Min 99 v) Ductility at 27oC, Min 2 2.2 Aggregates and fillers — Aggregates and fillers used in preparing bitumen mastic should be lime stone and other carbon black/graphite materials. The lime stone should have calcium carbonate content of maximum 75%. The combined grading of aggregates shall be as specified in Table 2. TABLE 2 GRADING OF AGGRE- GATES AND FILLERS Sieve Designation Percentage by Mass Passing IS Sieve Retained on IS Sieve 90 microns — 45 to 55 212 microns 90 microns 10 to 30 600 microns 212 microns 10 to 30 2.36 mm 600 microns 5 to 20 — 2.36 Nil 3. Composition— Bitumen mastic composition is made by adding suitable materials like carbon black/graphite of conducting type. The bitumen content shall be between 13 and 18 percent by mass of the total mastics. Carbon black/graphite content shall be finer than 90 micron IS Sieve with carbon content more than 60 percent by mass. 4. Properties— The hardness number of bitumen mastic shall be 4 to 12 at 35oC. The resistance of products after being manufactured shall have electrical resistance between 5×10 4 ohms and 2×106 ohms Note— For methods of tests for bitumen, refer to"
-  },
-  {
-    "standard_id": "IS 1203: 1978",
-    "title": "Determination of penetration.",
-    "category": "Other Building Materials",
-    "scope": "Determination of penetration.",
-    "keywords": [
-      "determination",
-      "penetration"
-    ],
-    "full_text": "IS 1203: 1978 Determination of penetration."
-  },
-  {
-    "standard_id": "IS 1205: 1978",
-    "title": "Determination of softening point.",
-    "category": "Other Building Materials",
-    "scope": "Determination of softening point.",
-    "keywords": [
-      "determination",
-      "softening",
-      "point"
-    ],
-    "full_text": "IS 1205: 1978 Determination of softening point."
-  },
-  {
-    "standard_id": "IS 1208: 1978",
-    "title": "Determination of ductility.",
-    "category": "Other Building Materials",
-    "scope": "Determination of ductility.",
-    "keywords": [
-      "determination",
-      "ductility"
-    ],
-    "full_text": "IS 1208: 1978 Determination of ductility."
-  },
-  {
-    "standard_id": "IS 1212: 1978",
-    "title": "Determination of loss on heating.",
-    "category": "Other Building Materials",
-    "scope": "Determination of loss on heating.",
-    "keywords": [
-      "determination",
-      "heating"
-    ],
-    "full_text": "IS 1212: 1978 Determination of loss on heating."
   },
   {
     "standard_id": "IS 1216: 1978",
@@ -13147,7 +12542,14 @@
     "title": "Corrugated and semi corrugated asbestos cement sheets.",
     "category": "Other Building Materials",
     "scope": "** and",
-    "keywords": [],
+    "keywords": [
+      "cement",
+      "sheets",
+      "asbestos",
+      "and",
+      "corrugated",
+      "semi"
+    ],
     "full_text": "IS 459: 1992 ** and"
   },
   {
@@ -13606,20 +13008,6 @@
     "full_text": "IS 1322: 1993 Specification for bitumen felts for water- proofing and damp-proofing (fourth revision). 9.6 SP 21 : 2005 Note— For test procedures, refer to Annex A to C of the standard and"
   },
   {
-    "standard_id": "IS 1209: 1978",
-    "title": "Determination of flash point and fire point (first revision).",
-    "category": "Other Building Materials",
-    "scope": "Determination of flash point and fire point (first revision).",
-    "keywords": [
-      "point",
-      "determination",
-      "flash",
-      "first",
-      "revision"
-    ],
-    "full_text": "IS 1209: 1978 Determination of flash point and fire point (first revision)."
-  },
-  {
     "standard_id": "IS 1211: 1978",
     "title": "Determination of water content (Dean and Stark method) (first reivsion).",
     "category": "Other Building Materials",
@@ -13710,20 +13098,6 @@
     "full_text": "IS 2645: 2003 INTEGRAL CEMENT WATER-PROOFING COMPOUNDS (Second Revision) 1. Scope — Requirements for integral cement water- proofing compounds, which shall be assessed by: a) Permeability to water, and b) Physical tests of setting time and compressive strengths of cement mixed with the water-proofing compounds. Note — Proportions as recommended by manufacturers, but not exceeding 3 percent by weight of cement. 2. Requirements 2.1 Permeability to water of specimens prepared with the recommended proportion of the compound shall be less than half the permeability of similar specimens prepared without the addition of the compound. 2.2 Setting time of cement mixed with water-proofing– Initial – not less than 30 minutes; final – not more than 600 minutes. 2.3 Compressive Strengths – of mortar cubes using the recommended proportion of waterproofing compound shall be as follows : At 3 days — Not less than the minimum specified 3 days compressive strength of the grade of ordinary Portland cement used nor less than 90 percent of the 3 days compressive strength of mortar cubes made with the same cement and sand only. At 7 days — Not less than the minimum specified 7 days compressive strength of the grade of ordinary Portland cement used nor less than 90 percent of the 7 days compressive strength of mortar cubes made with the same cement and sand only. 2.4 The chloride content and sulphate content in the product shall be declared by the manufacturer. Note— For methods of tests, refer to Appendix B of the standard,"
   },
   {
-    "standard_id": "IS 4031",
-    "title": "Methods of physical tests for hydraulic cement",
-    "category": "Cement",
-    "scope": "Methods of physical tests for hydraulic cement",
-    "keywords": [
-      "methods",
-      "physical",
-      "tests",
-      "hydraulic",
-      "cement"
-    ],
-    "full_text": "IS 4031 Methods of physical tests for hydraulic cement"
-  },
-  {
     "standard_id": "IS 6925",
     "title": "Methods of test for determination of water soluble chlorides in concrete and admixtures.",
     "category": "Concrete",
@@ -13784,7 +13158,17 @@
     "title": "Determination of  solubility in carbon disulphide trichloroethylene  (first revision).",
     "category": "Other Building Materials",
     "scope": "*,",
-    "keywords": [],
+    "keywords": [
+      "in",
+      "first",
+      "revision",
+      "determination",
+      "disulphide",
+      "solubility",
+      "of",
+      "carbon",
+      "trichloroethylene"
+    ],
     "full_text": "IS 1203: 1978 *,"
   },
   {
@@ -13792,7 +13176,14 @@
     "title": "Determination of softening point (first revision).",
     "category": "Other Building Materials",
     "scope": "**,",
-    "keywords": [],
+    "keywords": [
+      "softening",
+      "point",
+      "first",
+      "revision",
+      "determination",
+      "of"
+    ],
     "full_text": "IS 1205: 1978 **,"
   },
   {
@@ -13800,7 +13191,13 @@
     "title": "Determination of ductility (first revision).",
     "category": "Other Building Materials",
     "scope": "#,",
-    "keywords": [],
+    "keywords": [
+      "first",
+      "ductility",
+      "revision",
+      "determination",
+      "of"
+    ],
     "full_text": "IS 1208: 1978 #,"
   },
   {
@@ -13808,7 +13205,15 @@
     "title": "Determination of loss on heating (first revision).",
     "category": "Other Building Materials",
     "scope": "^,",
-    "keywords": [],
+    "keywords": [
+      "first",
+      "revision",
+      "determination",
+      "loss",
+      "on",
+      "of",
+      "heating"
+    ],
     "full_text": "IS 1212: 1978 ^,"
   },
   {
@@ -13890,17 +13295,6 @@
       "industrial"
     ],
     "full_text": "IS 1206 (Part 1): 1978 Determination of viscosity: Part 1 Industrial viscosity."
-  },
-  {
-    "standard_id": "IS 1208: 1978",
-    "title": "Determination of ductility.",
-    "category": "Other Building Materials",
-    "scope": "Determination of ductility.",
-    "keywords": [
-      "determination",
-      "ductility"
-    ],
-    "full_text": "IS 1208: 1978 Determination of ductility."
   },
   {
     "standard_id": "IS 1209: 1978",
@@ -13992,19 +13386,18 @@
     "full_text": "IS 5871: 1987 BITUMEN MASTIC FOR TANKING AND DAMP–PROOFING (First Revision) 1. Scope — Requirements for bitumen mastic used as covering material for damp-proofing of underground tanks, basements of building, water reservoirs, swimming pools, irrigation canals, etc. 2. General Characteristics — It shall consist of a mixture of bitumen, aggregates and mineral filler in suitable proportions so as to give it a semi fluid consistency when heated to about 180oC. The mastic at this temperature shall be easily compressible by trowels into a compact and uniform layer. 3. Materials 3.1 Bitumen – Physical Properties i) Softening point (ring and ball method) 50 to 90oC ii) Penetration at 25oC in 1/100cm 20 to 40 iii) Ductility at 27oC (Min) in cm 3 iv) Loss on heating, percent Max 1 v) Solubility in CS2, percent Min 99 or Carbon tetrachloride or trichloroethylene Note— For methods of tests, refer to"
   },
   {
-    "standard_id": "IS 1203: 1978",
-    "title": "Determination of  solubility in carbon disulphide trichloroethylene  (first revision).",
-    "category": "Other Building Materials",
-    "scope": "*,",
-    "keywords": [],
-    "full_text": "IS 1203: 1978 *,"
-  },
-  {
     "standard_id": "IS 1205: 1978",
     "title": "Determination of softening point (first revision).",
     "category": "Other Building Materials",
     "scope": "+,",
-    "keywords": [],
+    "keywords": [
+      "softening",
+      "point",
+      "first",
+      "revision",
+      "determination",
+      "of"
+    ],
     "full_text": "IS 1205: 1978 +,"
   },
   {
@@ -14012,7 +13405,13 @@
     "title": "Determination of ductility (first revision).",
     "category": "Other Building Materials",
     "scope": "‡ ,",
-    "keywords": [],
+    "keywords": [
+      "first",
+      "ductility",
+      "revision",
+      "determination",
+      "of"
+    ],
     "full_text": "IS 1208: 1978 ‡ ,"
   },
   {
@@ -14020,7 +13419,15 @@
     "title": "Determination of loss on heating (first revision).",
     "category": "Other Building Materials",
     "scope": "§,",
-    "keywords": [],
+    "keywords": [
+      "first",
+      "revision",
+      "determination",
+      "loss",
+      "on",
+      "of",
+      "heating"
+    ],
     "full_text": "IS 1212: 1978 §,"
   },
   {
@@ -19727,18 +19134,6 @@
     "full_text": "IS 10124 (Part 9): 1988 Specification for fabricated PVC fittings for potable water supplies: Part 9 Specific requirements for 60 o bends. (first revision). r o 360 90 10.110 SP 21 : 2005 1. Scope – Requirements of manufacture, dimensions and marking for fabricated PVC 45 o bends for potable water supplies. 2. Requirements — The general requirements for materials, sizes, methods of test, sampling and critieria for conformity shall conform to"
   },
   {
-    "standard_id": "IS 10124 (Part 1): 1988",
-    "title": ".",
-    "category": "Other Building Materials",
-    "scope": ". 3. Dimensions — See Table 1.",
-    "keywords": [
-      "dimensions",
-      "table",
-      "summary"
-    ],
-    "full_text": "IS 10124 (Part 1): 1988 . 3. Dimensions — See Table 1."
-  },
-  {
     "standard_id": "IS 10124",
     "title": "(PART 10) : 1988 FABRICATED PVC FITTING",
     "category": "Pipes",
@@ -19827,18 +19222,6 @@
     "full_text": "IS 10124 (Part 11): 1988 Specification for fabricated PVC fittings for potable water supplies Part 11 Specific requirements for 30 o bends. (first revision). FIG. 1 30O BEND r o 360 90 10.112 SP 21 : 2005 1. Scope — Requirements of manufacture, dimensions and marking for fabricated PVC 22½ o bends for potable water supplies. 2. Requirements — The general requirements for materials, sizes, methods of test, sampling and critieria for conformity shall conform to"
   },
   {
-    "standard_id": "IS 10124 (Part 1): 1988",
-    "title": ".",
-    "category": "Other Building Materials",
-    "scope": ". 3. Dimensions—See Table 1.",
-    "keywords": [
-      "dimensions",
-      "table",
-      "summary"
-    ],
-    "full_text": "IS 10124 (Part 1): 1988 . 3. Dimensions—See Table 1."
-  },
-  {
     "standard_id": "IS 10124",
     "title": "(PART 12) : 1988 FABRICATED PVC FITTING",
     "category": "Pipes",
@@ -19875,18 +19258,6 @@
       "first"
     ],
     "full_text": "IS 10124 (Part 12): 1988 Specification for fabricated PVC fittings for potable water supplies Part 12 Specific requirements for 22½ o bends. (first revision). FIG. 1 220–30’ BEND o o 360 2 1 22 10.113 SP 21 : 2005 1. Scope — Requirements of manufacture, dimensions and marking for fabricated PVC 11¼ o bends for potable water supplies. 2. Requirements — The general requirements for materials, sizes, methods of test, sampling and critieria for conformity shall conform to"
-  },
-  {
-    "standard_id": "IS 10124 (Part 1): 1988",
-    "title": ".",
-    "category": "Other Building Materials",
-    "scope": ". 3. Dimensions—See Table 1.",
-    "keywords": [
-      "dimensions",
-      "table",
-      "summary"
-    ],
-    "full_text": "IS 10124 (Part 1): 1988 . 3. Dimensions—See Table 1."
   },
   {
     "standard_id": "IS 10124",
@@ -19958,7 +19329,9 @@
     "title": "* or",
     "category": "Other Building Materials",
     "scope": "* or",
-    "keywords": [],
+    "keywords": [
+      "or"
+    ],
     "full_text": "IS 11320: 1985 * or"
   },
   {
@@ -20231,24 +19604,6 @@
     "full_text": "IS 8543 (Part 4/sec 1) 1984 Methods of testing plastics, Part 4 Short term mechanical properties, Section 1 Determination of tensile properties and relevant parts of"
   },
   {
-    "standard_id": "IS 12235: 1986",
-    "title": "Methods of test for unplasticized PVC pipes for potable water supplies.",
-    "category": "Pipes",
-    "scope": "Methods of test for unplasticized PVC pipes for potable water supplies. For detailed information, refer to",
-    "keywords": [
-      "methods",
-      "unplasticized",
-      "pipes",
-      "potable",
-      "water",
-      "supplies",
-      "detailed",
-      "information",
-      "refer"
-    ],
-    "full_text": "IS 12235: 1986 Methods of test for unplasticized PVC pipes for potable water supplies. For detailed information, refer to"
-  },
-  {
     "standard_id": "IS 13592: 1992",
     "title": "Specification for unplasticized polyvinyl",
     "category": "Pipes",
@@ -20366,19 +19721,13 @@
     "full_text": "IS 6746: 1994 * shall be used. 4.2 Glass Fibre Reinforcement —Glass fibre reinforcement shall be of commercial grade E type and shall conform to"
   },
   {
-    "standard_id": "IS 11273: 1992",
-    "title": "+,",
-    "category": "Other Building Materials",
-    "scope": "+,",
-    "keywords": [],
-    "full_text": "IS 11273: 1992 +,"
-  },
-  {
     "standard_id": "IS 11320: 1997",
     "title": "‡ or",
     "category": "Other Building Materials",
     "scope": "‡ or",
-    "keywords": [],
+    "keywords": [
+      "or"
+    ],
     "full_text": "IS 11320: 1997 ‡ or"
   },
   {
@@ -21912,7 +21261,9 @@
     "title": "* and",
     "category": "Other Building Materials",
     "scope": "* and",
-    "keywords": [],
+    "keywords": [
+      "and"
+    ],
     "full_text": "IS 11320: 1997 * and"
   },
   {
@@ -22277,7 +21628,9 @@
     "title": "1985*,",
     "category": "Other Building Materials",
     "scope": "1985*,",
-    "keywords": [],
+    "keywords": [
+      "1985"
+    ],
     "full_text": "IS 771 (Part 2) 1985*,"
   },
   {
@@ -22285,7 +21638,13 @@
     "title": "Specification for vitreous  sanitary  appliances",
     "category": "Other Building Materials",
     "scope": "+ *",
-    "keywords": [],
+    "keywords": [
+      "for",
+      "vitreous",
+      "sanitary",
+      "specification",
+      "appliances"
+    ],
     "full_text": "IS 2556 (Part 4): 1994 + *"
   },
   {
@@ -23576,7 +22935,10 @@
     "title": "Hold fast",
     "category": "Other Building Materials",
     "scope": "Hold fast 11.36",
-    "keywords": [],
+    "keywords": [
+      "hold",
+      "fast"
+    ],
     "full_text": "IS 7196: 1974 Hold fast 11.36"
   },
   {
@@ -26526,7 +25888,15 @@
     "title": "Specification for plywood for general purposes (third revision)",
     "category": "Other Building Materials",
     "scope": "and",
-    "keywords": [],
+    "keywords": [
+      "for",
+      "general",
+      "revision",
+      "purposes",
+      "third",
+      "plywood",
+      "specification"
+    ],
     "full_text": "IS 303: 1989 and"
   },
   {
@@ -27918,7 +27288,9 @@
     "title": "+ and",
     "category": "Other Building Materials",
     "scope": "+ and",
-    "keywords": [],
+    "keywords": [
+      "and"
+    ],
     "full_text": "IS 524: 1983 + and"
   },
   {
@@ -28056,14 +27428,6 @@
     "full_text": "IS 848: 1974 .* 3.3. Varnishes — Shall conform to"
   },
   {
-    "standard_id": "IS 524: 1983",
-    "title": "+ and",
-    "category": "Other Building Materials",
-    "scope": "+ and",
-    "keywords": [],
-    "full_text": "IS 524: 1983 + and"
-  },
-  {
     "standard_id": "IS 525: 1968",
     "title": "‡ .",
     "category": "Other Building Materials",
@@ -28148,22 +27512,6 @@
       "revision"
     ],
     "full_text": "IS 1734 (Part 9) Methods of testing of plywood, Part 9 Determination of tensile strength. (sssecond revision) iv)"
-  },
-  {
-    "standard_id": "IS 1998: 1962",
-    "title": "Method of test for  thermosetting synthetic resin bonded laminated sheets.",
-    "category": "Other Building Materials",
-    "scope": "Method of test for thermosetting synthetic resin bonded laminated sheets. v)",
-    "keywords": [
-      "method",
-      "thermosetting",
-      "synthetic",
-      "resin",
-      "bonded",
-      "laminated",
-      "sheets"
-    ],
-    "full_text": "IS 1998: 1962 Method of test for thermosetting synthetic resin bonded laminated sheets. v)"
   },
   {
     "standard_id": "IS 3513 (Part 4)",
@@ -28875,7 +28223,9 @@
     "title": "* and",
     "category": "Other Building Materials",
     "scope": "* and",
-    "keywords": [],
+    "keywords": [
+      "and"
+    ],
     "full_text": "IS 2338 (Part 1) * and"
   },
   {
@@ -30670,24 +30020,6 @@
     "full_text": "IS 1786: 1985 Specification for high strength deformed steel bars and wires for concrete reinforcement (third revision). 14.12 SP 21 : 2005 1. Scope – Requirements for high tensile steel bars used in prestressed concrete. 2. Chemical Composition – The ladle analysis of steel shall show that steel contains no more than 0.050 percent of sulphur and not more than 0.050 percent of phosphorus. 3. Nominal Sizes —10, 12, 16, 20, 22, 25, 28 and 32 mm. 4. Tolerances a) Nominal Size : ±0.5 mm for bars upto 25mm ±0.6 mm for bars above 25mm b) Mass : ±5 percent for bars upto 16mm ±3 percent for bars above 16 mm 5. Physical Requirements Characteristic Requirement Tensile strength, Min 980 N/mm2 Proof stress Notlessthan 80 percent of minimum specified tensile strength Elongation at rupture 10 percent on a gauge length 5.65 A , Min (Where A is the area of cross-section) The relaxation of stress in the bar, shall not exceed 49 N/mm2 at the end of 1000. Note—For test proceedures, refer to 7 of the standard and"
   },
   {
-    "standard_id": "IS 1608: 1995",
-    "title": "Mechanical testing of  metals – Tensile testing",
-    "category": "Other Building Materials",
-    "scope": "Mechanical testing of metals – Tensile testing (second revision). For detailed information, refer to",
-    "keywords": [
-      "testing",
-      "mechanical",
-      "metals",
-      "tensile",
-      "second",
-      "revision",
-      "detailed",
-      "information",
-      "refer"
-    ],
-    "full_text": "IS 1608: 1995 Mechanical testing of metals – Tensile testing (second revision). For detailed information, refer to"
-  },
-  {
     "standard_id": "IS 2090: 1983",
     "title": "Specification for high tensile steel bars usd in prestressed",
     "category": "Steel",
@@ -31671,7 +31003,9 @@
     "title": "+ or",
     "category": "Other Building Materials",
     "scope": "+ or",
-    "keywords": [],
+    "keywords": [
+      "or"
+    ],
     "full_text": "IS 1079 + or"
   },
   {
@@ -31832,18 +31166,6 @@
       "revision"
     ],
     "full_text": "IS 1586: 2000 Method of Rockwell Hardness test for metallic materials (A-B-C-D-E-G-H-K 15 N, 30 N, 45N. 15 T, 30 T, 45 T) (third revision)."
-  },
-  {
-    "standard_id": "IS 1599: 1985",
-    "title": "Method of bend test (second revision),",
-    "category": "Other Building Materials",
-    "scope": "Method of bend test (second revision),",
-    "keywords": [
-      "method",
-      "second",
-      "revision"
-    ],
-    "full_text": "IS 1599: 1985 Method of bend test (second revision),"
   },
   {
     "standard_id": "IS 1608: 1995",
@@ -32025,7 +31347,9 @@
     "title": "+ or",
     "category": "Other Building Materials",
     "scope": "+ or",
-    "keywords": [],
+    "keywords": [
+      "or"
+    ],
     "full_text": "IS 2062: 1992 + or"
   },
   {
@@ -32046,14 +31370,6 @@
       "finished"
     ],
     "full_text": "IS 1977: 1996 ++. 3. Freedom From Defects – Plates shall be cleanly rolled to the dimensions specified. Finished material shall be free from harmful surface defects, such as cracks, surface flaws, imperfect edges, etc. 4. Patterns – See Fig.1 of the standard. 5. Tensile Test – Properties shall conform to Grade A of"
-  },
-  {
-    "standard_id": "IS 2062: 1992",
-    "title": "+ or",
-    "category": "Other Building Materials",
-    "scope": "+ or",
-    "keywords": [],
-    "full_text": "IS 2062: 1992 + or"
   },
   {
     "standard_id": "IS 1977: 1996",
@@ -32192,7 +31508,18 @@
     "title": "Method of  Rockwell herdness test for metallic materials (second revision).",
     "category": "Other Building Materials",
     "scope": "* or",
-    "keywords": [],
+    "keywords": [
+      "for",
+      "method",
+      "test",
+      "herdness",
+      "rockwell",
+      "revision",
+      "metallic",
+      "of",
+      "materials",
+      "second"
+    ],
     "full_text": "IS 1586: 1988 * or"
   },
   {
@@ -32424,18 +31751,6 @@
       "fracture"
     ],
     "full_text": "IS 1148: 1982 *. 6. Tests 6.1 Tensile Test Characteristic Requirement Tensile strength, min MPa 460 Min Yield stress, min, MPa a) 6mm upto and 310 including 12 mm b) Over 12 mm upto 300 and including 20 mm c) Over 20 mm upto 280 and including 40 mm Elongation percent, Min guage length 5.65 So Min 22 6.1.1 No tensile test shall be carried out on bars below 6 mm. 6.2 Bend Test – In the case of bars over 25 mm in diameter the test piece when cold shall withstand, without fracture, being doubled over, either by pressure or by slow and steady blows from a hammer , till the internal diameter is not greater than three times the diameter of the test piece, and sides are parallel. For bars 25 mm in diameter and under, the internal diameter of the bend shall be not greater than twice the diameter of the bar. 6.3 Shear Test – The ultimate shear strength of the bars as rolled shall be not less than 370 MPa. 6.4 Hot Compression Test – A test piece having a length equal to twice its diameter, shall be cut from a bar and shall, without cracking or showing signs of fracture withstand being heated to a forging temperature and hammered or compressed on the end till its length has been reduced to its orginal diameter. * Hot rolled river bars (upto 40 mm dia) for structural purposes (third revision). Note – For test proceedures, refer to"
-  },
-  {
-    "standard_id": "IS 1599: 1985",
-    "title": "Method of bend test (second revision),",
-    "category": "Other Building Materials",
-    "scope": "Method of bend test (second revision),",
-    "keywords": [
-      "method",
-      "second",
-      "revision"
-    ],
-    "full_text": "IS 1599: 1985 Method of bend test (second revision),"
   },
   {
     "standard_id": "IS 1608: 1995",
@@ -32999,7 +32314,16 @@
     "title": "Dimensions for  wrought aluminium and aluminium alloys, sheet and strip",
     "category": "Other Building Materials",
     "scope": "* and",
-    "keywords": [],
+    "keywords": [
+      "for",
+      "alloys",
+      "sheet",
+      "aluminium",
+      "dimensions",
+      "strip",
+      "and",
+      "wrought"
+    ],
     "full_text": "IS 2676: 1981 * and"
   },
   {
@@ -33311,7 +32635,9 @@
     "title": "* and",
     "category": "Other Building Materials",
     "scope": "* and",
-    "keywords": [],
+    "keywords": [
+      "and"
+    ],
     "full_text": "IS 2673: 2002 * and"
   },
   {
@@ -34433,7 +33759,9 @@
     "title": "or",
     "category": "Other Building Materials",
     "scope": "or",
-    "keywords": [],
+    "keywords": [
+      "or"
+    ],
     "full_text": "IS 3039: 1988 or"
   },
   {
@@ -34498,7 +33826,9 @@
     "title": "* or",
     "category": "Other Building Materials",
     "scope": "* or",
-    "keywords": [],
+    "keywords": [
+      "or"
+    ],
     "full_text": "IS 2062: 1992 * or"
   },
   {
@@ -37625,7 +36955,9 @@
     "title": "+ and",
     "category": "Other Building Materials",
     "scope": "+ and",
-    "keywords": [],
+    "keywords": [
+      "and"
+    ],
     "full_text": "IS 2633: 1986 + and"
   },
   {
@@ -38690,7 +38022,9 @@
     "title": "and",
     "category": "Other Building Materials",
     "scope": "and",
-    "keywords": [],
+    "keywords": [
+      "and"
+    ],
     "full_text": "IS 1367 (Part1) and"
   },
   {
@@ -39110,22 +38444,6 @@
       "refer"
     ],
     "full_text": "IS 6760 Steel’. Note – In regard to the requirements not covered in the standard, Refer to"
-  },
-  {
-    "standard_id": "IS 451: 1999",
-    "title": "Technical supply conditions for",
-    "category": "Timber",
-    "scope": "Technical supply conditions for wood screws (third revision).",
-    "keywords": [
-      "technical",
-      "supply",
-      "conditions",
-      "screws",
-      "third",
-      "revision",
-      "summary"
-    ],
-    "full_text": "IS 451: 1999 Technical supply conditions for wood screws (third revision)."
   },
   {
     "standard_id": "IS 6760: 1972",
@@ -41801,22 +41119,6 @@
     "full_text": "IS 11128: 1984 SPRAY – APPLIED HYDRATED CALCIUM SILICATE THERMAL INSULATION 1. Scope – Requirements and methods of sampling and test for spray-applied, hydrated calcium silicate thermal insulation. 2. Requirements 2.1 Sprayable hydrated calcium silicate insulation shall be composed predominantly of calcium silicate mineral or refractory fibres and a suitable proportion of inorganic, heat-resistant binder. The binder and the fibres shall be uniformly blended and shall not separate during normal handling and spraying operations. The fibre content shall be less than 15 percent. 2.2 Density — The applied and dried density of the material shall be in the range of 160-350 kg/m3 and shall not vary by more than ±10 percent from the value declared by the manufacturer. 2.3 Compressive Strength — Shall be as given below: Deformation, Compressive Strength, Percent kPa (kN/m2), Min 5 285 10 500 2.4 Thermal Conductivity – Shall not exceed the values given below: Mean Temp- Thermal Conductivity erature ºC W/m.K 100 0.069 200 0.081 300 0.097 400 0.117 500 0.144 2.5 Adhesion – Adhesion of dried thermal insulation to steel shall be 3.65 kN/m2. 2.6 Heat Resistance – Shall not suffer visible deterioration when tested to the maximum recommended temperature of use. At increasing temperatures, the material shall be deemed suitable for use conditions of soaking heat for 24 hours up to the specified temperature at which the following requirements are met : a) Linear shrinkage – 2 percent, Max b) Loss in mass – 15 percent, Max c) Compressive strength – 10 percent, Max reduction in thickness under a load of 345 kN/m2 2.7 Incombustibility – Shall be found to be incombustible. 2.8 Moisture Content – Shall not exceed 7.5 percent. 2.9 Optical Requirement 2.9.1 Fire Protection – When the material is to be used for fire protection, it shall satisty the time- temperature curve as agreed to between the purchaser and the supplier. Note – For method of tests, refer to"
   },
   {
-    "standard_id": "IS 3144: 1992",
-    "title": "Mineral wool thermal insulation materials – Methods of test (second",
-    "category": "Other Building Materials",
-    "scope": "Mineral wool thermal insulation materials – Methods of test (second revision),",
-    "keywords": [
-      "mineral",
-      "thermal",
-      "insulation",
-      "materials",
-      "methods",
-      "second",
-      "revision"
-    ],
-    "full_text": "IS 3144: 1992 Mineral wool thermal insulation materials – Methods of test (second revision),"
-  },
-  {
     "standard_id": "IS 3346: 1980",
     "title": "Method of  determination of  thermal conductivity of thermal insulation",
     "category": "Other Building Materials",
@@ -41834,39 +41136,6 @@
       "revision"
     ],
     "full_text": "IS 3346: 1980 method of determination of thermal conductivity of thermal insulating materials (two slab guarded hot plate method) (first revision),"
-  },
-  {
-    "standard_id": "IS 5688: 1982",
-    "title": "Methods of test for preformed block-type and pipe covering type thermal",
-    "category": "Bricks",
-    "scope": "Methods of test for preformed block-type and pipe covering type thermal insulation (first revision), and",
-    "keywords": [
-      "methods",
-      "preformed",
-      "block",
-      "covering",
-      "thermal",
-      "insulation",
-      "first",
-      "revision"
-    ],
-    "full_text": "IS 5688: 1982 Methods of test for preformed block-type and pipe covering type thermal insulation (first revision), and"
-  },
-  {
-    "standard_id": "IS 5724: 1970",
-    "title": "Method of test for thermal insulating cements.",
-    "category": "Cement",
-    "scope": "Method of test for thermal insulating cements. For detailed information, refer to",
-    "keywords": [
-      "method",
-      "thermal",
-      "insulating",
-      "cements",
-      "detailed",
-      "information",
-      "refer"
-    ],
-    "full_text": "IS 5724: 1970 Method of test for thermal insulating cements. For detailed information, refer to"
   },
   {
     "standard_id": "IS 11128: 1984",
@@ -41993,42 +41262,6 @@
       "revision"
     ],
     "full_text": "IS 3144: 1992 Mineral wool thermal insulation materials - Methods of test (second revision),"
-  },
-  {
-    "standard_id": "IS 3346: 1980",
-    "title": "Method of determination of  thermal conductivity of thermal insulating",
-    "category": "Other Building Materials",
-    "scope": "Method of determination of thermal conductivity of thermal insulating materials (two slab guarded hot plate method) (first revision),",
-    "keywords": [
-      "method",
-      "thermal",
-      "determination",
-      "conductivity",
-      "insulating",
-      "materials",
-      "guarded",
-      "plate",
-      "first",
-      "revision"
-    ],
-    "full_text": "IS 3346: 1980 Method of determination of thermal conductivity of thermal insulating materials (two slab guarded hot plate method) (first revision),"
-  },
-  {
-    "standard_id": "IS 5688: 1982",
-    "title": "Methods of test for preformed block-type and pipe",
-    "category": "Bricks",
-    "scope": "Methods of test for preformed block-type and pipe covering type thermal insulation (first revision), and",
-    "keywords": [
-      "methods",
-      "preformed",
-      "block",
-      "covering",
-      "thermal",
-      "insulation",
-      "first",
-      "revision"
-    ],
-    "full_text": "IS 5688: 1982 Methods of test for preformed block-type and pipe covering type thermal insulation (first revision), and"
   },
   {
     "standard_id": "IS 5724: 1970",
@@ -42476,7 +41709,11 @@
     "title": "-P333 or HPL",
     "category": "Other Building Materials",
     "scope": "-P333 or HPL -",
-    "keywords": [],
+    "keywords": [
+      "hpl",
+      "p333",
+      "or"
+    ],
     "full_text": "IS 2046 -P333 or HPL -"
   },
   {
