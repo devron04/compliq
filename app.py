@@ -74,7 +74,7 @@ label span {
 .dark .bg-white { background-color: #1f2937 !important; }
 """
 
-with gr.Blocks(title="CompliQ", css=css, theme=gr.themes.Soft(primary_hue="blue", neutral_hue="slate")) as demo:
+with gr.Blocks(title="CompliQ", css=css, theme=gr.themes.Soft(primary_hue="blue", neutral_hue="slate"), fill_width=True) as demo:
     with gr.Column(elem_id="header"):
         gr.HTML(
             """
