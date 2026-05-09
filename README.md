@@ -1,16 +1,3 @@
----
-title: CompliQ
-emoji: 🏛️
-colorFrom: blue
-colorTo: indigo
-sdk: gradio
-sdk_version: 5.14.0
-python_version: "3.10"
-app_file: app.py
-pinned: false
-license: mit
----
-
 # 🏛️ CompliQ: BIS Standards Recommendation Engine
 
 [![Evaluation Score](https://img.shields.io/badge/Evaluation-90%25%20Hit%20Rate-green)](https://github.com/devron04/compliq)
@@ -70,15 +57,17 @@ Verify our performance metrics locally using our **Golden Test Dataset**:
 
 **1. Run Evaluation Suite:**
 ```bash
-python eval_script.py data/public_test_set.json
+python eval_script.py
 ```
-*This script runs the entire golden test set and outputs the live Hit Rate @ 3 and MRR results.*
 
 **2. Test Raw Inference:**
 ```bash
 python inference.py --query "bricks for black soil"
 ```
-*This validates the pipeline logic against the expectations in `data/sample_output.json`.*
+
+### Dataset References
+- **Evaluation Set**: `data/public_test_set.json` (Benchmarked for Hit Rate & MRR).
+- **Benchmark Reference**: `data/sample_output.json` (Validated for logic and output consistency).
 
 ---
 
@@ -98,7 +87,7 @@ CompliQ uses a sophisticated "Senior Level" retrieval strategy:
 ## 📁 Project Structure
 - `app.py`: Production entry point (Root).
 - `src/`: Core logic (Pipeline, Retriever, Embeddings).
-- `data/`: Pre-indexed vector stores and standards metadata.
+- `data/`: Pre-computed vector stores and BIS dataset.
 - `assets/`: Documentation media and UI demonstrations.
 
 ## ⚖️ License
