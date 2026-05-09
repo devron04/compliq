@@ -59,13 +59,15 @@ Verify our performance metrics locally using our **Golden Test Dataset**:
 ```bash
 python eval_script.py
 ```
-*This script uses `data/public_test_set.json` to benchmark the retriever and computes the final Hit Rate and MRR scores.*
 
 **2. Test Raw Inference:**
 ```bash
 python inference.py --query "bricks for black soil"
 ```
-*This validates the pipeline logic against the expectations in `data/sample_output.json`.*
+
+### Dataset References
+- **Evaluation Set**: `data/public_test_set.json` (Benchmarked for Hit Rate & MRR).
+- **Benchmark Reference**: `data/sample_output.json` (Validated for logic and output consistency).
 
 ---
 
