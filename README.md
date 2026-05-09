@@ -70,9 +70,9 @@ Verify our performance metrics locally using our **Golden Test Dataset**:
 
 **1. Run Evaluation Suite:**
 ```bash
-python eval_script.py
+python eval_script.py data/public_test_set.json
 ```
-*This script uses `data/public_test_set.json` to benchmark the retriever and computes the final Hit Rate and MRR scores.*
+*This script runs the entire golden test set and outputs the live Hit Rate @ 3 and MRR results.*
 
 **2. Test Raw Inference:**
 ```bash
