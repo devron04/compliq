@@ -17,20 +17,20 @@ CompliQ is a measured retrieval system, rigorously tested against a curated gold
 
 ---
 
-## 🧪 How to Reproduce Results
-Judges can verify our results using our specialized testing tools:
+## 🧪 How to Reproduce Results (Judges)
+Judges can verify our results using the mandatory evaluation entry-points:
 
-**1. Run Inference on Test Set:**
+**1. Generate Results (Inference):**
 ```bash
-python inference.py data/public_test_set.json my_results.json
+python inference.py --input data/public_test_set.json --output results.json
 ```
-*This runs the pipeline on the golden test set and saves the AI's predictions.*
+*This command runs the RAG pipeline on the test set and saves the predictions.*
 
-**2. Evaluate Results:**
+**2. Calculate Metrics (Evaluation):**
 ```bash
-python eval_script.py data/sample_output.json
+python eval_script.py results.json
 ```
-*This grades the pre-generated sample results and outputs the official Hit Rate and MRR scores.*
+*This script grades the generated results and outputs the official Hit Rate and MRR scores.*
 
 ---
 
@@ -61,6 +61,14 @@ CompliQ uses a sophisticated "Senior Level" retrieval strategy:
 - **Retriever**: Rank-BM25 (Hybrid Keyword + Semantic)
 - **Embedding Model**: BAAI/bge-small-en-v1.5
 - **LLM Interface**: Groq API (Llama 3 / Mixtral)
+
+## 📁 Package Structure
+- `/src`: Main application logic.
+- `/data`: Public test sets and indexed vector stores.
+- `app.py`: Gradio Web Interface entry point.
+- `inference.py`: **Mandatory judge entry point.**
+- `eval_script.py`: **Mandatory evaluation script.**
+- `requirements.txt`: System dependencies.
 
 ## ⚖️ License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
