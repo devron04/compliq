@@ -53,18 +53,19 @@ python app.py
 ---
 
 ## 🧪 How to Reproduce Results
-Verify our performance metrics locally:
+Verify our performance metrics locally using our **Golden Test Dataset**:
 
 **1. Run Evaluation Suite:**
 ```bash
 python eval_script.py
 ```
-*Outputs the Hit Rate and MRR metrics for the entire test set.*
+*This script uses `data/public_test_set.json` to benchmark the retriever and computes the final Hit Rate and MRR scores.*
 
 **2. Test Raw Inference:**
 ```bash
 python inference.py --query "bricks for black soil"
 ```
+*This validates the pipeline logic against the expectations in `data/sample_output.json`.*
 
 ---
 
