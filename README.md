@@ -1,76 +1,226 @@
-# 🏛️ CompliQ: BIS Standards Recommendation Engine
+<div align="center">
 
-[![Evaluation Score](https://img.shields.io/badge/Evaluation-100%25%20Hit%20Rate-brightgreen)](https://github.com/devron04/compliq)
-[![Live Demo](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Live%20Demo-blue)](https://huggingface.co/spaces/Ronakk0412/CompliQ)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<!-- Animated Banner -->
+<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=30&duration=2500&pause=1000&color=00C2FF&center=true&vCenter=true&width=1000&lines=🏛️+CompliQ+-+BIS+Recommendation+Engine;🤖+Hybrid+RAG+%2B+RRF+Architecture;⚡+Hallucination-Free+AI+Search;🚀+Production+Grade+Retrieval+System" alt="Typing SVG" />
 
-**CompliQ** is a production-grade, AI-powered search engine designed to instantly map building materials and products to their relevant **Bureau of Indian Standards (BIS)** regulations using a high-speed, hallucination-free RAG pipeline.
+# 🏛️ CompliQ
 
-![CompliQ Interface](assets/app_demo.png)
+### AI-Powered BIS Standards Recommendation Engine
 
-## 📊 Performance & Evaluation
-CompliQ is a measured retrieval system, rigorously tested against a curated golden dataset of BIS standards.
+<p align="center">
+  <img src="https://img.shields.io/badge/Hit%20Rate-100%25-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/MRR-0.83-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Latency-2.1s-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" />
+</p>
 
-- **Hit Rate @ 3**: **100%** (Verified on official public test set).
-- **Mean Reciprocal Rank (MRR)**: **0.83** (Exceeds 0.7 target).
-- **Average Latency**: **~2.1s** (Safely under 5s target; <400ms for fast queries).
+*A production-grade AI search engine that maps building materials to official BIS standards using Hybrid RAG pipelines.*
+
+[🚀 Features](#-features) • [🏗️ Architecture](#️-architecture) • [⚙️ Setup](#️-quick-start) • [🧠 Tech Stack](#-technology-stack)
+
+</div>
 
 ---
 
-## 🧪 How to Reproduce Results (Judges)
-Judges can verify our results using the mandatory evaluation entry-points:
+# 🌟 Features
 
-**1. Generate Results (Inference):**
+<div align="center">
+
+| ⚡ Fast Retrieval | 🧠 AI Re-ranking | 🛡️ Anti-Hallucination | 📊 Evaluation Ready |
+|:---:|:---:|:---:|:---:|
+| Semantic + Keyword Search | Llama 3 via Groq | Strict Context Filtering | Judge-ready pipeline |
+| <img width="100" src="https://media.giphy.com/media/f3iwJFOVOwuy7K6FFw/giphy.gif"> | <img width="100" src="https://media.giphy.com/media/3o7TKsQ8UQK6mM0fLO/giphy.gif"> | <img width="100" src="https://media.giphy.com/media/l0HlRnAWXxn0MhKLK/giphy.gif"> | <img width="100" src="https://media.giphy.com/media/xT0xeJpnrWC4XWblEk/giphy.gif"> |
+
+</div>
+
+---
+
+# 📊 Performance Metrics
+
+<div align="center">
+
+| Metric | Result |
+|---|---|
+| 🎯 Hit Rate @ 3 | **100%** |
+| 📈 Mean Reciprocal Rank | **0.83** |
+| ⚡ Average Latency | **~2.1s** |
+| 🚀 Fast Query Response | **<400ms** |
+
+</div>
+
+---
+
+# 🏗️ Architecture
+
+<div align="center">
+
+```ascii
+┌───────────────────────────────────────────────────────────────┐
+│                    🏛️ COMPLIQ PIPELINE                       │
+└───────────────────────────────────────────────────────────────┘
+```
+
+</div>
+
+## 🔄 Retrieval Workflow
+
+```ascii
+        ┌──────────────┐
+        │ User Query   │
+        └──────┬───────┘
+               │
+      ┌────────▼────────┐
+      │ Hybrid Retrieval │
+      └────────┬────────┘
+               │
+     ┌─────────┴─────────┐
+     │                   │
+┌────▼────┐       ┌──────▼─────┐
+│  BM25   │       │   FAISS    │
+│ Keyword │       │ Semantic   │
+└────┬────┘       └──────┬─────┘
+     │                   │
+     └────────┬──────────┘
+              ▼
+      ┌──────────────┐
+      │ RRF Fusion   │
+      └──────┬───────┘
+             ▼
+     ┌───────────────┐
+     │ LLM Re-ranking│
+     └──────┬────────┘
+            ▼
+   ┌──────────────────┐
+   │ Final BIS Result │
+   └──────────────────┘
+```
+
+---
+
+# ⚙️ Quick Start
+
+## 📦 Prerequisites
+
+- Python 3.10+
+- Groq API Key
+
+---
+
+## 🚀 Installation
+
+### 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/devron04/compliq.git
+cd compliq
+```
+
+### 2️⃣ Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3️⃣ Configure Environment
+
+Create `.env`
+
+```env
+GROQ_API_KEY=your_api_key
+```
+
+### 4️⃣ Run Application
+
+```bash
+python app.py
+```
+
+---
+
+# 🧪 Evaluation
+
+## ▶️ Run Inference
+
 ```bash
 python inference.py --input data/public_test_set.json --output data/public_test_results.json
 ```
-*This command runs the RAG pipeline on the test set and saves the predictions.*
 
-**2. Calculate Metrics (Evaluation):**
+## 📈 Evaluate Results
+
 ```bash
 python eval_script.py --results data/public_test_results.json
 ```
-*This script grades the generated results and outputs the official Hit Rate and MRR scores.*
 
 ---
 
-## 🏗️ Architecture: Hybrid RAG + RRF
-CompliQ uses a sophisticated "Senior Level" retrieval strategy:
-1. **Dense Retrieval (FAISS)**: Captures semantic meaning and intent using `BAAI/bge-small-en-v1.5`.
-2. **Sparse Retrieval (BM25)**: Ensures precise keyword matching for specific standard IDs and material names.
-3. **Reciprocal Rank Fusion (RRF)**: Merges results from both methods to provide a mathematically optimized final ranking.
-4. **AI Rationales & Re-ranking**: Uses LLMs (Llama 3 via Groq) to filter and rank the most specific product matches at the top.
-5. **Anti-Hallucination Whitelist**: A strict code-level filter that discards any standard ID not found in the original retrieved context.
-6. **Latency Guard**: A hard timeout mechanism that automatically falls back to raw retrieval if the LLM takes too long, guaranteeing a response within the 5s limit.
+# 🛠️ Technology Stack
 
-## ⚙️ Quick Start & Setup
+<div align="center">
 
-### Prerequisites
-- **Python 3.10+**
-- **Groq API Key**: Obtain one for free at [console.groq.com](https://console.groq.com/).
+### ⚙️ Retrieval Layer
 
-### Installation
-1. **Clone & Install:**
-   ```bash
-   git clone https://github.com/devron04/compliq.git
-   pip install -r requirements.txt
-   ```
-2. **Configure Env:** Create a `.env` file and add `GROQ_API_KEY=your_key`.
-3. **Run UI:** `python app.py`
+```ascii
+┌─────────────────────────────────────────────────────┐
+│                🔍 Retrieval System                  │
+├─────────────────────────────────────────────────────┤
+│  ⚡ FAISS  │  🧠 BM25  │  🔄 RRF Fusion             │
+└─────────────────────────────────────────────────────┘
+```
 
-## 🛠️ Technology Stack
-- **Vector DB**: FAISS
-- **Retriever**: Rank-BM25 (Hybrid Keyword + Semantic)
-- **Embedding Model**: BAAI/bge-small-en-v1.5
-- **LLM Interface**: Groq API (Llama 3 / Mixtral)
+### 🤖 AI Layer
 
-## 📁 Package Structure
-- `/src`: Main application logic.
-- `/data`: Public test sets and indexed vector stores.
-- `app.py`: Gradio Web Interface entry point.
-- `inference.py`: **Mandatory judge entry point.**
-- `eval_script.py`: **Mandatory evaluation script.**
-- `requirements.txt`: System dependencies.
+```ascii
+┌─────────────────────────────────────────────────────┐
+│                   🧠 LLM Layer                      │
+├─────────────────────────────────────────────────────┤
+│  🚀 Groq API  │  🦙 Llama 3  │  ⚡ Mixtral         │
+└─────────────────────────────────────────────────────┘
+```
 
-## ⚖️ License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,fastapi,git,docker&theme=dark&perline=8" />
+</p>
+
+</div>
+
+---
+
+# 📁 Project Structure
+
+```ascii
+📦 compliq/
+├── 📂 src/                  # Core application logic
+├── 📂 data/                 # Vector stores & datasets
+├── 🚀 app.py                # Gradio UI
+├── 🧪 inference.py          # Judge inference script
+├── 📈 eval_script.py        # Evaluation metrics
+├── 📋 requirements.txt      # Dependencies
+└── 📖 README.md
+```
+
+---
+
+# 🔒 Key Highlights
+
+- ✅ Hybrid Semantic + Keyword Retrieval
+- ✅ Production-grade RAG Pipeline
+- ✅ Hallucination Prevention Layer
+- ✅ AI-based Re-ranking
+- ✅ Ultra-fast Retrieval
+- ✅ Judge-ready Evaluation
+
+---
+
+# ⚖️ License
+
+This project is licensed under the MIT License.
+
+---
+
+<div align="center">
+
+### ❤️ Built with AI, Retrieval Systems & Modern LLM Infrastructure
+
+⭐ Star this repository if you found it useful!
+
+</div>
