@@ -12,6 +12,7 @@
   <img src="https://img.shields.io/badge/MRR-0.83-blue?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Latency-2.1s-orange?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Last%20Update-May%202026-blueviolet?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" />
 </p>
 
 *A production-grade AI search engine that maps building materials to official BIS standards using Hybrid RAG pipelines.*
